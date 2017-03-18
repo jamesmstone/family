@@ -5,4 +5,4 @@ mkdir -p out;
 
 docker build -t parse-gedcom gedcomToJson;
 docker run --rm -i  parse-gedcom <familyTree/stoneFamily.ged >out/stoneFamily.json ;
-cp -r html out;
+cp -r html/* out/;
