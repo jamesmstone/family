@@ -1,7 +1,7 @@
 # Family
 
-** My family tree ** 
+**My family tree** 
 
-[![Build Status](https://travis-ci.org/jamesmstone/family.svg?branch=master)](https://travis-ci.org/jamesmstone/family)
+[![Travis](https://img.shields.io/travis/jamesmstone/family.svg?style=flat-square&label=Deploy)](https://travis-ci.org/jamesmstone/family)
 
 Still under construction
