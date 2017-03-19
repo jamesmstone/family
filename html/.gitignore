@@ -9,6 +9,9 @@
 # production
 /build
 
+# tests
+/jest
+
 /public/stoneFamily.json
 /public/CNAME
 
