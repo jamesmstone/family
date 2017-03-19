@@ -7,7 +7,6 @@ npm ()
 }
 
 
-mkdir -p out;
 
 docker build -t parse-gedcom gedcomToJson;
 docker run --rm -i  parse-gedcom <familyTree/stoneFamily.ged >html/public/stoneFamily.json ;
@@ -18,4 +17,3 @@ cd html/
 npm install --dev;
 npm test;
 npm run build;
-cp -r ./build/* ../out/;
