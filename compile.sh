@@ -10,3 +10,4 @@ npm ()
 npm install;
 npm run clean;
 npm run build;
+cp CNAME public/;
