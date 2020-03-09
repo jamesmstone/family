@@ -1,0 +1,45 @@
+{
+  "name": "stone-family-tree",
+  "private": true,
+  "description": "The family tree for the Stone Family",
+  "version": "0.1.0",
+  "author": "James Stone",
+  "dependencies": {
+    "gatsby": "^2.19.32",
+    "gatsby-image": "^2.2.43",
+    "gatsby-plugin-manifest": "^2.2.44",
+    "gatsby-plugin-offline": "^3.0.37",
+    "gatsby-plugin-react-helmet": "^3.1.23",
+    "gatsby-plugin-sharp": "^2.4.7",
+    "gatsby-source-filesystem": "^2.1.50",
+    "gatsby-transformer-sharp": "^2.3.17",
+    "parse-gedcom": "^1.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby",
+    "family"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesmstone/family"
+  },
+  "bugs": {
+    "url": "https://github.com/jamesmstone/family/issues"
+  }
+}
