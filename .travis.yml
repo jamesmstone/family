@@ -1,7 +1,7 @@
 sudo: required
-language: node
-node_js:
-  - latest
+language: ruby
+services:
+- docker
 script: bash ./compile.sh
 deploy:
   provider: pages
