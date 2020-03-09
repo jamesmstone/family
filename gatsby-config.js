@@ -5,6 +5,12 @@ module.exports = {
     author: `James Stone`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-antd",
+      options: {
+        // style: true, // for less
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -36,4 +42,4 @@ module.exports = {
       },
     },
   ],
-}
+};

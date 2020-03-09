@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
+import { Descriptions } from "antd";
 export default ({ data }) => {
   const {
     family: { husband, wife, children },
@@ -8,42 +9,33 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <dl>
+        <Descriptions bordered>
           {husband && (
-            <>
-              <dt>Male</dt>
-              <dl>
-                <Link to={`/individual/${husband.id}`}>
-                  {husband.name.fullName}
-                </Link>
-              </dl>
-            </>
+            <Descriptions.Item label={"Male"}>
+              <Link to={`/individual/${husband.id}`}>
+                {husband.name.fullName}
+              </Link>
+            </Descriptions.Item>
           )}
           {wife && (
-            <>
-              <dt>Female</dt>
-              <dl>
-                <Link to={`/individual/${wife.id}`}>{wife.name.fullName}</Link>
-              </dl>
-            </>
+            <Descriptions.Item label={"Female"}>
+              <Link to={`/individual/${wife.id}`}>{wife.name.fullName}</Link>
+            </Descriptions.Item>
           )}
           {children && (
-            <>
-              <dt>Children</dt>
-              <dl>
-                <ul>
-                  {children.map(child => (
-                    <li key={child.id}>
-                      <Link to={`/individual/${child.id}`}>
-                        {child.name.fullName}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </dl>
-            </>
+            <Descriptions.Item label={"Children"}>
+              <ul>
+                {children.map(child => (
+                  <li key={child.id}>
+                    <Link to={`/individual/${child.id}`}>
+                      {child.name.fullName}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </Descriptions.Item>
           )}
-        </dl>
+        </Descriptions>
       </div>
     </Layout>
   );
