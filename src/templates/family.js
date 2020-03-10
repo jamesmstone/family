@@ -2,7 +2,10 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import { Descriptions } from "antd";
-import { Tree } from "../components/tree";
+
+import Loadable from "@loadable/component";
+
+const Tree = Loadable(() => import("../components/tree"), { ssr: false });
 
 export default ({ data }) => {
   const {

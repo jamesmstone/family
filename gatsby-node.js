@@ -259,17 +259,3 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === "build-html") {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /bizcharts/, // exclude bizcharts from SSR as they depends on the `document` which isn't available when SSR
-            use: loaders.null(),
-          },
-        ],
-      },
-    });
-  }
-};

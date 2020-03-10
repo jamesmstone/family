@@ -2,7 +2,8 @@ import React from "react";
 import { Chart, Coord, Geom, Label, Tooltip, View } from "bizcharts";
 import DataSet from "@antv/data-set";
 
-export function Tree({ data, direction="TB" }) {
+
+export default function Tree({ data, direction = "TB" }) {
   let dv = new DataSet.View().source(data, {
     type: "hierarchy",
     pureData: true,
@@ -29,54 +30,52 @@ export function Tree({ data, direction="TB" }) {
     },
   });
   return (
-    <div>
-      <Chart forceFit={true} padding={[100, 100, 100, 100]} height={600}>
-        <Coord transpose />
-        <Tooltip />
-        <View
-          data={dv.getAllLinks().map(link => ({
-            x: [link.source.x, link.target.x],
-            y: [link.source.y, link.target.y],
-            source: link.source.id,
-            target: link.target.id,
-          }))}
-        >
-          <Geom
-            type="edge"
-            position="x*y"
-            shape="line"
-            color="grey"
-            opacity={0.5}
-            tooltip="source*target"
+    <Chart forceFit={true} padding={[100, 100, 100, 100]} height={600}>
+      <Coord transpose />
+      <Tooltip />
+      <View
+        data={dv.getAllLinks().map(link => ({
+          x: [link.source.x, link.target.x],
+          y: [link.source.y, link.target.y],
+          source: link.source.id,
+          target: link.target.id,
+        }))}
+      >
+        <Geom
+          type="edge"
+          position="x*y"
+          shape="line"
+          color="grey"
+          opacity={0.5}
+          tooltip="source*target"
+        />
+      </View>
+      <View
+        data={dv.getAllNodes().map(node => ({
+          hasChildren: !!(node.children && node.children.length),
+          name: node.data.name,
+          value: node.value,
+          depth: node.depth,
+          x: node.x,
+          y: node.y,
+        }))}
+      >
+        <Geom type="point" position="x*y" color="hasChildren">
+          <Label
+            content="name"
+            textStyle={(text, item) => {
+              const textAlign = item.point.hasChildren ? "left" : "right";
+              return {
+                fill: "grey",
+                fontSize: 14,
+                textBaseline: "below",
+                textAlign: textAlign,
+              };
+            }}
+            offset={0}
           />
-        </View>
-        <View
-          data={dv.getAllNodes().map(node => ({
-            hasChildren: !!(node.children && node.children.length),
-            name: node.data.name,
-            value: node.value,
-            depth: node.depth,
-            x: node.x,
-            y: node.y,
-          }))}
-        >
-          <Geom type="point" position="x*y" color="hasChildren">
-            <Label
-              content="name"
-              textStyle={(text, item) => {
-                const textAlign = item.point.hasChildren ? "left" : "right";
-                return {
-                  fill: "grey",
-                  fontSize: 14,
-                  textBaseline: "below",
-                  textAlign: textAlign,
-                };
-              }}
-              offset={0}
-            />
-          </Geom>
-        </View>
-      </Chart>
-    </div>
+        </Geom>
+      </View>
+    </Chart>
   );
 }
