@@ -118,6 +118,55 @@ async function onCreateNode({
 
 exports.onCreateNode = onCreateNode;
 
+exports.createResolvers = ({ createResolvers }) => {
+  const resolvers = {
+    Individual: {
+      relationships: {
+        type: ["Individual"],
+        args: {
+          relationship: "String!",
+        },
+        resolve(
+          { familyChild, familySpouse },
+          { relationship },
+          context,
+          info
+        ) {
+          const getFamC = () =>
+            context.nodeModel.getNodeById({ id: familyChild, type: "Family" });
+          const getFamSs = () =>
+            context.nodeModel.getNodesByIds({
+              ids: familySpouse,
+              type: "Family",
+            });
+          const getIndividual = id => {
+            if (id === null) return null;
+            return context.nodeModel.getNodeById({ id, type: "Individual" });
+          };
+
+          switch (relationship) {
+            case "father":
+              const famc = getFamC();
+              return famc !== null && famc.hasOwnProperty("husband")
+                ? [getIndividual(famc.husband)]
+                : null;
+            case "mother":
+              const fam = getFamC();
+              return fam !== null && fam.hasOwnProperty("wife")
+                ? [getIndividual(fam.wife)]
+                : null;
+            case "children":
+              return getFamSs().flatMap(({ children }) =>
+                children.map(c => getIndividual(c))
+              );
+          }
+        },
+      },
+    },
+  };
+  createResolvers(resolvers);
+};
+
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes, createFieldExtension } = actions;
 
