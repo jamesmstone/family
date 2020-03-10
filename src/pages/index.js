@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import { Avatar, List, Typography } from "antd";
+import { Avatar, Input, List, Typography } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 
 import Layout from "../components/layout";
@@ -8,7 +8,7 @@ import SEO from "../components/seo";
 
 const IndexPage = () => {
   const {
-    allIndividual: { nodes: individuals },
+    allIndividual: { nodes: is },
   } = useStaticQuery(graphql`
     {
       allIndividual {
@@ -22,15 +22,28 @@ const IndexPage = () => {
     }
   `);
 
+  const [search, setSearch] = useState();
+
+  const individuals =
+    search === undefined
+      ? is
+      : is.filter(i =>
+          i.name.fullName.toLowerCase().includes(search.toLowerCase())
+        );
   return (
     <Layout>
       <SEO title="Home" />
       <Typography.Title>All Individuals</Typography.Title>
       <List
         header={
-          <p>
-            Total: <span>{individuals.length}</span>
-          </p>
+          <>
+            <Input.Search
+              onChange={({ target: { value } }) => setSearch(value)}
+            />
+            <p>
+              Total: <span>{individuals.length}</span>
+            </p>
+          </>
         }
         itemLayout="horizontal"
         dataSource={individuals}
