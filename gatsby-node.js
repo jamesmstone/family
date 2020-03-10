@@ -55,8 +55,9 @@ async function onCreateNode({
         }
         const sex = findTagData("SEX");
         const familyChild = findTagData("FAMC");
-        const familySpouse = findTags("FAMS").map(({ data }) => createNodeId(data));
-
+        const familySpouse = findTags("FAMS").map(({ data }) =>
+          createNodeId(data)
+        );
 
         return {
           name: {
@@ -66,7 +67,7 @@ async function onCreateNode({
           sex,
           birth,
           death,
-          familyChild: familyChild ? createNodeId(familyChild): undefined,
+          familyChild: familyChild ? createNodeId(familyChild) : undefined,
           familySpouse,
 
           id,
@@ -79,7 +80,6 @@ async function onCreateNode({
         };
         break;
       case "FAM":
-
         const husband = findTagData("HUSB");
         const wife = findTagData("WIFE");
         const children = findTags("CHIL").map(({ data }) => createNodeId(data));
@@ -179,7 +179,7 @@ exports.createPages = async ({ graphql, actions }) => {
           id
         }
       }
-       allFamily {
+      allFamily {
         nodes {
           id
         }
@@ -197,7 +197,6 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-  debugger
   result.data.allFamily.nodes.forEach(node => {
     createPage({
       path: `family/${node.id}`,
@@ -209,4 +208,19 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
+};
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /bizcharts/, // exclude bizcharts from SSR as they depends on the `document` which isn't available when SSR
+            use: loaders.null(),
+          },
+        ],
+      },
+    });
+  }
 };

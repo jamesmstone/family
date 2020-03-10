@@ -5,7 +5,9 @@
   "version": "0.1.0",
   "author": "James Stone",
   "dependencies": {
+    "@antv/data-set": "^0.11.1",
     "antd": "^4.0.2",
+    "bizcharts": "^3.5.8",
     "gatsby": "^2.19.32",
     "gatsby-image": "^2.2.43",
     "gatsby-plugin-antd": "^2.2.0",
