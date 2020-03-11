@@ -58,7 +58,6 @@ const IndexPage = () => {
           </List.Item>
         )}
       />
-      ,
     </Layout>
   );
 };
