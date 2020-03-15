@@ -191,14 +191,18 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     extend(options, prevFieldConfig) {
       return {
         resolve({
-          birth: { date: bDate } = { date: null },
-          death: { date: dDate } = { date: null },
+          birth: { date: bDate } = { date: undefined },
+          death: { date: dDate } = { date: undefined },
         }) {
           if (bDate === undefined) {
             return null;
           }
-          if (dDate === undefined) return moment(bDate).diff(moment(), "years");
+
+          if (dDate === undefined) {
+            return moment().diff(moment(bDate), "years");
+          }
           return moment(dDate).diff(bDate, "years");
+          1;
         },
       };
     },

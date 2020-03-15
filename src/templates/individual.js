@@ -48,20 +48,22 @@ export default ({ data }) => {
             {individual.age}
           </Badge>
         </Descriptions.Item>
-        <Descriptions.Item label={"Birth"}>
-          <Descriptions>
-            {individual.birth.date && (
-              <Descriptions.Item label={"Date"}>
-                {individual.birth.date}
-              </Descriptions.Item>
-            )}
-            {individual.birth.place && individual.birth.place.place && (
-              <Descriptions.Item label={"Place"}>
-                {individual.birth.place.place}
-              </Descriptions.Item>
-            )}
-          </Descriptions>
-        </Descriptions.Item>
+        {individual.birth && (
+          <Descriptions.Item label={"Birth"}>
+            <Descriptions>
+              {individual.birth.date && (
+                <Descriptions.Item label={"Date"}>
+                  {individual.birth.date}
+                </Descriptions.Item>
+              )}
+              {individual.birth.place && individual.birth.place.place && (
+                <Descriptions.Item label={"Place"}>
+                  {individual.birth.place.place}
+                </Descriptions.Item>
+              )}
+            </Descriptions>
+          </Descriptions.Item>
+        )}
         {individual.death && (
           <Descriptions.Item label={"Death"}>
             <Descriptions>
