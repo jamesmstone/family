@@ -11,7 +11,7 @@ const IndexPage = () => {
     allIndividual: { nodes: is },
   } = useStaticQuery(graphql`
     {
-      allIndividual {
+      allIndividual(sort: { fields: birth___date, order: ASC }) {
         nodes {
           name {
             fullName

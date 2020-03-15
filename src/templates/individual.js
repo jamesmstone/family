@@ -1,11 +1,12 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import { Descriptions } from "antd";
+import { Badge, Descriptions } from "antd";
 import Layout from "../components/layout";
 import { ManOutlined, WomanOutlined } from "@ant-design/icons";
 
 export default ({ data }) => {
   const { individual } = data;
+  const alive = individual.death === null;
   return (
     <Layout>
       <Descriptions bordered title={individual.name.fullName}>
@@ -39,6 +40,44 @@ export default ({ data }) => {
             </ul>
           </Descriptions.Item>
         )}
+        <Descriptions.Item label={"Age"}>
+          <Badge
+            status={alive ? "success" : undefined}
+            title={"and counting..."}
+          >
+            {individual.age}
+          </Badge>
+        </Descriptions.Item>
+        <Descriptions.Item label={"Birth"}>
+          <Descriptions>
+            {individual.birth.date && (
+              <Descriptions.Item label={"Date"}>
+                {individual.birth.date}
+              </Descriptions.Item>
+            )}
+            {individual.birth.place && individual.birth.place.place && (
+              <Descriptions.Item label={"Place"}>
+                {individual.birth.place.place}
+              </Descriptions.Item>
+            )}
+          </Descriptions>
+        </Descriptions.Item>
+        {individual.death && (
+          <Descriptions.Item label={"Death"}>
+            <Descriptions>
+              {individual.death.date && (
+                <Descriptions.Item label={"Date"}>
+                  {individual.death.date}
+                </Descriptions.Item>
+              )}
+              {individual.death.place && individual.death.place.place && (
+                <Descriptions.Item label={"Place"}>
+                  {individual.death.place.place}
+                </Descriptions.Item>
+              )}
+            </Descriptions>
+          </Descriptions.Item>
+        )}
       </Descriptions>
     </Layout>
   );
@@ -50,6 +89,21 @@ export const query = graphql`
       name {
         fullName
       }
+      birth {
+        born
+        date(formatString: "DD MMMM YYYY")
+        place {
+          place
+        }
+      }
+      death {
+        died
+        date(formatString: "DD MMMM YYYY")
+        place {
+          place
+        }
+      }
+      age
       sex
       familyChild {
         id

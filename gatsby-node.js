@@ -1,3 +1,4 @@
+const moment = require("moment");
 const parsegedcom = require(`parse-gedcom`);
 const path = require(`path`);
 
@@ -39,18 +40,23 @@ async function onCreateNode({
           let [{ tree: deathTree }] = findTags("DEAT");
           let died =
             (deathTree.length === 0 && findTagData("DEAT") === "Y") || true;
+          let place = findTagData("PLAC", deathTree);
+          let date = findTagData("DATE", deathTree);
           death = {
             died,
-            place: findTagData("PLAC", deathTree),
-            date: findTagData("DATE", deathTree),
+            place: place ? { place } : null,
+            date: date ? moment(date).format() : null,
           };
         }
         if (hasTag("BIRT")) {
           let [{ tree: birthTree }] = findTags("BIRT");
+          let place = findTagData("PLAC", birthTree);
+          let date = findTagData("DATE", birthTree);
+
           birth = {
             born: true,
-            place: findTagData("PLAC", birthTree),
-            date: findTagData("DATE", birthTree),
+            place: place ? { place } : null,
+            date: date ? moment(date).toISOString() : null,
           };
         }
         const sex = findTagData("SEX");
@@ -180,6 +186,23 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       };
     },
   });
+  createFieldExtension({
+    name: "age",
+    extend(options, prevFieldConfig) {
+      return {
+        resolve({
+          birth: { date: bDate } = { date: null },
+          death: { date: dDate } = { date: null },
+        }) {
+          if (bDate === undefined) {
+            return null;
+          }
+          if (dDate === undefined) return moment(bDate).diff(moment(), "years");
+          return moment(dDate).diff(bDate, "years");
+        },
+      };
+    },
+  });
 
   // language=GraphQL
   const typeDefs = [
@@ -190,6 +213,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           death: Death
           familyChild: Family @link
           familySpouse: [Family] @link
+          age: Int @age
       }`,
     `type Family implements Node @dontInfer {
           children: [Individual] @link
@@ -204,12 +228,12 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     `type Birth @dontInfer {
           born:Boolean
           place: Place
-          date:Date
+          date:Date @dateformat
       }`,
     `type Death @dontInfer {
           died: Boolean
           place: Place
-          date:Date
+          date:Date @dateformat
       }`,
     `type Place @dontInfer {
           place: String!

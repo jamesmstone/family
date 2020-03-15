@@ -25,9 +25,9 @@ const StatsPage = () => {
     <Layout>
       <SEO title="Stats" />
       <Typography.Title>Stats</Typography.Title>
-      <Descriptions bordered title={"Names"}>
+      {/* <Descriptions bordered title={"Names"}>
         <Descriptions.Item label={"Most common first name"}></Descriptions.Item>
-      </Descriptions>
+      </Descriptions>*/}
     </Layout>
   );
 };
