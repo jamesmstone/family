@@ -121,10 +121,6 @@ exports.onCreateNode = onCreateNode;
 exports.createResolvers = ({ createResolvers }) => {
   const resolvers = {
     Individual: {
-      age:{
-        type: "Number",
-
-      },
       relationships: {
         type: ["Individual"],
         args: {

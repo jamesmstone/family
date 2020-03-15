@@ -3319,10 +3319,14 @@
 1 BIRT
 2 DATE 25 JAN 1934
 2 PLAC Melbourne, VIC, Australia
+1 BURI
+2 DATE 23 MAR 2018
+2 PLAC Cheltenham Cemetery
 1 DEAT
 2 DATE 14 MAR 2018
 3 TIME 17:20:00
 2 PLAC Cabrini Health, 646 High St, Prahran, VIC, Australia
+2 CAUS Lymphoma
 1 FAMS @F3@
 1 FAMC @F7@
 0 @I90@ INDI
