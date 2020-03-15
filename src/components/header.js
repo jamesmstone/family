@@ -1,34 +1,29 @@
+import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import React from "react";
+import { Layout, Menu, Typography } from "antd";
+import { LineChartOutlined, TeamOutlined } from "@ant-design/icons";
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+  <Layout.Header>
+    <Link style={{ float: "left", color: "#fff" }} to="/">
+      {siteTitle}
+    </Link>
+    <Menu style={{ lineHeight: "64px" }} theme={"dark"} mode="horizontal">
+      <Menu.Item key="/">
+        <Link to={"/"}>
+          <TeamOutlined />
+          People
         </Link>
-      </h1>
-    </div>
-  </header>
+      </Menu.Item>
+      <Menu.Item key="/stats">
+        <Link to={"/stats"}>
+          <LineChartOutlined />
+          Stats
+        </Link>
+      </Menu.Item>
+    </Menu>
+  </Layout.Header>
 );
 
 Header.propTypes = {

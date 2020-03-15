@@ -2,7 +2,6 @@ import React from "react";
 import { Chart, Coord, Geom, Label, Tooltip, View } from "bizcharts";
 import DataSet from "@antv/data-set";
 
-
 export default function Tree({ data, direction = "TB" }) {
   let dv = new DataSet.View().source(data, {
     type: "hierarchy",

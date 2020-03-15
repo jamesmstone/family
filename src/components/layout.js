@@ -8,9 +8,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
+import { Layout as L } from "antd";
 
 import Header from "./header";
-import "./layout.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,21 +24,15 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <L>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+      <L.Content
+        style={{ padding: "50px", background: "#fff", minHeight: "280px" }}
       >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} Stone Family
-        </footer>
-      </div>
-    </>
+        {children}
+      </L.Content>
+      <L.Footer>© {new Date().getFullYear()} Stone Family</L.Footer>
+    </L>
   );
 };
 
