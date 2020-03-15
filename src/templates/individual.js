@@ -11,9 +11,9 @@ export default ({ data }) => {
     <Layout>
       <Descriptions bordered title={individual.name.fullName}>
         <Descriptions.Item label={"Sex"}>
+          {individual.sex}
           {individual.sex === "F" && <WomanOutlined />}
           {individual.sex === "M" && <ManOutlined />}
-          {individual.sex}
         </Descriptions.Item>
         {individual.familyChild && (
           <Descriptions.Item label={"Childhood Family"}>
