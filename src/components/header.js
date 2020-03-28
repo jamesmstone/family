@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import { Layout, Menu, Typography } from "antd";
+import { Layout, Menu } from "antd";
 import { LineChartOutlined, TeamOutlined } from "@ant-design/icons";
 
 const Header = ({ siteTitle }) => (
