@@ -22,6 +22,12 @@ const Header = ({ siteTitle }) => (
           Stats
         </Link>
       </Menu.Item>
+      <Menu.Item key="/familyTree">
+        <Link to={"/familyTree"}>
+          <LineChartOutlined />
+          Family Tree
+        </Link>
+      </Menu.Item>
     </Menu>
   </Layout.Header>
 );
