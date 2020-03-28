@@ -1,9 +1,6 @@
 import React from "react";
 import DataSet from "@antv/data-set";
-import Loadable from "@loadable/component";
-
-const bizcharts = Loadable(() => import("bizcharts"), { ssr: false });
-const { Chart, Coord, Geom, Label, Tooltip, View } = bizcharts;
+import { Chart, Coord, Geom, Label, Tooltip, View } from "bizcharts";
 
 export default function Tree({ data, direction = "TB" }) {
   let dv = new DataSet.View().source(data, {

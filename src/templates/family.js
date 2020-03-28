@@ -2,16 +2,11 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import { Descriptions } from "antd";
-import Tree from "../components/tree";
 
 export default ({ data }) => {
   const {
     family: { husband, wife, children },
   } = data;
-  const treeData = {
-    name: `${husband && husband.name.fullName} & ${wife && wife.name.fullName}`,
-    children: children.map(c => ({ name: c.name.fullName })),
-  };
 
   return (
     <Layout>
@@ -43,7 +38,6 @@ export default ({ data }) => {
             </Descriptions.Item>
           )}
         </Descriptions>
-        <Tree data={treeData} />
       </div>
     </Layout>
   );
