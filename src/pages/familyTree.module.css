@@ -24,6 +24,14 @@
   line-height: 16px;
   color: white;
   padding: 0;
+
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  height: 20px;
+
+  border: 1px solid #dddddd;
+  border-radius: 4px;
 }
 
 .TemplateA .titleBackground {
@@ -36,13 +44,21 @@
   -ms-user-select: none;
   user-select: none;
   box-sizing: content-box;
+
+  border-radius: 4px;
+
+  border: 1px solid #dddddd;
+  background: #eeeeee;
+  color: #333333;
+
+  width: 100%;
 }
 
 .TemplateA .description {
   overflow: hidden;
   text-align: left;
   top: 26px;
-  left: 56px;
+  left: 2px;
   right: 2px;
   bottom: 2px;
   font-size: 12px;
