@@ -132,12 +132,8 @@ exports.createResolvers = ({ createResolvers }) => {
         args: {
           relationship: "String!",
         },
-        resolve(
-          { familyChild, familySpouse },
-          { relationship },
-          context,
-          info
-        ) {
+        resolve(a, { relationship }, context, info) {
+          const { id, familyChild, familySpouse } = a;
           const getFamC = () =>
             context.nodeModel.getNodeById({ id: familyChild, type: "Family" });
           const getFamSs = () =>
@@ -152,19 +148,54 @@ exports.createResolvers = ({ createResolvers }) => {
 
           switch (relationship) {
             case "father":
-              const famc = getFamC();
+              const famcA = getFamC();
               return famc !== null && famc.hasOwnProperty("husband")
                 ? [getIndividual(famc.husband)]
                 : null;
             case "mother":
-              const fam = getFamC();
-              return fam !== null && fam.hasOwnProperty("wife")
-                ? [getIndividual(fam.wife)]
+              const famcB = getFamC();
+              return famcB !== null && famcB.hasOwnProperty("wife")
+                ? [getIndividual(famcB.wife)]
                 : null;
+            case "parents":
+              if (id === "c22b96ea-898d-5b01-b0c4-017404a53664") debugger;
+              const famcC = getFamC();
+              if (famcC === null) {
+                return [];
+              }
+              if (
+                famcC.hasOwnProperty("husband") &&
+                famcC.husband &&
+                famcC.hasOwnProperty("wife") &&
+                famcC.wife
+              ) {
+                return [
+                  getIndividual(famcC.husband),
+                  getIndividual(famcC.wife),
+                ];
+              }
+              if (famcC.hasOwnProperty("husband") && famcC.husband) {
+                return [getIndividual(famcC.husband)];
+              }
+              if (famcC.hasOwnProperty("wife") && famcC.wife) {
+                return [getIndividual(famcC.wife)];
+              }
+              return [];
+
             case "children":
               return getFamSs().flatMap(({ children }) =>
                 children.map(c => getIndividual(c))
               );
+            case "spouse":
+              return getFamSs()
+                .flatMap(({ husband, wife }) => [
+                  getIndividual(husband),
+                  getIndividual(wife),
+                ]) // this includes the current individual
+                .filter(s => {
+                  if (s === null) return false;
+                  return s.id !== id;
+                }); // so here we exclude them
           }
         },
       },
