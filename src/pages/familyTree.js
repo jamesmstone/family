@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import { Typography } from "antd";
 
 import Layout from "../components/layout";
@@ -108,6 +108,8 @@ function FamilyTreeDiagram({ individuals }) {
               </div>
               <div className={styles.description}>
                 {itemConfig.description}
+                <br />
+                <Link to={`/individual/${itemConfig.id}`}>View Profile</Link>
               </div>
             </div>
           );
