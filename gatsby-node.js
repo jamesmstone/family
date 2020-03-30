@@ -233,7 +233,26 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
             return moment().diff(moment(bDate), "years");
           }
           return moment(dDate).diff(bDate, "years");
-          1;
+        },
+      };
+    },
+  });
+  createFieldExtension({
+    name: "alive",
+    extend(options, prevFieldConfig) {
+      return {
+        resolve({
+          birth: { date: bDate } = { date: undefined },
+          death: { date: dDate } = { date: undefined },
+        }) {
+          if (bDate === undefined) {
+            return false;
+          }
+
+          if (dDate === undefined) {
+            return true;
+          }
+          return false;
         },
       };
     },
@@ -246,6 +265,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           sex: String
           birth: Birth
           death: Death
+          alive: Boolean @alive
           familyChild: Family @link
           familySpouse: [Family] @link
           age: Int @age

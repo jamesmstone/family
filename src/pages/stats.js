@@ -24,6 +24,7 @@ const StatsPage = () => {
           age
           id
           sex
+          alive
         }
       }
 

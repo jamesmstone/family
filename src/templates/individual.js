@@ -6,7 +6,6 @@ import { ManOutlined, WomanOutlined } from "@ant-design/icons";
 
 export default ({ data }) => {
   const { individual } = data;
-  const alive = individual.death === null;
   return (
     <Layout>
       <Descriptions bordered title={individual.name.fullName}>
@@ -42,7 +41,7 @@ export default ({ data }) => {
         )}
         <Descriptions.Item label={"Age"}>
           <Badge
-            status={alive ? "success" : undefined}
+            status={individual.alive ? "success" : undefined}
             title={"and counting..."}
           >
             {individual.age}
@@ -91,6 +90,7 @@ export const query = graphql`
       name {
         fullName
       }
+      alive
       birth {
         born
         date(formatString: "DD MMMM YYYY")

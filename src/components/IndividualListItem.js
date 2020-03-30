@@ -1,4 +1,4 @@
-import { Avatar, List } from "antd";
+import { Avatar, Badge, List } from "antd";
 import { ManOutlined, WomanOutlined } from "@ant-design/icons";
 import { Link } from "gatsby";
 import React from "react";
@@ -9,6 +9,7 @@ export function IndividualListItem({
     name: { fullName },
     age,
     sex,
+    alive,
   },
 }) {
   const avatar = sex === "M" ? <ManOutlined /> : <WomanOutlined />;
@@ -16,7 +17,16 @@ export function IndividualListItem({
     <List.Item>
       <List.Item.Meta
         avatar={<Avatar icon={avatar} />}
-        title={<Link to={`/individual/${id}`}>{fullName}</Link>}
+        title={
+          <Link to={`/individual/${id}`}>
+            <Badge
+              status={alive ? "success" : undefined}
+              title={"and counting..."}
+            >
+              {fullName}
+            </Badge>
+          </Link>
+        }
         description={`Age: ${age ?? "Unknown"}`}
       />
     </List.Item>
