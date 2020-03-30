@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { Layout, Menu } from "antd";
-import { LineChartOutlined, TeamOutlined } from "@ant-design/icons";
+import {
+  LineChartOutlined,
+  PartitionOutlined,
+  TeamOutlined,
+} from "@ant-design/icons";
 
 const Header = ({ siteTitle }) => (
   <Layout.Header>
@@ -24,7 +28,7 @@ const Header = ({ siteTitle }) => (
       </Menu.Item>
       <Menu.Item key="/familyTree">
         <Link to={"/familyTree"}>
-          <LineChartOutlined />
+          <PartitionOutlined rotate={270} />
           Family Tree
         </Link>
       </Menu.Item>
