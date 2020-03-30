@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { graphql, Link, useStaticQuery } from "gatsby";
-import { Avatar, Input, List, Typography } from "antd";
-import { UserOutlined } from "@ant-design/icons";
+import { graphql, useStaticQuery } from "gatsby";
+import { Input, List, Typography } from "antd";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { IndividualListItem } from "../components/IndividualListItem";
 
 const IndexPage = () => {
   const {
@@ -16,6 +16,7 @@ const IndexPage = () => {
           name {
             fullName
           }
+          age
           id
         }
       }
@@ -47,15 +48,8 @@ const IndexPage = () => {
         }
         itemLayout="horizontal"
         dataSource={individuals}
-        renderItem={item => (
-          <List.Item>
-            <List.Item.Meta
-              avatar={<Avatar icon={<UserOutlined />} />}
-              title={
-                <Link to={`/individual/${item.id}`}>{item.name.fullName}</Link>
-              }
-            />
-          </List.Item>
+        renderItem={individual => (
+          <IndividualListItem individual={individual} />
         )}
       />
     </Layout>

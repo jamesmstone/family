@@ -1,15 +1,31 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import { Descriptions, Typography } from "antd";
+import {graphql, useStaticQuery} from "gatsby";
+import {Descriptions, List, Typography} from "antd";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import {IndividualListItem} from "../components/IndividualListItem";
 
 const StatsPage = () => {
   const {
+    oldest: { nodes: oldestPeople },
     allIndividual: { bySex, bySurname, byGivenName },
   } = useStaticQuery(graphql`
     {
+      oldest: allIndividual(
+        sort: { fields: age, order: DESC }
+        filter: { age: { gte: 0 } }
+        limit: 10
+      ) {
+        nodes {
+          name {
+            fullName
+          }
+          age
+          id
+        }
+      }
+
       allIndividual {
         bySex: group(field: sex) {
           sex: fieldValue
@@ -32,6 +48,14 @@ const StatsPage = () => {
     <Layout>
       <SEO title="Stats" />
       <Typography.Title>Stats</Typography.Title>
+      <Typography.Title level={2}>Top ten oldest ages:</Typography.Title>
+      <List
+        itemLayout="horizontal"
+        dataSource={oldestPeople}
+        renderItem={individual => (
+          <IndividualListItem individual={individual} />
+        )}
+      />
       <Typography.Title level={2}>Number of people by:</Typography.Title>
       <Descriptions bordered title={"Sex"}>
         {bySex.sort(sorter).map(({ sex, totalCount }) => {
