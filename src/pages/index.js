@@ -18,6 +18,7 @@ const IndexPage = () => {
           }
           age
           id
+          sex
         }
       }
     }

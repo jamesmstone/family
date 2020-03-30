@@ -1,10 +1,10 @@
 import React from "react";
-import {graphql, useStaticQuery} from "gatsby";
-import {Descriptions, List, Typography} from "antd";
+import { graphql, useStaticQuery } from "gatsby";
+import { Descriptions, List, Typography } from "antd";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import {IndividualListItem} from "../components/IndividualListItem";
+import { IndividualListItem } from "../components/IndividualListItem";
 
 const StatsPage = () => {
   const {
@@ -23,6 +23,7 @@ const StatsPage = () => {
           }
           age
           id
+          sex
         }
       }
 
