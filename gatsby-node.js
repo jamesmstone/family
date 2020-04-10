@@ -33,9 +33,10 @@ async function onCreateNode({
       case "INDI":
         let name = findTagData("NAME");
         let nameTags = findTags("NAME");
-        let nameTree = nameTags && nameTags[0] ? nameTags[0].tree : undefined;
         let given, surname;
+
         if (nameTags !== undefined) {
+          let nameTree = nameTags && nameTags[0] ? nameTags[0].tree : undefined;
           given = findTagData("GIVN", nameTree);
           surname = findTagData("SURN", nameTree);
         }
