@@ -31,9 +31,20 @@ async function onCreateNode({
 
     switch (tag) {
       case "INDI":
+        let name = findTagData("NAME");
         const [{ tree: nameTree }] = findTags("NAME");
-        const given = findTagData("GIVN", nameTree);
-        const surname = findTagData("SURN", nameTree);
+        let given = findTagData("GIVN", nameTree);
+        let surname = findTagData("SURN", nameTree);
+
+        if (
+          given === undefined &&
+          surname === undefined &&
+          name !== undefined
+        ) {
+          let [g, s] = name.split("/");
+          given = g;
+          surname = s;
+        }
 
         let death, birth;
         if (hasTag("DEAT")) {
@@ -67,8 +78,8 @@ async function onCreateNode({
 
         return {
           name: {
-            given: given,
-            surname: surname,
+            given,
+            surname,
           },
           sex,
           birth,
@@ -253,6 +264,19 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
             return true;
           }
           return false;
+        },
+      };
+    },
+  });
+  createFieldExtension({
+    name: "birthCentury",
+    extend(options, prevFieldConfig) {
+      return {
+        resolve({ birth: { date: bDate } = { date: undefined } }) {
+          if (bDate === undefined) {
+            return null;
+          }
+          return moment(bDate).century();
         },
       };
     },
