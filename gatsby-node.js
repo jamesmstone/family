@@ -32,9 +32,13 @@ async function onCreateNode({
     switch (tag) {
       case "INDI":
         let name = findTagData("NAME");
-        const [{ tree: nameTree }] = findTags("NAME");
-        let given = findTagData("GIVN", nameTree);
-        let surname = findTagData("SURN", nameTree);
+        let nameTags = findTags("NAME");
+        let nameTree = nameTags && nameTags[0] ? nameTags[0].tree : undefined;
+        let given, surname;
+        if (nameTags !== undefined) {
+          given = findTagData("GIVN", nameTree);
+          surname = findTagData("SURN", nameTree);
+        }
 
         if (
           given === undefined &&
