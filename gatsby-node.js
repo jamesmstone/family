@@ -86,6 +86,7 @@ async function onCreateNode({
           };
         }
         const sex = findTagData("SEX");
+        const occupation = findTagData("OCCU");
         const familyChild = findTagData("FAMC");
         const familySpouse = findTags("FAMS").map(({ data }) =>
           createNodeId(data)
@@ -93,10 +94,11 @@ async function onCreateNode({
 
         return {
           name: {
-            given,
-            surname,
+            given: given ? given.trim() : undefined,
+            surname: surname ? surname.trim() : undefined,
           },
           sex,
+          occupation,
           birth,
           baptism,
           death,
@@ -185,7 +187,6 @@ exports.createResolvers = ({ createResolvers }) => {
                 ? [getIndividual(famcB.wife)]
                 : null;
             case "parents":
-              if (id === "c22b96ea-898d-5b01-b0c4-017404a53664") debugger;
               const famcC = getFamC();
               if (famcC === null) {
                 return [];
@@ -303,6 +304,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     `type Individual implements Node @dontInfer {
           name: Name
           sex: String
+          occupation: String
           birth: Birth
           death: Death
           baptism: Baptism

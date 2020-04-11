@@ -14,6 +14,11 @@ export default ({ data }) => {
           {individual.sex === "F" && <WomanOutlined />}
           {individual.sex === "M" && <ManOutlined />}
         </Descriptions.Item>
+        {individual.occupation && (
+          <Descriptions.Item label={"Occupation"}>
+            {individual.occupation}
+          </Descriptions.Item>
+        )}
         {individual.familyChild && (
           <Descriptions.Item label={"Childhood Family"}>
             <Link to={`/family/${individual.familyChild.id}`}>Family</Link>
@@ -129,6 +134,7 @@ export const query = graphql`
       }
       age
       sex
+      occupation
       familyChild {
         id
       }
