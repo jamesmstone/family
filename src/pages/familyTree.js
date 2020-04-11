@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import { Typography } from "antd";
+import { Slider, Typography } from "antd";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -73,8 +73,14 @@ const FamilyTree = () => {
 
 export default FamilyTree;
 
-function FamilyTreeDiagram({ individuals }) {
+function FamilyTreeDiagram({
+  individuals,
+  showScale = true,
+  initScale = 0.25,
+}) {
+  const [scale, setScale] = useState(initScale);
   const config = {
+    scale,
     pageFitMode: primitives.common.PageFitMode.None,
     cursorItem: 2,
     linesWidth: 1,
@@ -119,7 +125,21 @@ function FamilyTreeDiagram({ individuals }) {
   };
 
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "50vh" }}>
+      {showScale && (
+        <>
+          <span>Scale</span>
+          <Slider
+            min={0.1}
+            step={0.01}
+            max={1}
+            value={scale}
+            tooltipVisible
+            tipFormatter={value => `${Math.round(value * 100)}%`}
+            onChange={setScale}
+          />
+        </>
+      )}
       <FamDiagram centerOnCursor={true} config={config} />
     </div>
   );
