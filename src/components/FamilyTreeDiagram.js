@@ -64,7 +64,6 @@ export function FamilyTreeDiagram({
   const [scale, setScale] = useState(initScale);
   const config = {
     scale,
-    enablePanning: primitives.common.Enabled.True,
     pageFitMode,
     cursorItem: 2,
     linesWidth: 1,
