@@ -1,21 +1,71 @@
 import React, { useState } from "react";
 import primitives from "basicprimitives";
 import styles from "../pages/familyTree.module.css";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { Slider } from "antd";
 import { FamDiagram } from "basicprimitivesreact";
 
+export const query = graphql`
+  fragment FamilyTreeIndividualInfo on Individual {
+    name {
+      fullName
+    }
+    children: relationships(relationship: "children") {
+      id
+    }
+    spouses: relationships(relationship: "spouse") {
+      id
+    }
+    parents: relationships(relationship: "parents") {
+      id
+    }
+    id
+    sex
+    age
+    birth {
+      date
+      place {
+        place
+      }
+    }
+    death {
+      date
+      place {
+        place
+      }
+    }
+  }
+`;
+
 export function FamilyTreeDiagram({
-  individuals,
+  individuals: is,
   showScale = true,
-  initScale = 0.25,
+  initScale = 1,
   height = "50vh",
+  width,
+  pageFitMode = primitives.common.PageFitMode.None,
 }) {
+  const individuals = is.map(i => {
+    return {
+      id: i.id,
+      itemTitleColor: i.sex === "M" ? "#4169E1" : "#e1160d",
+      title: i.name.fullName,
+      groupTitle: i.sex === "M" ? "Male" : "Female",
+      groupTitleColor: i.sex === "M" ? "#4169E1" : "#e1160d",
+      label: i.name.fullName,
+      description: i.age ? `Age: ${i.age}` : "",
+      spouses: i.spouses.map(s => s.id),
+      parents: i.parents.map(s => s.id),
+      image: null,
+      templateName: "templateA",
+    };
+  });
+
   const [scale, setScale] = useState(initScale);
   const config = {
     scale,
     enablePanning: primitives.common.Enabled.True,
-    pageFitMode: primitives.common.PageFitMode.SelectionOnly,
+    pageFitMode,
     cursorItem: 2,
     linesWidth: 1,
     linesColor: "black",
@@ -59,7 +109,7 @@ export function FamilyTreeDiagram({
   };
 
   return (
-    <div style={{ height: height }}>
+    <div style={{ height, width }}>
       {showScale && (
         <>
           <span>Scale</span>
