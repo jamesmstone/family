@@ -1,9 +1,12 @@
 import { Avatar, Badge, List } from "antd";
 import { ManOutlined, WomanOutlined } from "@ant-design/icons";
 import { Link } from "gatsby";
+import Highlight from "react-highlighter";
 import React from "react";
+import style from "./IndividualListItem.module.css";
 
 export function IndividualListItem({
+  search,
   individual: {
     id,
     name: { fullName },
@@ -23,7 +26,9 @@ export function IndividualListItem({
               status={alive ? "success" : undefined}
               title={"and counting..."}
             >
-              {fullName}
+              <Highlight matchClass={style.match} search={search}>
+                {fullName}
+              </Highlight>
             </Badge>
           </Link>
         }

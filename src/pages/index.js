@@ -51,7 +51,7 @@ const IndexPage = () => {
         itemLayout="horizontal"
         dataSource={individuals}
         renderItem={individual => (
-          <IndividualListItem individual={individual} />
+          <IndividualListItem individual={individual} search={search} />
         )}
       />
     </Layout>
