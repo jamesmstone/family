@@ -81,7 +81,8 @@ function FamilyTreeDiagram({
   const [scale, setScale] = useState(initScale);
   const config = {
     scale,
-    pageFitMode: primitives.common.PageFitMode.None,
+    enablePanning: primitives.common.Enabled.True,
+    pageFitMode: primitives.common.PageFitMode.SelectionOnly,
     cursorItem: 2,
     linesWidth: 1,
     linesColor: "black",
