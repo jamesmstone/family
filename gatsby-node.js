@@ -51,7 +51,7 @@ async function onCreateNode({
           surname = s;
         }
 
-        let death, birth;
+        let death, birth, baptism;
         if (hasTag("DEAT")) {
           let [{ tree: deathTree }] = findTags("DEAT");
           let died =
@@ -75,6 +75,16 @@ async function onCreateNode({
             date: date ? moment(date).toISOString() : null,
           };
         }
+        if (hasTag("BAPM")) {
+          let [{ tree: baptismTree }] = findTags("BAPM");
+          let place = findTagData("PLAC", baptismTree);
+          let date = findTagData("DATE", baptismTree);
+
+          baptism = {
+            place: place ? { place } : null,
+            date: date ? moment(date).toISOString() : null,
+          };
+        }
         const sex = findTagData("SEX");
         const familyChild = findTagData("FAMC");
         const familySpouse = findTags("FAMS").map(({ data }) =>
@@ -88,6 +98,7 @@ async function onCreateNode({
           },
           sex,
           birth,
+          baptism,
           death,
           familyChild: familyChild ? createNodeId(familyChild) : undefined,
           familySpouse,
@@ -294,6 +305,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           sex: String
           birth: Birth
           death: Death
+          baptism: Baptism
           alive: Boolean @alive
           familyChild: Family @link
           familySpouse: [Family] @link
@@ -311,6 +323,10 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       }`,
     `type Birth @dontInfer {
           born:Boolean
+          place: Place
+          date:Date @dateformat
+      }`,
+    `type Baptism @dontInfer {
           place: Place
           date:Date @dateformat
       }`,

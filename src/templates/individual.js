@@ -63,6 +63,22 @@ export default ({ data }) => {
             </Descriptions>
           </Descriptions.Item>
         )}
+        {individual.baptism && (
+          <Descriptions.Item label={"Baptism"}>
+            <Descriptions>
+              {individual.baptism.date && (
+                <Descriptions.Item label={"Date"}>
+                  {individual.baptism.date}
+                </Descriptions.Item>
+              )}
+              {individual.baptism.place && individual.baptism.place.place && (
+                <Descriptions.Item label={"Place"}>
+                  {individual.baptism.place.place}
+                </Descriptions.Item>
+              )}
+            </Descriptions>
+          </Descriptions.Item>
+        )}
         {individual.death && (
           <Descriptions.Item label={"Death"}>
             <Descriptions>
@@ -93,6 +109,12 @@ export const query = graphql`
       alive
       birth {
         born
+        date(formatString: "DD MMMM YYYY")
+        place {
+          place
+        }
+      }
+      baptism {
         date(formatString: "DD MMMM YYYY")
         place {
           place
