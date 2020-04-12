@@ -5,6 +5,8 @@ module.exports = {
     author: `James Stone`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-antd",
       options: {

@@ -3,12 +3,20 @@ import { graphql, Link } from "gatsby";
 import { Badge, Descriptions } from "antd";
 import Layout from "../components/layout";
 import { ManOutlined, WomanOutlined } from "@ant-design/icons";
+import Source from "../components/Source";
 
 export default ({ data }) => {
   const { individual } = data;
   return (
     <Layout>
       <Descriptions bordered title={individual.name.fullName}>
+        {individual.name.source && (
+          <Descriptions.Item label={"Name Sources"}>
+            {individual.name.source.map(s => (
+              <Source key={JSON.stringify(s)} source={s} />
+            ))}
+          </Descriptions.Item>
+        )}
         <Descriptions.Item label={"Sex"}>
           {individual.sex}
           {individual.sex === "F" && <WomanOutlined />}
@@ -110,6 +118,9 @@ export const query = graphql`
       id
       name {
         fullName
+        source {
+          ...SourceInfo
+        }
       }
       alive
       birth {

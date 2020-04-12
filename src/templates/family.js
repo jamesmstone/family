@@ -44,6 +44,7 @@ export default ({ data }) => {
       <FamilyTreeDiagram
         individuals={individuals}
         width={"100%"}
+        height={330}
         showScale={false}
         initScale={1}
       />
@@ -57,6 +58,9 @@ export const query = graphql`
         id
         name {
           fullName
+          source {
+            ...SourceInfo
+          }
         }
         ...FamilyTreeIndividualInfo
       }
