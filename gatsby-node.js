@@ -285,6 +285,41 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     },
   });
   createFieldExtension({
+    name: "allEvent",
+    extend(options, prevFieldConfig) {
+      return {
+        resolve(source) {
+          const events = source.event ? source.event : [];
+          const birth = source.birth
+            ? {
+                title: "Birth",
+                place: source.birth.place,
+                date: source.birth.date,
+                source: source.birth.source,
+              }
+            : null;
+          const death = source.death
+            ? {
+                title: "Death",
+                place: source.death.place,
+                date: source.death.date,
+                source: source.death.source,
+              }
+            : null;
+          const baptism = source.baptism
+            ? {
+                title: "Baptism",
+                place: source.baptism.place,
+                date: source.baptism.date,
+                source: source.baptism.source,
+              }
+            : null;
+          return [birth, baptism, ...events, death].filter(e => e);
+        },
+      };
+    },
+  });
+  createFieldExtension({
     name: "age",
     extend(options, prevFieldConfig) {
       return {
@@ -351,6 +386,8 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           familyChild: Family @link
           familySpouse: [Family] @link
           age: Int @age
+          event: [ Event ]
+          allEvent: [Event] @allEvent
       }`,
     `type Family implements Node @dontInfer {
           children: [Individual] @link
@@ -376,6 +413,13 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       }`,
     `type Death @dontInfer {
           died: Boolean
+          place: Place
+          date:Date @dateformat
+          source:[Source]
+
+      }`,
+    `type Event @dontInfer {
+          title : String
           place: Place
           date:Date @dateformat
           source:[Source]
