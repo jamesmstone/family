@@ -29,16 +29,48 @@ async function onCreateNode({
     };
     const hasTag = (tag, t = tree) => findTags(tag, t).length > 0;
 
+    const findSource = (t = tree) => {
+      const source = findTags("SOUR", t).map(({ data, tree }) => {
+        const apid = findTagData("_APID", tree);
+        return {
+          image: `${data}-${apid}.jpg`,
+          path: `${data}.jpg`,
+          page: findTagData("PAGE", tree),
+          _APID: apid,
+        };
+      });
+      return source.length === 0 ? null : source;
+    };
+
     switch (tag) {
+      case "SOUR":
+        const title = findTagData("TITL");
+        const author = findTagData("AUTH");
+        const publisher = findTagData("PUBL");
+
+        return {
+          title,
+          author,
+          publisher,
+          id,
+          parent: null, //parent.id,
+          internal: {
+            contentDigest: createContentDigest(obj),
+            type: "Source",
+          },
+        };
+
+        break;
       case "INDI":
         let name = findTagData("NAME");
         let nameTags = findTags("NAME");
-        let given, surname;
+        let given, surname, nameSource;
 
         if (nameTags !== undefined) {
           let nameTree = nameTags && nameTags[0] ? nameTags[0].tree : undefined;
           given = findTagData("GIVN", nameTree);
           surname = findTagData("SURN", nameTree);
+          nameSource = findSource(nameTree);
         }
 
         if (
@@ -58,31 +90,37 @@ async function onCreateNode({
             (deathTree.length === 0 && findTagData("DEAT") === "Y") || true;
           let place = findTagData("PLAC", deathTree);
           let date = findTagData("DATE", deathTree);
+          let deathSource = findSource(deathTree);
           death = {
             died,
             place: place ? { place } : null,
             date: date ? moment(date).format() : null,
+            source: deathSource,
           };
         }
         if (hasTag("BIRT")) {
           let [{ tree: birthTree }] = findTags("BIRT");
           let place = findTagData("PLAC", birthTree);
           let date = findTagData("DATE", birthTree);
+          let birthSource = findSource(birthTree);
 
           birth = {
             born: true,
             place: place ? { place } : null,
             date: date ? moment(date).toISOString() : null,
+            source: birthSource,
           };
         }
         if (hasTag("BAPM")) {
           let [{ tree: baptismTree }] = findTags("BAPM");
           let place = findTagData("PLAC", baptismTree);
           let date = findTagData("DATE", baptismTree);
+          let baptismSource = findSource(baptismTree);
 
           baptism = {
             place: place ? { place } : null,
             date: date ? moment(date).toISOString() : null,
+            source: baptismSource,
           };
         }
         const sex = findTagData("SEX");
@@ -96,6 +134,7 @@ async function onCreateNode({
           name: {
             given: given ? given.trim() : undefined,
             surname: surname ? surname.trim() : undefined,
+            source: nameSource,
           },
           sex,
           occupation,
@@ -322,21 +361,49 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           fullName: String! @fullName
           given: String
           surname: String
+          source: [Source]
       }`,
     `type Birth @dontInfer {
           born:Boolean
           place: Place
           date:Date @dateformat
+          source:[Source]
       }`,
     `type Baptism @dontInfer {
           place: Place
           date:Date @dateformat
+          source:[Source]
       }`,
     `type Death @dontInfer {
           died: Boolean
           place: Place
           date:Date @dateformat
+          source:[Source]
+
       }`,
+    schema.buildObjectType({
+      name: "Source",
+      extensions: {
+        // While in SDL you have two different directives, @infer and @dontInfer to
+        // control inference behavior, Gatsby Type Builders take a single `infer`
+        // extension which accepts a Boolean
+        infer: false,
+      },
+      fields: {
+        title: { type: "String" },
+        author: { type: "String" },
+        publisher: { type: "String" },
+        page: { type: "String" },
+        _APID: { type: "String" },
+        image: {
+          type: "File",
+          resolve: (source, args, context, info) =>
+            context.nodeModel
+              .getAllNodes({ type: "File" })
+              .find(file => file.relativePath === source.image),
+        },
+      },
+    }),
     `type Place @dontInfer {
           place: String!
       }`,
