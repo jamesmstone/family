@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import { Button, Modal } from "antd";
+import { Button, Modal, Tooltip } from "antd";
 
-export default ({ source: { thumbnail, image, page } }) => {
+function Source({ i, source: { thumbnail, image, page } }) {
   function modal() {
     Modal.info({
       title: page ?? "Source",
@@ -12,33 +12,34 @@ export default ({ source: { thumbnail, image, page } }) => {
     });
   }
   return (
-    <Button
-      style={{ fontSize: 14, fontWeight: "none", color: "rgba(0,0,0,0.65)" }}
-      ghost
-      type={"link"}
-      onClick={modal}
-    >
-      {page && <h4>{page}</h4>}
-      {thumbnail && <Img fixed={thumbnail.childImageSharp.fixed} />}
-    </Button>
+    <Tooltip title={page ?? `source ${i}`}>
+      <Button style={{ padding: 0 }} type={"link"} onClick={modal}>
+        <sup>[{i}]</sup>
+      </Button>
+    </Tooltip>
   );
-};
+}
 export const query = graphql`
   fragment SourceInfo on Source {
     page
-    thumbnail: image {
-      childImageSharp {
-        fixed(width: 125, height: 125) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
     image {
       childImageSharp {
-        fixed(width: 900) {
+        fixed(width: 300) {
           ...GatsbyImageSharpFixed
         }
       }
     }
   }
 `;
+
+export function Sources({ sources }) {
+  return (
+    <>
+      {sources.map((s, i) => (
+        <Source key={JSON.stringify(s)} i={i + 1} source={s} />
+      ))}
+    </>
+  );
+}
+
+export default Source;

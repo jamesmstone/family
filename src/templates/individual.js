@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby";
 import { Badge, Col, Descriptions, Divider, Row, Timeline } from "antd";
 import Layout from "../components/layout";
 import { ManOutlined, WomanOutlined } from "@ant-design/icons";
-import Source from "../components/Source";
+import { Sources } from "../components/Source";
 
 export default ({ data }) => {
   const { individual } = data;
@@ -12,14 +12,17 @@ export default ({ data }) => {
     <Layout>
       <Row>
         <Col xs={24}>
-          <Descriptions bordered title={individual.name.fullName}>
-            {individual.name.source && (
-              <Descriptions.Item label={"Name Sources"}>
-                {individual.name.source.map(s => (
-                  <Source key={JSON.stringify(s)} source={s} />
-                ))}
-              </Descriptions.Item>
-            )}
+          <Descriptions
+            bordered
+            title={
+              <>
+                {individual.name.fullName}
+                {individual.name.source && (
+                  <Sources sources={individual.name.source} />
+                )}
+              </>
+            }
+          >
             <Descriptions.Item label={"Sex"}>
               {individual.sex}
               {individual.sex === "F" && <WomanOutlined />}
@@ -64,7 +67,16 @@ export default ({ data }) => {
               </Badge>
             </Descriptions.Item>
             {individual.birth && (
-              <Descriptions.Item label={"Birth"}>
+              <Descriptions.Item
+                label={
+                  <>
+                    Birth
+                    {individual.birth.source && (
+                      <Sources sources={individual.birth.source} />
+                    )}
+                  </>
+                }
+              >
                 <Descriptions>
                   {individual.birth.date && (
                     <Descriptions.Item label={"Date"}>
@@ -80,7 +92,16 @@ export default ({ data }) => {
               </Descriptions.Item>
             )}
             {individual.baptism && (
-              <Descriptions.Item label={"Baptism"}>
+              <Descriptions.Item
+                label={
+                  <>
+                    Baptism
+                    {individual.baptism.source && (
+                      <Sources sources={individual.baptism.source} />
+                    )}
+                  </>
+                }
+              >
                 <Descriptions>
                   {individual.baptism.date && (
                     <Descriptions.Item label={"Date"}>
@@ -97,7 +118,16 @@ export default ({ data }) => {
               </Descriptions.Item>
             )}
             {individual.death && (
-              <Descriptions.Item label={"Death"}>
+              <Descriptions.Item
+                label={
+                  <>
+                    Death
+                    {individual.death.source && (
+                      <Sources sources={individual.death.source} />
+                    )}
+                  </>
+                }
+              >
                 <Descriptions>
                   {individual.death.date && (
                     <Descriptions.Item label={"Date"}>
@@ -120,9 +150,10 @@ export default ({ data }) => {
         <Col xs={24}>
           {events && (
             <Timeline>
-              {events.map(({ title, place, date, source }) => (
-                <Timeline.Item label={date}>
+              {events.map(({ title, place, date, source }, i) => (
+                <Timeline.Item key={i} label={date}>
                   {title} - {place && place.place ? place.place : ""}
+                  {source && <Sources sources={source} />}
                 </Timeline.Item>
               ))}
             </Timeline>
@@ -159,11 +190,17 @@ export const query = graphql`
         place {
           place
         }
+        source {
+          ...SourceInfo
+        }
       }
       baptism {
         date(formatString: "DD MMMM YYYY")
         place {
           place
+        }
+        source {
+          ...SourceInfo
         }
       }
       death {
@@ -171,6 +208,9 @@ export const query = graphql`
         date(formatString: "DD MMMM YYYY")
         place {
           place
+        }
+        source {
+          ...SourceInfo
         }
       }
       age
