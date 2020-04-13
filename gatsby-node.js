@@ -83,7 +83,7 @@ async function onCreateNode({
           surname = s;
         }
 
-        let death, birth, baptism;
+        let death, birth, baptism, residence;
         if (hasTag("DEAT")) {
           let [{ tree: deathTree }] = findTags("DEAT");
           let died =
@@ -123,6 +123,18 @@ async function onCreateNode({
             source: baptismSource,
           };
         }
+        if (hasTag("RESI")) {
+          residence = findTags("RESI").map(({ tree: residenceTree }) => {
+            let place = findTagData("PLAC", residenceTree);
+            let date = findTagData("DATE", residenceTree);
+            let source = findSource(residenceTree);
+            return {
+              place: place ? { place } : null,
+              date: date ? moment(date).toISOString() : null,
+              source: source,
+            };
+          });
+        }
         const sex = findTagData("SEX");
         const occupation = findTagData("OCCU");
         const familyChild = findTagData("FAMC");
@@ -140,6 +152,7 @@ async function onCreateNode({
           occupation,
           birth,
           baptism,
+          residence,
           death,
           familyChild: familyChild ? createNodeId(familyChild) : undefined,
           familySpouse,
@@ -298,6 +311,14 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
                 source: source.birth.source,
               }
             : null;
+          const residence = source.residence
+            ? source.residence.map(r => ({
+                title: "Residence",
+                place: r.place,
+                date: r.date,
+                source: r.source,
+              }))
+            : [];
           const death = source.death
             ? {
                 title: "Death",
@@ -314,7 +335,12 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
                 source: source.baptism.source,
               }
             : null;
-          return [birth, baptism, ...events, death].filter(e => e);
+          const sortedEvents = [...residence, ...events].sort((a, b) => {
+            let x = a ? a : 0;
+            let y = b ? b : 0;
+            return x - y;
+          });
+          return [birth, baptism, ...sortedEvents, death].filter(e => e);
         },
       };
     },
@@ -382,6 +408,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           birth: Birth
           death: Death
           baptism: Baptism
+          residence: [Residence]
           alive: Boolean @alive
           familyChild: Family @link
           familySpouse: [Family] @link
@@ -402,6 +429,11 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       }`,
     `type Birth @dontInfer {
           born:Boolean
+          place: Place
+          date:Date @dateformat
+          source:[Source]
+      }`,
+    `type Residence @dontInfer {
           place: Place
           date:Date @dateformat
           source:[Source]

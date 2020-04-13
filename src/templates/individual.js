@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import { Badge, Col, Descriptions, Divider, Row, Timeline } from "antd";
 import Layout from "../components/layout";
-import { ManOutlined, WomanOutlined } from "@ant-design/icons";
+import { ManOutlined, WomanOutlined, HomeOutlined } from "@ant-design/icons";
 import { Sources } from "../components/Source";
 
 export default ({ data }) => {
@@ -151,7 +151,7 @@ export default ({ data }) => {
           {events && (
             <Timeline>
               {events.map(({ title, place, date, source }, i) => (
-                <Timeline.Item key={i} label={date}>
+                <Timeline.Item key={i} label={date} dot={getIcon(title)}>
                   {title} - {place && place.place ? place.place : ""}
                   {source && <Sources sources={source} />}
                 </Timeline.Item>
@@ -163,6 +163,14 @@ export default ({ data }) => {
     </Layout>
   );
 };
+
+function getIcon(title) {
+  switch (title) {
+    case "Residence":
+      return <HomeOutlined />;
+  }
+}
+
 export const query = graphql`
   query($id: String!) {
     individual(id: { eq: $id }) {
