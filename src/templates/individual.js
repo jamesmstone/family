@@ -168,6 +168,8 @@ function getIcon(title) {
   switch (title) {
     case "Residence":
       return <HomeOutlined />;
+    default:
+      return undefined;
   }
 }
 
