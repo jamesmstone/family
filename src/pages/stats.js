@@ -9,7 +9,7 @@ import { IndividualListItem } from "../components/IndividualListItem";
 const StatsPage = () => {
   const {
     oldest: { nodes: oldestPeople },
-    allIndividual: { bySex, bySurname, byGivenName },
+    allIndividual: { bySex, byOccupation, bySurname, byGivenName },
   } = useStaticQuery(graphql`
     {
       oldest: allIndividual(
@@ -31,6 +31,10 @@ const StatsPage = () => {
       allIndividual {
         bySex: group(field: sex) {
           sex: fieldValue
+          totalCount
+        }
+        byOccupation: group(field: occupation) {
+          occupation: fieldValue
           totalCount
         }
         bySurname: group(field: name___surname) {
@@ -63,6 +67,15 @@ const StatsPage = () => {
         {bySex.sort(sorter).map(({ sex, totalCount }) => {
           return (
             <Descriptions.Item key={sex} label={sex}>
+              {totalCount}
+            </Descriptions.Item>
+          );
+        })}
+      </Descriptions>
+      <Descriptions bordered title={"Occupation"}>
+        {byOccupation.sort(sorter).map(({ occupation, totalCount }) => {
+          return (
+            <Descriptions.Item key={occupation} label={occupation}>
               {totalCount}
             </Descriptions.Item>
           );
