@@ -1,12 +1,14 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import { Badge, Col, Descriptions, Divider, Row, Timeline } from "antd";
+import { Badge, Col, Descriptions, Divider, Row, Tabs } from "antd";
 import Layout from "../components/layout";
-import { ManOutlined, WomanOutlined, HomeOutlined } from "@ant-design/icons";
+import { ManOutlined, WomanOutlined } from "@ant-design/icons";
 import { Sources } from "../components/Source";
+import { EventsTimeline } from "../components/EventsTimeline";
+import { Pedigree } from "../components/Pedigree";
 
 export default ({ data }) => {
-  const { individual } = data;
+  const { individual, pedigree } = data;
   const { events } = individual;
   return (
     <Layout>
@@ -148,44 +150,32 @@ export default ({ data }) => {
       <Divider />
       <Row>
         <Col xs={24}>
-          {events && (
-            <Timeline>
-              {events.map(({ title, place, date, source }, i) => (
-                <Timeline.Item key={i} label={date} dot={getIcon(title)}>
-                  {title} - {place && place.place ? place.place : ""}
-                  {source && <Sources sources={source} />}
-                </Timeline.Item>
-              ))}
-            </Timeline>
-          )}
+          <Tabs defaultActiveKey="Timeline">
+            {events && (
+              <Tabs.TabPane tab="Timeline" key="Timeline">
+                <EventsTimeline events={events} />
+              </Tabs.TabPane>
+            )}
+            {pedigree && (
+              <Tabs.TabPane tab="Pedigree" key="Pedigree">
+                <Pedigree pedigree={pedigree} />
+              </Tabs.TabPane>
+            )}
+          </Tabs>
         </Col>
       </Row>
     </Layout>
   );
 };
 
-function getIcon(title) {
-  switch (title) {
-    case "Residence":
-      return <HomeOutlined />;
-    default:
-      return undefined;
-  }
-}
-
 export const query = graphql`
   query($id: String!) {
+    pedigree: individual(id: { eq: $id }) {
+      ...Pedigree
+    }
     individual(id: { eq: $id }) {
-      events: allEvent {
-        title
-        place {
-          place
-        }
-        date(formatString: "YYYY-MM-DD")
-        source {
-          ...SourceInfo
-        }
-      }
+      ...EventsTimeline
+
       id
       name {
         fullName

@@ -38,7 +38,31 @@ export const query = graphql`
 `;
 
 export function FamilyTreeDiagram({
+  showGroupTitle = true,
+  orientation = primitives.common.OrientationType.Top,
   individuals: is,
+  itemSize = undefined,
+  itemRenderer = ({ context: itemConfig }) => {
+    const itemTitleColor =
+      itemConfig.itemTitleColor != null
+        ? itemConfig.itemTitleColor
+        : primitives.common.Colors.RoyalBlue;
+    return (
+      <div className={styles.TemplateA}>
+        <div
+          className={styles.titleBackground}
+          style={{ backgroundColor: itemTitleColor }}
+        >
+          <div className={styles.title}>{itemConfig.title}</div>
+        </div>
+        <div className={styles.description}>
+          {itemConfig.description}
+          <br />
+          <Link to={`/individual/${itemConfig.id}`}>View Profile</Link>
+        </div>
+      </div>
+    );
+  },
   showScale = true,
   initScale = 1,
   height = "50vh",
@@ -46,12 +70,10 @@ export function FamilyTreeDiagram({
   pageFitMode = primitives.common.PageFitMode.None,
 }) {
   const individuals = is.map(i => {
-    return {
+    let ret = {
       id: i.id,
       itemTitleColor: i.sex === "M" ? "#4169E1" : "#e1160d",
       title: i.name.fullName,
-      groupTitle: i.sex === "M" ? "Male" : "Female",
-      groupTitleColor: i.sex === "M" ? "#4169E1" : "#e1160d",
       label: i.name.fullName,
       description: i.age ? `Age: ${i.age}` : "",
       spouses: i.spouses.map(s => s.id),
@@ -59,10 +81,16 @@ export function FamilyTreeDiagram({
       image: null,
       templateName: "templateA",
     };
+    if (showGroupTitle) {
+      ret["groupTitle"] = i.sex === "M" ? "Male" : "Female";
+      ret["groupTitleColor"] = i.sex === "M" ? "#4169E1" : "#e1160d";
+    }
+    return ret;
   });
 
   const [scale, setScale] = useState(initScale);
   const config = {
+    orientationType: orientation,
     scale,
     pageFitMode,
     cursorItem: 2,
@@ -82,27 +110,8 @@ export function FamilyTreeDiagram({
     templates: [
       {
         name: "templateA",
-        onItemRender: ({ context: itemConfig }) => {
-          const itemTitleColor =
-            itemConfig.itemTitleColor != null
-              ? itemConfig.itemTitleColor
-              : primitives.common.Colors.RoyalBlue;
-          return (
-            <div className={styles.TemplateA}>
-              <div
-                className={styles.titleBackground}
-                style={{ backgroundColor: itemTitleColor }}
-              >
-                <div className={styles.title}>{itemConfig.title}</div>
-              </div>
-              <div className={styles.description}>
-                {itemConfig.description}
-                <br />
-                <Link to={`/individual/${itemConfig.id}`}>View Profile</Link>
-              </div>
-            </div>
-          );
-        },
+        onItemRender: itemRenderer,
+        itemSize,
       },
     ],
   };
