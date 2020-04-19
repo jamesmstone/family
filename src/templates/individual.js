@@ -6,9 +6,10 @@ import { ManOutlined, WomanOutlined } from "@ant-design/icons";
 import { Sources } from "../components/Source";
 import { EventsTimeline } from "../components/EventsTimeline";
 import { Pedigree } from "../components/Pedigree";
+import { IndividualMap } from "../components/IndividualMap";
 
 export default ({ data }) => {
-  const { individual, pedigree } = data;
+  const { individual, pedigree, map } = data;
   const { events } = individual;
   return (
     <Layout>
@@ -161,6 +162,11 @@ export default ({ data }) => {
                 <Pedigree pedigree={pedigree} />
               </Tabs.TabPane>
             )}
+            {map && (
+              <Tabs.TabPane tab="Map" key="Map">
+                <IndividualMap map={map} />
+              </Tabs.TabPane>
+            )}
           </Tabs>
         </Col>
       </Row>
@@ -172,6 +178,9 @@ export const query = graphql`
   query($id: String!) {
     pedigree: individual(id: { eq: $id }) {
       ...Pedigree
+    }
+    map: individual(id: { eq: $id }) {
+      ...MapIdividual
     }
     individual(id: { eq: $id }) {
       ...EventsTimeline
