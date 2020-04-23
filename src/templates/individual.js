@@ -6,7 +6,7 @@ import { ManOutlined, WomanOutlined } from "@ant-design/icons";
 import { Sources } from "../components/Source";
 import { EventsTimeline } from "../components/EventsTimeline";
 import { Pedigree } from "../components/Pedigree";
-import { IndividualMap } from "../components/IndividualMap";
+import { MapEvents } from "../components/MapEvents";
 
 export default ({ data }) => {
   const { individual, pedigree, map } = data;
@@ -164,7 +164,7 @@ export default ({ data }) => {
             )}
             {map && (
               <Tabs.TabPane tab="Map" key="Map">
-                <IndividualMap map={map} />
+                <MapEvents events={map.mapEvents} />
               </Tabs.TabPane>
             )}
           </Tabs>

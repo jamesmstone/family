@@ -4,18 +4,16 @@ import { Map } from "./Map";
 import { Marker, Popup, TileLayer } from "react-leaflet";
 import { Sources } from "./Source";
 
-export function IndividualMap({ map: { mapEvents } }) {
+export function MapEvents({ events }) {
   return (
-    <Map
-      zoom={5}
-      center={[51.505, -0.09]}
-      style={{ minHeight: 300, height: "60vh" }}
-    >
+    <Map zoom={2} center={[15, 20]} style={{ minHeight: 300, height: "70vh" }}>
       <TileLayer
         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {mapEvents.map(({ title, date, source, place: { place, location } }) => {
+      {events.map(({ title, date, source, place: p }) => {
+        if (!p) return null;
+        const { place, location } = p;
         if (!location) return null;
         const { lat, lng } = location;
         return (

@@ -6,6 +6,7 @@ import {
   LineChartOutlined,
   PartitionOutlined,
   TeamOutlined,
+  GlobalOutlined,
 } from "@ant-design/icons";
 
 const Header = ({ siteTitle }) => (
@@ -30,6 +31,12 @@ const Header = ({ siteTitle }) => (
         <Link to={"/familyTree"}>
           <PartitionOutlined rotate={270} />
           Family Tree
+        </Link>
+      </Menu.Item>
+      <Menu.Item key="/familyMap">
+        <Link to={"/familyMap"}>
+          <GlobalOutlined />
+          Family Map
         </Link>
       </Menu.Item>
     </Menu>
