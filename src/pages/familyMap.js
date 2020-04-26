@@ -19,13 +19,12 @@ const FamilyMap = () => {
     }
   `);
 
-  const events = individuals.flatMap(({ mapEvents }) => mapEvents);
 
   return (
     <Layout>
       <SEO title="Family Tree Map" />
       <Typography.Title>Family Map</Typography.Title>
-      <MapEvents events={events} />
+      <MapEvents individuals={individuals} />
     </Layout>
   );
 };

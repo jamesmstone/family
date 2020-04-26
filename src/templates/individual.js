@@ -164,7 +164,7 @@ export default ({ data }) => {
             )}
             {map && (
               <Tabs.TabPane tab="Map" key="Map">
-                <MapEvents events={map.mapEvents} />
+                <MapEvents individuals={[map]} />
               </Tabs.TabPane>
             )}
           </Tabs>
