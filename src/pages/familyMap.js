@@ -20,7 +20,6 @@ const FamilyMap = () => {
   `);
 
   const events = individuals.flatMap(({ mapEvents }) => mapEvents);
-  console.log({ individuals, events });
 
   return (
     <Layout>
