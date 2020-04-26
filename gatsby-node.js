@@ -1,10 +1,7 @@
+const createLocation = require("./location");
 const moment = require("moment");
 const parsegedcom = require(`parse-gedcom`);
 const path = require(`path`);
-const limit = require("simple-rate-limiter");
-const request = limit(require("request"))
-  .to(1)
-  .per(1100);
 
 async function onCreateNode({
   node,
@@ -209,7 +206,15 @@ async function onCreateNode({
 
 exports.onCreateNode = onCreateNode;
 
-exports.createResolvers = ({ createResolvers }) => {
+exports.createResolvers = ({
+  actions,
+  cache,
+  createNodeId,
+  createResolvers,
+  store,
+  reporter,
+}) => {
+  const { createNode } = actions;
   const resolvers = {
     Individual: {
       relationships: {
@@ -281,6 +286,21 @@ exports.createResolvers = ({ createResolvers }) => {
                   return s.id !== id;
                 }); // so here we exclude them
           }
+        },
+      },
+    },
+    Place: {
+      location: {
+        type: "Location",
+        resolve(source, args, context, info) {
+          return createLocation({
+            location: source.place,
+            store,
+            cache,
+            createNode,
+            createNodeId,
+            reporter,
+          });
         },
       },
     },
@@ -483,60 +503,10 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         },
       },
     }),
-    schema.buildObjectType({
-      name: "Place",
-      extensions: {
-        // While in SDL you have two different directives, @infer and @dontInfer to
-        // control inference behavior, Gatsby Type Builders take a single `infer`
-        // extension which accepts a Boolean
-        infer: false,
-      },
-      fields: {
-        place: { type: "String" },
-        location: {
-          type: "Location",
-          resolve: ({ place }, args, context, info) => {
-            return new Promise((resolver, reject) => {
-              const url = `https://nominatim.openstreetmap.org/search/${encodeURIComponent(
-                place
-              )}?format=json`;
-              request(
-                {
-                  url,
-                  headers: {
-                    "User-Agent":
-                      "family.jamesst.one  - A personal family tree",
-                  },
-                },
-                function(err, res, body) {
-                  if (err) {
-                    console.error({ err, res, body, url });
-                    reject(err);
-                  }
-                  const location = JSON.parse(body)[0];
-                  if (location === undefined) {
-                    resolver();
-                    return;
-                  }
-                  resolver({
-                    lat:
-                      location && location.hasOwnProperty("lat")
-                        ? location.lat
-                        : null,
-                    lng:
-                      location && location.hasOwnProperty("lon")
-                        ? location.lon
-                        : null,
-                  });
-                }
-              );
-            });
-            // const response = await limiter.request('https://joinbox.com/');
-          },
-        },
-      },
-    }),
-    `type Location @infer {
+    `type Place @dontInfer {
+          place: String
+      }`,
+    `type Location @dontInfer {
           lat: String
           lng: String
       }`,
