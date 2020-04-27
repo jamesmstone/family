@@ -7,7 +7,7 @@
 1 GEDC
 2 VERS 5.5
 2 FORM LINEAGE-LINKED
-0 @P167@ INDI 
+0 @P166@ INDI 
 1 NAME James Michael /Stone/
 1 SEX M
 1 UID 7C51ABEB1E23FD41A63096B2C74EF5141E5E
@@ -115,11 +115,6 @@
 1 BIRT 
 2 DATE 18 Jul 1911
 2 PLAC Temora, NSW, Australia
-2 SOUR @S445246761@
-3 PAGE Compiler: Griffith Genealogical and Historical Society Inc; Collection Title: Griffith G and HS Cemetery Records
-3 _APID 1,1266::493518
-1 RESI 
-2 PLAC Australia
 2 SOUR @S445246761@
 3 PAGE Compiler: Griffith Genealogical and Historical Society Inc; Collection Title: Griffith G and HS Cemetery Records
 3 _APID 1,1266::493518
@@ -362,11 +357,9 @@
 1 FAMC @F8@
 1 FAMS @F4@
 0 @P22@ INDI 
-1 DEAT 
-2 PLAC Partridge Green, Sussex, England
 1 BIRT 
 2 DATE 20 Jul 1881
-2 PLAC White Church, Dorset
+2 PLAC White Church, Dorset, England
 2 SOUR @S445248318@
 3 _APID 1,9852::37948964
 2 SOUR @S445247785@
@@ -383,6 +376,8 @@
 3 _APID 1,7814::6306714
 2 SOUR @S445247099@
 3 _APID 1,8912::41709637
+1 DEAT 
+2 PLAC Partridge Green, Sussex, England
 1 NAME Frances Emma /Davis/
 2 SOUR @S445248318@
 3 _APID 1,9852::37948964
@@ -547,6 +542,19 @@
 1 FAMC @F4@
 1 FAMS @F5@
 0 @P26@ INDI 
+1 DEAT Y
+2 DATE 13 Mar 1929
+2 PLAC Hailsham, Sussex, England
+2 SOUR @S445249441@
+3 PAGE General Register Office; United Kingdom; Volume: 2b; Page: 240
+3 _APID 1,7579::20100999
+2 SOUR @S445309188@
+3 _APID 1,1904::988911
+1 PROB 
+2 DATE 12 Jun 1929
+2 PLAC Lewes, Sussex, England
+2 SOUR @S445309188@
+3 _APID 1,1904::988911
 1 NAME John /Hemsley/
 2 SOUR @S445247785@
 3 PAGE Surrey History Centre; Woking, Surrey, England
@@ -563,6 +571,26 @@
 3 _APID 1,7572::21858695
 2 SOUR @S445248318@
 3 _APID 1,9852::37948967
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225752
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201952
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577376
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 600; Page: 19; GSU roll: 193543
+3 _APID 1,8860::1732452
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1052; Folio: 95; Page: 28; GSU roll: 827486
+3 _APID 1,7619::14095634
+2 SOUR @S445249441@
+3 PAGE General Register Office; United Kingdom; Volume: 2b; Page: 240
+3 _APID 1,7579::20100999
+2 SOUR @S445309188@
+3 _APID 1,1904::988911
 1 BIRT 
 2 DATE (July-Sep) 1848
 2 PLAC Buxted, Sussex, England
@@ -574,6 +602,54 @@
 2 SOUR @S445248254@
 3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
 3 _APID 1,7572::21858695
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225752
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201952
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577376
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 600; Page: 19; GSU roll: 193543
+3 _APID 1,8860::1732452
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1052; Folio: 95; Page: 28; GSU roll: 827486
+3 _APID 1,7619::14095634
+2 SOUR @S445249441@
+3 PAGE General Register Office; United Kingdom; Volume: 2b; Page: 240
+3 _APID 1,7579::20100999
+1 RESI Relation to Head: Head
+2 DATE 1871
+2 PLAC Sussex, England
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1052; Folio: 95; Page: 28; GSU roll: 827486
+3 _APID 1,7619::14095634
+1 RESI Relationship: Son
+2 DATE 1851
+2 PLAC Buxted, Sussex, England
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 600; Page: 19; GSU roll: 193543
+3 _APID 1,8860::1732452
+1 RESI Relationship: Son
+2 DATE 1861
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577376
+1 RESI Marital Status: MarriedRelation to Head: Head
+2 DATE 1911
+2 PLAC Heathfield, Sussex, England
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201952
+1 RESI Relation to Head of House: Head
+2 DATE 1901
+2 PLAC Heathfield, Sussex, England
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225752
 1 RESI Marital Status: MarriedRelationship to Head: Head
 2 DATE 1881
 2 PLAC Waldron, Sussex, England
@@ -586,13 +662,15 @@
 2 SOUR @S445248134@
 3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
 3 _APID 1,6598::12404756
+1 OCCU Farmer at Tanners Farm, Framfield, employing 5 men and 2 boys, 3 servants and a nurse girl
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201952
 1 SEX M
 1 UID 55768278A606FE45BCE759BEBAA4BBDD64F5
 1 BAPM 
 2 DATE 10 APR 1853
 2 PLAC Forest Row, Sussex
-1 OCCU Farmer at Tanners Farm, Framfield, employing 5 men and 2 boys, 3 servants and a nurse girl
-1 DEAT Y
 1 RESI 
 2 PLAC Tanners Farm, Framfield, Sussex, England
 1 FAMC @F11@
@@ -607,16 +685,52 @@
 2 SOUR @S445248254@
 3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
 3 _APID 1,7572::21858619
-1 RESI Marital Status: MarriedRelationship to Head: Wife
-2 DATE 1881
-2 PLAC Waldron, Sussex, England
-2 SOUR @S445248254@
-3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
-3 _APID 1,7572::21858619
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225753
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201953
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1052; Folio: 95; Page: 28; GSU roll: 827486
+3 _APID 1,7619::14095635
+1 RESI Relation to Head: Wife
+2 DATE 1871
+2 PLAC Sussex, England
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1052; Folio: 95; Page: 28; GSU roll: 827486
+3 _APID 1,7619::14095635
 1 NAME Julia /Daniels/
 2 SOUR @S445248134@
 3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
 3 _APID 1,6598::12404757
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
+3 _APID 1,7572::21858619
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225753
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201953
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1052; Folio: 95; Page: 28; GSU roll: 827486
+3 _APID 1,7619::14095635
+1 RESI Marital Status: MarriedRelation to Head: Wife
+2 DATE 1911
+2 PLAC Heathfield, Sussex, England
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201953
+1 RESI Relation to Head of House: Wife
+2 DATE 1901
+2 PLAC Heathfield, Sussex, England
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225753
+1 RESI Marital Status: MarriedRelationship to Head: Wife
+2 DATE 1881
+2 PLAC Waldron, Sussex, England
 2 SOUR @S445248254@
 3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
 3 _APID 1,7572::21858619
@@ -747,36 +861,6 @@
 1 SEX F
 1 FAMS @F7@
 0 @P40@ INDI 
-1 NAME John /Hemsley/
-1 SEX M
-1 UID 48D91E387E105C4BA3E644FE2E6DBEA17192
-1 BIRT 
-2 DATE 1815
-2 PLAC Buxted, Sussex, England
-1 DEAT 
-2 DATE 15 JUL 1895
-1 BURI 
-2 DATE 19 JUL 1895
-2 PLAC Hadlow Down, Sussex, England
-1 BAPM 
-2 DATE JUN 1816
-2 PLAC Heathfield Independent Chapel, Sussex, England
-1 OCCU Farmer of 9 acres, employing 3 men and 1 boy
-1 RESI 
-2 PLAC Buxted, Sussex, England
-1 FAMC @F23@
-1 FAMS @F11@
-0 @P41@ INDI 
-1 NAME Jane /Tester/
-1 SEX F
-1 UID 73A7A1CDFBB61D45AB862B4E674F3A487D24
-1 BIRT 
-2 DATE 1819
-2 PLAC Waldron, Sussex, England
-1 DEAT 
-2 DATE 1889
-1 FAMS @F11@
-0 @P42@ INDI 
 1 NAME Cyril /Hemsley/
 1 SEX M
 1 UID 1F08130E00BC184184C795C3A25C8927AE28
@@ -784,18 +868,390 @@
 2 DATE AFT 1880
 1 DEAT Y
 1 FAMC @F8@
-0 @P43@ INDI 
-1 NAME Mabel /Hemsley/
+0 @P41@ INDI 
+1 BIRT 
+2 DATE 1870
+2 PLAC East Hoathly, Sussex, England
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
+3 _APID 1,6598::12404758
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
+3 _APID 1,7572::21858770
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1052; Folio: 95; Page: 28; GSU roll: 827486
+3 _APID 1,7619::14095636
+1 RESI Relation to Head: Son
+2 DATE 1871
+2 PLAC Sussex, England
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1052; Folio: 95; Page: 28; GSU roll: 827486
+3 _APID 1,7619::14095636
+1 NAME Henry /Hemsley/
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
+3 _APID 1,6598::12404758
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
+3 _APID 1,7572::21858770
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1052; Folio: 95; Page: 28; GSU roll: 827486
+3 _APID 1,7619::14095636
+1 RESI Relationship to Head: Son
+2 DATE 1881
+2 PLAC Waldron, Sussex, England
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
+3 _APID 1,7572::21858770
+1 RESI Relation to Head: Son
+2 DATE 1891
+2 PLAC Waldron, Sussex, England
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
+3 _APID 1,6598::12404758
+1 SEX M
+1 UID 1B7D0DF1B716D64BB224FC633116BB45009F
+1 DEAT Y
+1 FAMC @F8@
+1 FAMS @F9@
+0 @P42@ INDI 
+1 NAME Jane /Tester/
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577373
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732449
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 9; Page: 11; GSU roll: 1341249
+3 _APID 1,7572::21856455
+2 SOUR @S445315960@
+3 _APID 1,1351::303432392
+1 BIRT 
+2 DATE 1821
+2 PLAC Waldron, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577373
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732449
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 9; Page: 11; GSU roll: 1341249
+3 _APID 1,7572::21856455
+1 RESI Marital Status: MarriedRelationship to Head: Wife
+2 DATE 1881
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 9; Page: 11; GSU roll: 1341249
+3 _APID 1,7572::21856455
+1 RESI Relationship: Wife
+2 DATE 1851
+2 PLAC Buxted, Sussex, England
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732449
+1 RESI Relationship: Wife
+2 DATE 1861
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577373
 1 SEX F
+1 UID 73A7A1CDFBB61D45AB862B4E674F3A487D24
+1 DEAT 
+2 DATE 1889
+1 FAMS @F11@
+0 @P43@ INDI 
+1 NAME John /Hemsley/
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577372
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732448
+2 SOUR @S445310018@
+3 _APID 1,9841::179379417
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1058; Folio: 111; Page: 29; GSU roll: 827488
+3 _APID 1,7619::14103892
+2 SOUR @S445248318@
+3 _APID 1,9852::12715108
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 7; Page: 7; GSU roll: 6095894
+3 _APID 1,6598::12399025
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 9; Page: 11; GSU roll: 1341249
+3 _APID 1,7572::21856279
+2 SOUR @S445835637@
+3 PAGE Class: HO 27; Piece: 68; Page: 284
+3 _APID 1,1590::1326677
+2 SOUR @S445316821@
+3 PAGE The National Archives of the UK; Kew, Surrey, England; General Register Office: Registers of Births, Marriages and Deaths surrendered to the Non-parochial Registers Commissions of 1837 and 1857; Clas
+4 CONC s Number: RG 4; Piece Number: 3107
+3 _APID 1,2972::1968449
+2 SOUR @S445315960@
+3 _APID 1,1351::153432392
+2 SOUR @S445313055@
+3 _APID 1,8914::15735801
+2 SOUR @S445309188@
+3 _APID 1,1904::2658622
+2 SOUR @S445835945@
+3 _APID 1,2410::4515967
+1 DEAT 
+2 DATE 15 JUL 1895
+2 PLAC Hailsham, Sussex, England
+2 SOUR @S445313055@
+3 _APID 1,8914::15735801
+2 SOUR @S445309188@
+3 _APID 1,1904::2658622
+1 PROB 
+2 DATE 3 Aug 1895
+2 PLAC Lewes, Sussex, England
+2 SOUR @S445309188@
+3 _APID 1,1904::2658622
+1 BIRT 
+2 DATE 15 Mar 1816
+2 PLAC Buxted, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577372
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732448
+2 SOUR @S445310018@
+3 _APID 1,9841::179379417
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1058; Folio: 111; Page: 29; GSU roll: 827488
+3 _APID 1,7619::14103892
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 9; Page: 11; GSU roll: 1341249
+3 _APID 1,7572::21856279
+2 SOUR @S445835637@
+3 PAGE Class: HO 27; Piece: 68; Page: 284
+3 _APID 1,1590::1326677
+2 SOUR @S445316821@
+3 PAGE The National Archives of the UK; Kew, Surrey, England; General Register Office: Registers of Births, Marriages and Deaths surrendered to the Non-parochial Registers Commissions of 1837 and 1857; Clas
+4 CONC s Number: RG 4; Piece Number: 3107
+3 _APID 1,2972::1968449
+2 SOUR @S445313055@
+3 _APID 1,8914::15735801
+1 BAPM 
+2 DATE JUN 1816
+2 PLAC Heathfield Independent Chapel, Sussex, England
+2 SOUR @S445316821@
+3 PAGE The National Archives of the UK; Kew, Surrey, England; General Register Office: Registers of Births, Marriages and Deaths surrendered to the Non-parochial Registers Commissions of 1837 and 1857; Clas
+4 CONC s Number: RG 4; Piece Number: 3107
+3 _APID 1,2972::1968449
+1 RESI 
+2 DATE 19 March 1842
+2 PLAC Sussex, England
+2 SOUR @S445835637@
+3 PAGE Class: HO 27; Piece: 68; Page: 284
+3 _APID 1,1590::1326677
+1 RESI Marital Status: MarriedRelationship to Head: Head
+2 DATE 1881
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 9; Page: 11; GSU roll: 1341249
+3 _APID 1,7572::21856279
+1 RESI Relation to Head: Head
+2 DATE 1891
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 7; Page: 7; GSU roll: 6095894
+3 _APID 1,6598::12399025
+1 RESI Relation to Head: Head
+2 DATE 1871
+2 PLAC Forest Row, Sussex, England
+2 SOUR @S445308938@
+3 PAGE The National Archives; Kew, London, England; 1871 England Census; Class: RG10; Piece: 1058; Folio: 111; Page: 29; GSU roll: 827488
+3 _APID 1,7619::14103892
+1 BAPM 
+2 PLAC Independent-NC,Heathfield,Sussex,England
+2 SOUR @S445310018@
+3 _APID 1,9841::179379417
+1 RESI Relationship: Head
+2 DATE 1851
+2 PLAC Buxted, Sussex, England
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732448
+1 RESI Relationship: Head
+2 DATE 1861
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577372
+1 SEX M
+1 UID 48D91E387E105C4BA3E644FE2E6DBEA17192
+1 BURI 
+2 DATE 19 JUL 1895
+2 PLAC Hadlow Down, Sussex, England
+1 OCCU Farmer of 9 acres, employing 3 men and 1 boy
+1 RESI 
+2 PLAC Buxted, Sussex, England
+1 BIRT 
+2 DATE 15 Mar 1816
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 7; Page: 7; GSU roll: 6095894
+3 _APID 1,6598::12399025
+1 RESI 
+2 DATE 1856
+2 PLAC Hole Farm, Buxted, Sussex, England
+2 SOUR @S445835945@
+3 _APID 1,2410::4515967
+1 EVEN Crime: Poaching in the night time  Punishment: 1 year
+2 TYPE Prision Admission
+2 DATE 19 Mar 1842
+2 PLAC Sussex, England
+2 SOUR @S445835637@
+3 PAGE Class: HO 27; Piece: 68; Page: 284
+3 _APID 1,1590::1326677
+1 RESI 
+2 DATE 15 JUL 1895 
+2 PLAC Sapperton Farm, Heathfield, Sussex, England
+2 SOUR @S445309188@
+3 _APID 1,1904::2658622
+1 FAMC @F23@
+1 FAMS @F11@
+0 @P44@ INDI 
+1 BIRT 
+2 DATE 1889
+2 PLAC Waldron, Sussex, England
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225756
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201955
+1 RESI Marital Status: SingleRelation to Head: Daughter
+2 DATE 1911
+2 PLAC Heathfield, Sussex, England
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201955
+1 NAME Mabel J /Hemsley/
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225756
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201955
+1 RESI Relation to Head of House: Daughter
+2 DATE 1901
+2 PLAC Heathfield, Sussex, England
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225756
+1 DEAT Y
+1 SEX F
+1 NAME Mabel /Hemsley/
 1 UID 4DFA1FAB54474D49990801C7F153D49B5E50
 1 BIRT 
 2 DATE AFT 1880
 2 PLAC Burwash, Sussex, England
 1 RESI 
 2 PLAC Burwash, Sussex, England
+1 RESI Relation to Head: Daughter
+2 DATE 1891
+2 PLAC Waldron, Sussex, England
+1 FAMC @F8@
+0 @P45@ INDI 
+1 BIRT 
+2 DATE 1875
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
+3 _APID 1,6598::12404760
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
+3 _APID 1,7572::21858771
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225754
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201954
+1 RESI Marital Status: SingleRelation to Head: Son
+2 DATE 1911
+2 PLAC Heathfield, Sussex, England
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201954
+1 NAME Caleb /Hemsley/
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
+3 _APID 1,6598::12404760
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
+3 _APID 1,7572::21858771
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225754
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201954
+1 RESI Relation to Head of House: Son
+2 DATE 1901
+2 PLAC Heathfield, Sussex, England
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225754
+1 RESI Relationship to Head: Son
+2 DATE 1881
+2 PLAC Waldron, Sussex, England
+2 SOUR @S445248254@
+3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
+3 _APID 1,7572::21858771
+1 RESI Relation to Head: Son
+2 DATE 1891
+2 PLAC Waldron, Sussex, England
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
+3 _APID 1,6598::12404760
+1 SEX M
+1 UID 8611B5E4A0F9DF4CB866C85E706BE36258A7
 1 DEAT Y
 1 FAMC @F8@
-0 @P44@ INDI 
+0 @P46@ INDI 
+1 BIRT 
+2 DATE 1884
+2 PLAC Waldron, Sussex, England
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
+3 _APID 1,6598::12404764
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225755
+1 RESI Relation to Head of House: Son
+2 DATE 1901
+2 PLAC Heathfield, Sussex, England
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225755
+1 NAME Nelson /Hemsley/
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
+3 _APID 1,6598::12404764
+2 SOUR @S445246943@
+3 PAGE Class: RG13; Piece: 889; Folio: 75; Page: 4
+3 _APID 1,7814::6225755
+1 RESI Relation to Head: Son
+2 DATE 1891
+2 PLAC Waldron, Sussex, England
+2 SOUR @S445248134@
+3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
+3 _APID 1,6598::12404764
+1 SEX M
+1 UID 9283CBF87FCFC941876A404A3CE8C177072C
+1 DEAT 
+2 DATE 1942
+1 RESI 
+2 PLAC Brightling, Sussex, England
+1 FAMC @F8@
+0 @P47@ INDI 
 1 BIRT 
 2 DATE 1879
 2 PLAC Framfield, Sussex, England
@@ -830,7 +1286,7 @@
 2 PLAC Tanners Farm, Framfield, Sussex, England
 1 DEAT Y
 1 FAMC @F8@
-0 @P45@ INDI 
+0 @P48@ INDI 
 1 BIRT 
 2 DATE 1879
 2 PLAC Framfield, Sussex, England
@@ -863,40 +1319,7 @@
 1 UID 37A276622B28664A99715BB0EFF29348851F
 1 DEAT Y
 1 FAMC @F8@
-0 @P46@ INDI 
-1 BIRT 
-2 DATE 1875
-2 PLAC Framfield, Sussex, England
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404760
-2 SOUR @S445248254@
-3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
-3 _APID 1,7572::21858771
-1 RESI Relationship to Head: Son
-2 DATE 1881
-2 PLAC Waldron, Sussex, England
-2 SOUR @S445248254@
-3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
-3 _APID 1,7572::21858771
-1 NAME Caleb /Hemsley/
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404760
-2 SOUR @S445248254@
-3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
-3 _APID 1,7572::21858771
-1 RESI Relation to Head: Son
-2 DATE 1891
-2 PLAC Waldron, Sussex, England
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404760
-1 SEX M
-1 UID 8611B5E4A0F9DF4CB866C85E706BE36258A7
-1 DEAT Y
-1 FAMC @F8@
-0 @P47@ INDI 
+0 @P49@ INDI 
 1 BIRT 
 2 DATE 1874
 2 PLAC Framfield, Sussex, England
@@ -917,7 +1340,7 @@
 1 UID 8CCB5FDF4C77E741B76D95CE6E63412D46ED
 1 DEAT Y
 1 FAMC @F8@
-0 @P48@ INDI 
+0 @P50@ INDI 
 1 BIRT 
 2 DATE 26 MAR 1872
 2 PLAC Framfield, Sussex, England
@@ -951,59 +1374,6 @@
 1 DEAT Y
 1 FAMC @F8@
 1 FAMS @F10@
-0 @P49@ INDI 
-1 BIRT 
-2 DATE 1870
-2 PLAC East Hoathly, Sussex, England
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404758
-2 SOUR @S445248254@
-3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
-3 _APID 1,7572::21858770
-1 RESI Relationship to Head: Son
-2 DATE 1881
-2 PLAC Waldron, Sussex, England
-2 SOUR @S445248254@
-3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
-3 _APID 1,7572::21858770
-1 NAME Henry /Hemsley/
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404758
-2 SOUR @S445248254@
-3 PAGE Class: RG11; Piece: 1052; Folio: 72; Page: 14; GSU roll: 1341249
-3 _APID 1,7572::21858770
-1 RESI Relation to Head: Son
-2 DATE 1891
-2 PLAC Waldron, Sussex, England
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404758
-1 SEX M
-1 UID 1B7D0DF1B716D64BB224FC633116BB45009F
-1 DEAT Y
-1 FAMC @F8@
-1 FAMS @F9@
-0 @P50@ INDI 
-1 BIRT 
-2 DATE 1889
-2 PLAC Waldron, Sussex, England
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404766
-1 RESI Relation to Head: Daughter
-2 DATE 1891
-2 PLAC Waldron, Sussex, England
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404766
-1 NAME Mabel J /Hemsley/
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404766
-1 SEX F
-1 FAMC @F8@
 0 @P51@ INDI 
 1 BIRT 
 2 DATE 8 MAR 1884
@@ -1028,40 +1398,16 @@
 2 PLAC Eastbourne, Sussex, England
 1 FAMC @F8@
 0 @P52@ INDI 
-1 BIRT 
-2 DATE 1884
-2 PLAC Waldron, Sussex, England
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404764
-1 RESI Relation to Head: Son
-2 DATE 1891
-2 PLAC Waldron, Sussex, England
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404764
-1 NAME Nelson /Hemsley/
-2 SOUR @S445248134@
-3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 784; Folio: 59; Page: 1; GSU roll: 6095894
-3 _APID 1,6598::12404764
-1 SEX M
-1 UID 9283CBF87FCFC941876A404A3CE8C177072C
-1 DEAT 
-2 DATE 1942
-1 RESI 
-2 PLAC Brightling, Sussex, England
-1 FAMC @F8@
-0 @P53@ INDI 
 1 NAME Elizabeth Emma /Martin/
 1 SEX F
 1 UID 3A652DF29A6A444EA40399F7A88A4B404829
 1 FAMS @F9@
-0 @P54@ INDI 
+0 @P53@ INDI 
 1 NAME Ellen /Payne/
 1 SEX F
 1 UID 5427C5BC39188B48A75C4687E15CBCB49D4C
 1 FAMS @F10@
-0 @P55@ INDI 
+0 @P54@ INDI 
 1 NAME John /Daniels/
 1 SEX M
 1 UID BE9884FF41E89246AA1F3E595249C8C764F5
@@ -1070,7 +1416,7 @@
 2 PLAC Mayfield, Sussex, England
 1 DEAT Y
 1 FAMS @F17@
-0 @P56@ INDI 
+0 @P55@ INDI 
 1 NAME Mary Ann /Blackford/
 1 SEX F
 1 UID 7D8E07F11E60F043A61700A2ACCE8A0D243A
@@ -1080,18 +1426,53 @@
 1 DEAT Y
 1 FAMC @F18@
 1 FAMS @F17@
-0 @P57@ INDI 
-1 NAME Henry /Hemsley/
-1 SEX M
-1 UID D35E04E802B5AB478DDF8407AD66520E3012
+0 @P56@ INDI 
+1 BAPM 
+2 DATE 13 OCT 1850
+2 PLAC Forest Row, Sussex
+2 SOUR @S445315960@
+3 _APID 1,1351::3432392
+1 NAME Frances Jane /Hemsley/
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577375
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732451
+2 SOUR @S445248318@
+3 _APID 1,9852::12715110
+2 SOUR @S445315960@
+3 _APID 1,1351::3432392
 1 BIRT 
-2 DATE 1779
-1 DEAT 
-2 DATE 1843
-1 FAMC @F30@
-1 FAMS @F23@
-0 @P58@ INDI 
+2 DATE 1845
+2 PLAC Buxted, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577375
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732451
+1 RESI Relationship: Daughter
+2 DATE 1851
+2 PLAC Buxted, Sussex, England
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732451
+1 RESI Relationship: Daughter
+2 DATE 1861
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577375
+1 SEX F
+1 UID 501D09115926514E81BBC05DBC5C3B9FF053
+1 DEAT Y
+1 FAMC @F11@
+1 FAMS @F15@
+0 @P57@ INDI 
 1 NAME Philadelphia /Stevens/
+2 SOUR @S445310018@
+3 _APID 1,9841::179379416
 1 SEX F
 1 UID F9BB32110EB063489E7F37703E018911FDBD
 1 BIRT 
@@ -1100,78 +1481,150 @@
 1 DEAT 
 2 DATE 1854
 1 FAMS @F23@
-0 @P59@ INDI 
-1 NAME Frances Jane /Hemsley/
-1 SEX F
-1 UID 501D09115926514E81BBC05DBC5C3B9FF053
+0 @P58@ INDI 
+1 RESI 
+2 DATE 1842
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445835945@
+3 _APID 1,2410::6386444
+1 NAME Henry /Hemsley/
+2 SOUR @S445310018@
+3 _APID 1,9841::179379418
+2 SOUR @S445316369@
+3 PAGE Class: HO107; Piece: 1116; Book: 2; Civil Parish: Framfield; County: Sussex; Enumeration District: 4; Folio: 48; Page: 8; Line: 8; GSU roll: 464162
+3 _APID 1,8978::10668003
+2 SOUR @S445313055@
+3 _APID 1,8914::15735477
+2 SOUR @S445835945@
+3 _APID 1,2410::6386444
+1 DEAT 
+2 DATE Oct-Dec 1843
+2 PLAC Lewes, Sussex
+2 SOUR @S445313055@
+3 _APID 1,8914::15735477
 1 BIRT 
-2 DATE 1845
-2 PLAC Buxted, Sussex, England
-1 BAPM 
-2 DATE 13 OCT 1850
-2 PLAC Forest Row, Sussex
-1 DEAT Y
-1 FAMC @F11@
-1 FAMS @F15@
-0 @P60@ INDI 
-1 NAME Jabez /Hemsley/
+2 DATE 1779
+2 PLAC Sussex, England
+2 SOUR @S445316369@
+3 PAGE Class: HO107; Piece: 1116; Book: 2; Civil Parish: Framfield; County: Sussex; Enumeration District: 4; Folio: 48; Page: 8; Line: 8; GSU roll: 464162
+3 _APID 1,8978::10668003
+1 RESI 
+2 DATE 1841
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445316369@
+3 PAGE Class: HO107; Piece: 1116; Book: 2; Civil Parish: Framfield; County: Sussex; Enumeration District: 4; Folio: 48; Page: 8; Line: 8; GSU roll: 464162
+3 _APID 1,8978::10668003
 1 SEX M
-1 UID 80140BB14507F44DACA98F23FC8523BA4210
-1 BIRT 
-2 DATE DEC 1850
-2 PLAC Buxted, Sussex, England
-1 DEAT Y
-1 FAMC @F11@
-0 @P61@ INDI 
-1 NAME Sarah Jane /Hemsley/
-1 SEX F
-1 UID 633236CEE32667459961E3B9083EC8C4B6CD
+1 UID D35E04E802B5AB478DDF8407AD66520E3012
+1 FAMC @F30@
+1 FAMS @F23@
+0 @P59@ INDI 
 1 BIRT 
 2 DATE 1838
 2 PLAC Framfield, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577374
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732450
+1 RESI Relationship: Daughter
+2 DATE 1851
+2 PLAC Buxted, Sussex, England
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732450
+1 NAME Sarah Jane /Hemsley/
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577374
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 599; Page: 18; GSU roll: 193543
+3 _APID 1,8860::1732450
+1 RESI Relationship: Daughter
+2 DATE 1861
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577374
+1 SEX F
+1 UID 633236CEE32667459961E3B9083EC8C4B6CD
 1 DEAT 
 2 DATE 1902
 2 PLAC Tonbridge, Kent, England
 1 FAMC @F11@
-0 @P62@ INDI 
-1 NAME Alice Jane /Hemsley/
-1 SEX F
-1 UID DAEA10DEDC52EE429CD1CEB5D2E6F010B8CE
+0 @P60@ INDI 
+1 BIRT 
+2 DATE DEC 1850
+2 PLAC Buxted, Sussex, England
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 600; Page: 19; GSU roll: 193543
+3 _APID 1,8860::1732453
+1 RESI Relationship: Son
+2 DATE 1851
+2 PLAC Buxted, Sussex, England
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 600; Page: 19; GSU roll: 193543
+3 _APID 1,8860::1732453
+1 NAME Jabez /Hemsley/
+2 SOUR @S445313032@
+3 PAGE Class: HO107; Piece: 1640; Folio: 600; Page: 19; GSU roll: 193543
+3 _APID 1,8860::1732453
+1 SEX M
+1 UID 80140BB14507F44DACA98F23FC8523BA4210
+1 DEAT Y
+1 FAMC @F11@
+0 @P61@ INDI 
 1 BIRT 
 2 DATE 1856
 2 PLAC Framfield, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577377
+1 RESI Relationship: Daughter
+2 DATE 1861
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577377
+1 NAME Alice Jane /Hemsley/
+2 SOUR @S445308664@
+3 PAGE Class: RG 9; Piece: 575; Folio: 32; Page: 8; GSU roll: 542665
+3 _APID 1,8767::7577377
+1 SEX F
+1 UID DAEA10DEDC52EE429CD1CEB5D2E6F010B8CE
 1 DEAT Y
 1 FAMC @F11@
 1 FAMS @F16@
-0 @P63@ INDI 
+0 @P62@ INDI 
 1 NAME George /Briggs/
 1 SEX M
 1 UID D7A859041CF0D842B5AEA25FA9444BD775AA
 1 DEAT Y
 1 FAMS @F12@
-0 @P64@ INDI 
+0 @P63@ INDI 
 1 NAME Frances /Taylor/
 1 SEX F
 1 UID CC4CDB6E215B8448B5537A1217B9DBB39BFC
 1 DEAT 
 2 DATE 1973
 1 FAMS @F12@
-0 @P65@ INDI 
+0 @P64@ INDI 
 1 NAME Frederick /Markwick/
 1 SEX M
 1 UID F5BA83FE34190A49858CAF3D7849D710757E
 1 FAMS @F15@
-0 @P66@ INDI 
+0 @P65@ INDI 
 1 NAME Earnest /Briggs/
 1 SEX M
 1 UID C4DD956A5464B944BE9200C47247A6F4BC34
 1 FAMC @F12@
-0 @P67@ INDI 
+0 @P66@ INDI 
 1 NAME Leslie /Briggs/
 1 SEX M
 1 UID 20D5B05C5EEB9D40A3C1A9DD9EB52E1FB162
 1 FAMC @F12@
-0 @P68@ INDI 
+0 @P67@ INDI 
 1 NAME Albert /Freeth/
 1 SEX M
 1 UID 021E935E5016554D912CEC3D624634CDA86F
@@ -1184,7 +1637,7 @@
 1 DEAT Y
 1 FAMC @F51@
 1 FAMS @F13@
-0 @P69@ INDI 
+0 @P68@ INDI 
 1 NAME Henry /Freeth/
 1 SEX M
 1 UID CABEA1269E763947B98BC561A715C85C2D90
@@ -1199,7 +1652,7 @@
 2 PLAC Harborne, Staffordshire, England
 1 FAMC @F52@
 1 FAMS @F51@
-0 @P70@ INDI 
+0 @P69@ INDI 
 1 NAME Sarah /Newbold/
 1 SEX F
 1 UID 308C6B9BBA567F41B2EEECDC2164B25182E1
@@ -1211,7 +1664,7 @@
 2 PLAC Harborne, Staffordshire, England
 1 FAMC @F54@
 1 FAMS @F51@
-0 @P71@ INDI 
+0 @P70@ INDI 
 1 NAME Betsy Alice /Cutler/
 1 SEX F
 1 UID 3E850C67BC64EF4B82767090933764873D9D
@@ -1220,7 +1673,7 @@
 2 PLAC Harborne, Staffordshire, England
 1 DEAT Y
 1 FAMS @F13@
-0 @P72@ INDI 
+0 @P71@ INDI 
 1 NAME Marion /Freeth/
 1 UID 12E767ABFFAC484C9D77CDA6EEC2B098C9F9
 1 BIRT 
@@ -1228,7 +1681,7 @@
 2 PLAC Birmingham, Warwickshire, England
 1 DEAT Y
 1 FAMC @F13@
-0 @P73@ INDI 
+0 @P72@ INDI 
 1 NAME Edith /Freeth/
 1 UID C11290429874E7419CF11C24288C160E7E14
 1 BIRT 
@@ -1236,7 +1689,7 @@
 2 PLAC Birmingham, Warwickshire, England
 1 DEAT Y
 1 FAMC @F13@
-0 @P74@ INDI 
+0 @P73@ INDI 
 1 NAME Herbet /Freeth/
 1 UID 50FBD3354AA4C1488258658009541BFD7E2F
 1 DEAT Y
@@ -1244,7 +1697,7 @@
 2 DATE 1880
 2 PLAC Birmingham, Warwickshire, England
 1 FAMC @F13@
-0 @P75@ INDI 
+0 @P74@ INDI 
 1 NAME Elsie /Freeth/
 1 UID BE22D0B9CC3EE146B815F727D781DDCA8460
 1 DEAT Y
@@ -1252,7 +1705,7 @@
 2 DATE 1882
 2 PLAC Birmingham, Warwickshire, England
 1 FAMC @F13@
-0 @P76@ INDI 
+0 @P75@ INDI 
 1 NAME Howard /Freeth/
 1 UID A0E300E120A1734DAD97CAB7F3A88B92629C
 1 DEAT Y
@@ -1260,7 +1713,7 @@
 2 DATE 1889
 2 PLAC Birmingham, Warwickshire, England
 1 FAMC @F13@
-0 @P77@ INDI 
+0 @P76@ INDI 
 1 NAME Graham Swinfen /Freeth/
 1 UID 15080D54DE786E46A99A040129336152DF00
 1 DEAT Y
@@ -1268,7 +1721,7 @@
 2 DATE 1890
 2 PLAC Birmingham, Warwickshire, England
 1 FAMC @F13@
-0 @P78@ INDI 
+0 @P77@ INDI 
 1 NAME Ernest Albert /Freeth/
 1 UID B9737B012BFFC84A9125F328103DC518DF15
 1 DEAT Y
@@ -1276,7 +1729,7 @@
 2 DATE MAR 1894
 2 PLAC Birmingham, Warwickshire, England
 1 FAMC @F13@
-0 @P79@ INDI 
+0 @P78@ INDI 
 1 NAME Maud Lavinia /Freeth/
 2 SOUR @S445225173@
 3 PAGE Class: RG14; Piece: 18386
@@ -1323,7 +1776,7 @@
 1 RESI at Dudley St No.6 Osborn Terrace
 1 FAMC @F13@
 1 FAMS @F60@
-0 @P80@ INDI 
+0 @P79@ INDI 
 1 BIRT 
 2 DATE 3 MAR 1916
 2 PLAC Bournemouth, Dorset, England
@@ -1373,7 +1826,7 @@
 1 UID CEB0E23E10148547AEA830CC86EF3042C7AA
 1 FAMC @F57@
 1 FAMS @F14@
-0 @P81@ INDI 
+0 @P80@ INDI 
 1 BIRT 
 2 DATE 7 JUL 1946
 2 PLAC Horsham, Sussex, England
@@ -1391,7 +1844,7 @@
 1 UID 9F0AE7983261D24E8B679BD82690D22BF36F
 1 FAMC @F14@
 1 FAMS @F25@
-0 @P82@ INDI 
+0 @P81@ INDI 
 1 NAME Sheila Joyce /Hemsley/
 1 SEX F
 1 UID 6A08125D9E69844F87A8A27C43D916144E86
@@ -1401,12 +1854,12 @@
 1 FAMC @F14@
 1 FAMS @F43@
 1 FAMS @F65@
-0 @P83@ INDI 
+0 @P82@ INDI 
 1 NAME George /Goldsmith/
 1 SEX M
 1 UID C10778A22D07084E83D7524BB7AA985DB97D
 1 FAMS @F16@
-0 @P84@ INDI 
+0 @P83@ INDI 
 1 _MILT 
 2 DATE 1914-1920
 2 SOUR @S445309713@
@@ -1526,7 +1979,7 @@
 3 _APID 1,1219::1978513
 1 FAMC @F58@
 1 FAMS @F57@
-0 @P85@ INDI 
+0 @P84@ INDI 
 1 BIRT 
 2 DATE 1886
 2 PLAC High Wycombe, Buckinghamshire, England
@@ -1568,7 +2021,7 @@
 1 NOTE Twin of Elizabeth
 1 FAMC @F66@
 1 FAMS @F57@
-0 @P86@ INDI 
+0 @P85@ INDI 
 1 NAME Mary Ann /Daniels/
 1 SEX F
 1 UID CC6F427C384A4747873B29A2764D30B33C03
@@ -1579,7 +2032,7 @@
 2 DATE 1911
 1 FAMC @F17@
 1 FAMS @F19@
-0 @P87@ INDI 
+0 @P86@ INDI 
 1 BIRT 
 2 DATE 1840
 2 PLAC Mayfield, Sussex, England
@@ -1601,7 +2054,7 @@
 1 DEAT Y
 1 FAMC @F17@
 1 FAMS @F22@
-0 @P88@ INDI 
+0 @P87@ INDI 
 1 NAME Louisa /Daniels/
 1 SEX F
 1 UID 9E544B56C0CE6142A35394CB3F16883E3492
@@ -1610,7 +2063,7 @@
 2 PLAC Mayfield, Sussex, England
 1 DEAT Y
 1 FAMC @F17@
-0 @P89@ INDI 
+0 @P88@ INDI 
 1 NAME Thomas /Blackford/
 2 SOUR @S445313032@
 3 PAGE Class: HO107; Piece: 1640; Folio: 157; Page: 10; GSU roll: 193543
@@ -1637,7 +2090,7 @@
 1 DEAT Y
 1 FAMC @F29@
 1 FAMS @F18@
-0 @P90@ INDI 
+0 @P89@ INDI 
 1 NAME Rebecca /Woodsell/
 2 SOUR @S445315960@
 3 _APID 1,1351::3424894
@@ -1672,17 +2125,17 @@
 1 DEAT Y
 1 FAMC @F28@
 1 FAMS @F18@
-0 @P91@ INDI 
+0 @P90@ INDI 
 1 NAME Henry /Blackford/
 1 SEX M
 1 UID 98DE836AB9E8C244B320AA14F1A08617C949
 1 FAMS @F29@
-0 @P92@ INDI 
+0 @P91@ INDI 
 1 NAME Hannah
 1 SEX F
 1 UID C5DC149149053C4986DBEAD1FE9066BCE523
 1 FAMS @F29@
-0 @P93@ INDI 
+0 @P92@ INDI 
 1 NAME James /Blackford/
 1 SEX M
 1 UID 13A9C6CC203E2E4B89B1056D5DD411031653
@@ -1691,7 +2144,7 @@
 2 PLAC Burwash, Sussex, England
 1 DEAT Y
 1 FAMC @F18@
-0 @P94@ INDI 
+0 @P93@ INDI 
 1 BIRT 
 2 DATE 1820
 2 PLAC Burwash, Sussex, England
@@ -1712,7 +2165,7 @@
 1 UID CE977376ECDE554B9375A68D774677CAF166
 1 DEAT Y
 1 FAMC @F18@
-0 @P95@ INDI 
+0 @P94@ INDI 
 1 BIRT 
 2 DATE 1815
 2 PLAC Buxted, Sussex, England
@@ -1736,7 +2189,7 @@
 2 PLAC Independent or Calvanistic Burwash, Susex, England
 1 DEAT Y
 1 FAMC @F18@
-0 @P96@ INDI 
+0 @P95@ INDI 
 1 BIRT 
 2 DATE 1830
 2 PLAC Buxted, Sussex, England
@@ -1757,7 +2210,7 @@
 1 UID AE8D96CDB507A14D9D8ECEB8E6BE25F6B8D0
 1 DEAT Y
 1 FAMC @F18@
-0 @P97@ INDI 
+0 @P96@ INDI 
 1 DEAT 
 2 DATE Apr-Jun 1842
 2 PLAC Ticehurst, Sussex
@@ -1785,7 +2238,7 @@
 1 UID E1A1156A0B24054CA9820FA9D39BA851CB30
 1 FAMC @F92@
 1 FAMS @F28@
-0 @P98@ INDI 
+0 @P97@ INDI 
 1 NAME John /Woodsell/
 2 SOUR @S445315960@
 3 _APID 1,1351::153424894
@@ -1799,7 +2252,7 @@
 1 DEAT Y
 1 FAMC @F32@
 1 FAMS @F28@
-0 @P99@ INDI 
+0 @P98@ INDI 
 1 NAME Obediah /Hemsley/
 1 SEX M
 1 UID AE0111B63955AC4FBDC378C4180D9DEA6779
@@ -1814,7 +2267,7 @@
 1 FAMC @F20@
 1 FAMC @F23@
 1 FAMS @F19@
-0 @P100@ INDI 
+0 @P99@ INDI 
 1 BIRT 
 2 DATE abt 1834
 2 PLAC Mayfield, Sussex, England
@@ -1834,17 +2287,17 @@
 1 SEX M
 1 UID 91756257BB16E040B88CBC75BE85FE8FF5BF
 1 FAMS @F22@
-0 @P101@ INDI 
+0 @P100@ INDI 
 1 NAME /Hemsley/
 1 SEX M
 1 UID 4797C0C34386E4418EFF50B96925C91E5A70
 1 FAMS @F20@
-0 @P102@ INDI 
+0 @P101@ INDI 
 1 NAME Philadelphia /Simmonds/
 1 SEX F
 1 UID 35D74A5641C1224B90E42B876E1B40B3BD3E
 1 FAMS @F20@
-0 @P103@ INDI 
+0 @P102@ INDI 
 1 NAME Thomas S /Stone/
 1 SEX M
 1 UID 249A6A1C8F0E114D89BE80975DB958949F7B
@@ -1853,7 +2306,7 @@
 1 DEAT 
 2 DATE 1916
 1 FAMS @F61@
-0 @P104@ INDI 
+0 @P103@ INDI 
 1 NAME Maria /Wall/
 1 SEX F
 1 UID 7E8E6146EC1EE146A82643C0788F843C7C15
@@ -1864,22 +2317,22 @@
 2 DATE 1934
 1 FAMC @F94@
 1 FAMS @F61@
-0 @P105@ INDI 
+0 @P104@ INDI 
 1 NAME Wilfred /Stone/
 1 SEX M
 1 UID 90F53DD318CDC44A880948D2E6610B0D92C0
 1 FAMC @F21@
-0 @P106@ INDI 
+0 @P105@ INDI 
 1 NAME Violet /Stone/
 1 SEX F
 1 UID F2BD837A4AFF3F4AB78D76A6490D9AECBA0C
 1 FAMC @F21@
-0 @P107@ INDI 
+0 @P106@ INDI 
 1 NAME Gladys /Stone/
 1 SEX F
 1 UID 24C70BD432CF4642B5AAC59CA3E121AF67AA
 1 FAMC @F21@
-0 @P108@ INDI 
+0 @P107@ INDI 
 1 BIRT 
 2 DATE 29 Jan 1913
 2 SOUR @S445225094@
@@ -1919,7 +2372,7 @@
 3 _APID 1,61596::45590427
 1 FAMC @F21@
 1 FAMS @F81@
-0 @P109@ INDI 
+0 @P108@ INDI 
 1 NAME Joyce Mary /Stone/
 1 SEX F
 1 UID 8BD51E772331CE44A5645A272780B85397AB
@@ -1927,15 +2380,23 @@
 1 BIRT 
 2 DATE 29 MAR 1918
 1 FAMC @F21@
-0 @P110@ INDI 
+0 @P109@ INDI 
 1 NAME Douglas /Stone/
 1 SEX M
 1 UID A36668D380070347B4011503030A0F33312A
 1 BIRT 
 2 DATE 1920
 1 FAMC @F21@
-0 @P111@ INDI 
+0 @P110@ INDI 
+1 RESI 
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445248318@
+3 _APID 1,9852::14481574
 1 NAME John /Hemsley/
+2 SOUR @S445310018@
+3 _APID 1,9841::103976450
+2 SOUR @S445248318@
+3 _APID 1,9852::14481574
 1 SEX M
 1 UID F767FA75C0AAFB42859235765CD316E96434
 1 BIRT 
@@ -1949,8 +2410,16 @@
 2 PLAC Framfield, Sussex, England
 1 FAMC @F31@
 1 FAMS @F30@
-0 @P112@ INDI 
+0 @P111@ INDI 
+1 RESI 
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445248318@
+3 _APID 1,9852::14481575
 1 NAME Elizabeth /Pankhurst/
+2 SOUR @S445310018@
+3 _APID 1,9841::103976451
+2 SOUR @S445248318@
+3 _APID 1,9852::14481575
 1 SEX F
 1 UID 89F708C194E81A449E143D6F79E0BF912A3E
 1 BIRT 
@@ -1963,7 +2432,7 @@
 2 DATE 25 JAN 1835
 2 PLAC Framfield, Sussex, England
 1 FAMS @F30@
-0 @P113@ INDI 
+0 @P112@ INDI 
 1 NAME Henry /Hemsley/
 1 SEX M
 1 UID 6D486C6D6023B44ABEB0010A75466FC17359
@@ -1977,7 +2446,7 @@
 2 DATE 12 JUN 1831
 2 PLAC Framfield, Sussex, England
 1 FAMC @F23@
-0 @P114@ INDI 
+0 @P113@ INDI 
 1 NAME Sarah /Hemsley/
 1 SEX F
 1 UID 657E223862549A4CA361AEE183CE83145412
@@ -1989,7 +2458,7 @@
 2 PLAC Framfield, Sussex, England
 1 DEAT Y
 1 FAMC @F23@
-0 @P115@ INDI 
+0 @P114@ INDI 
 1 NAME William /Hemsley/
 1 SEX M
 1 UID 41A82139A5B8C34AAE184D1B94D274B86D4A
@@ -2003,7 +2472,7 @@
 2 DATE 1 MAR 1833
 2 PLAC Framfield, Sussex, England
 1 FAMC @F23@
-0 @P116@ INDI 
+0 @P115@ INDI 
 1 NAME Frances /Hemsley/
 1 SEX F
 1 UID 73C34E06BA9BF54B9B73364DB47D21B7B9C7
@@ -2013,7 +2482,7 @@
 1 DEAT Y
 1 FAMC @F23@
 1 FAMS @F24@
-0 @P117@ INDI 
+0 @P116@ INDI 
 1 NAME Harriet /Hemsley/
 1 SEX F
 1 UID BB31CDDEB5CB1F4CBEFC0242079E5764E054
@@ -2023,7 +2492,7 @@
 1 DEAT Y
 1 FAMC @F23@
 1 FAMS @F26@
-0 @P118@ INDI 
+0 @P117@ INDI 
 1 NAME Trayton /Hemsley/
 1 SEX M
 1 UID 2B92E6C1144DDE41B9C537E9C0FB6F9B473F
@@ -2035,7 +2504,7 @@
 2 PLAC Lingfield, Surrey, England
 1 FAMC @F23@
 1 FAMS @F27@
-0 @P119@ INDI 
+0 @P118@ INDI 
 1 NAME Philadelphia /Hemsley/
 1 SEX F
 1 UID 79C8481AEBEE9B42BEB41EE23696E9098997
@@ -2048,7 +2517,7 @@
 2 DATE 1908
 2 PLAC Hadlow Down, Sussex, England
 1 FAMC @F23@
-0 @P120@ INDI 
+0 @P119@ INDI 
 1 NAME Elizabeth /Hemsley/
 1 SEX F
 1 UID 0EC875D83E39CB47AC3A9F4CCECC80780FFE
@@ -2057,7 +2526,7 @@
 2 PLAC Framfield, Sussex, England
 1 DEAT Y
 1 FAMC @F23@
-0 @P121@ INDI 
+0 @P120@ INDI 
 1 NAME Tirzah Fanny /Hemsley/
 1 SEX F
 1 UID 11E3E669F5BC2E45A31239832716728F16DB
@@ -2065,7 +2534,7 @@
 2 DATE 24 NOV 1825
 1 DEAT Y
 1 FAMC @F23@
-0 @P122@ INDI 
+0 @P121@ INDI 
 1 NAME Mary /Hemsley/
 1 SEX F
 1 UID FF7DBA1295725E4E8B86A637A958E8370951
@@ -2073,7 +2542,7 @@
 2 DATE 29 SEP 1828
 1 DEAT Y
 1 FAMC @F23@
-0 @P123@ INDI 
+0 @P122@ INDI 
 1 NAME Anne /Hemsley/
 1 SEX F
 1 UID 5A2D92AB537A14488C0D661122E485F67E08
@@ -2086,17 +2555,17 @@
 2 DATE 19 JAN 1853
 2 PLAC Hadlow Down, Sussex, England
 1 FAMC @F23@
-0 @P124@ INDI 
+0 @P123@ INDI 
 1 NAME Willliam /Moon/
 1 SEX M
 1 UID 696F204DA652BD42AC6B9022F92C0F2962C2
 1 FAMS @F24@
-0 @P125@ INDI 
+0 @P124@ INDI 
 1 NAME James /Adams/
 1 SEX M
 1 UID 7E1EFA89A004CA429F44CEDD458D4D209C93
 1 FAMS @F26@
-0 @P126@ INDI 
+0 @P125@ INDI 
 1 NAME Laura Jane /Bates/
 2 SOUR @S445250172@
 3 PAGE General Register Office; United Kingdom; Volume: 5h; Page: 396
@@ -2105,22 +2574,22 @@
 1 UID E6EF5A41995A3C4EA40E64BCAA13D38CDB53
 1 FAMC @F45@
 1 FAMS @F25@
-0 @P127@ INDI 
+0 @P126@ INDI 
 1 NAME Hannah /Tester/
 1 SEX F
 1 UID 663EC2FA9F6DE746ABB1B764D3ECF232F382
 1 FAMS @F27@
-0 @P128@ INDI 
+0 @P127@ INDI 
 1 NAME Henry /Woodsell/
 1 SEX M
 1 UID AC776B877488E747983EF797FE30B422A77C
 1 FAMS @F32@
-0 @P129@ INDI 
+0 @P128@ INDI 
 1 NAME Rebecca /Tolham/
 1 SEX F
 1 UID A79FE9FCCF4D3847B6B510A428887C6071C4
 1 FAMS @F32@
-0 @P130@ INDI 
+0 @P129@ INDI 
 1 NAME Mary /Woodsell/
 1 SEX F
 1 UID F877DE9BC68EF4459D2BC844E937E9B406BB
@@ -2129,7 +2598,7 @@
 2 PLAC Burwash, Sussex, England
 1 DEAT Y
 1 FAMC @F28@
-0 @P131@ INDI 
+0 @P130@ INDI 
 1 NAME John /Woodsell/
 1 SEX M
 1 UID 6A8869CA2A51034293824B03D4FF84DF7EA6
@@ -2138,7 +2607,7 @@
 2 PLAC Burwash, Sussex, England
 1 DEAT Y
 1 FAMC @F28@
-0 @P132@ INDI 
+0 @P131@ INDI 
 1 NAME Sarah /Woodsell/
 1 SEX F
 1 UID 5C07CDFF8C1B304FB13251964E218271817C
@@ -2147,7 +2616,7 @@
 2 PLAC Burwash, Sussex, England
 1 DEAT Y
 1 FAMC @F28@
-0 @P133@ INDI 
+0 @P132@ INDI 
 1 NAME Sophia /Woodsell/
 1 SEX F
 1 UID AE27BE3CF5245345B7D4BE1FF17BE6B4EE94
@@ -2156,7 +2625,7 @@
 2 PLAC Burwash, Sussex, England
 1 DEAT Y
 1 FAMC @F28@
-0 @P134@ INDI 
+0 @P133@ INDI 
 1 NAME Winny /Woodsell/
 1 SEX F
 1 UID D5A77192BDC0D04F8FDB61BDA517F15EAE39
@@ -2165,7 +2634,7 @@
 2 PLAC Burwash, Sussex, England
 1 DEAT Y
 1 FAMC @F28@
-0 @P135@ INDI 
+0 @P134@ INDI 
 1 NAME Frances /Woodsell/
 1 SEX F
 1 UID D1440A0458F11346B59426EF8A858CB06E3D
@@ -2174,7 +2643,7 @@
 2 PLAC Burwash, Sussex, England
 1 DEAT Y
 1 FAMC @F28@
-0 @P136@ INDI 
+0 @P135@ INDI 
 1 NAME Ann /Woodsell/
 1 SEX F
 1 UID A0756FC14C30E841A6DAA453B7F94A69C414
@@ -2183,7 +2652,7 @@
 2 PLAC Burwash, Sussex, England
 1 DEAT Y
 1 FAMC @F28@
-0 @P137@ INDI 
+0 @P136@ INDI 
 1 BIRT 
 2 DATE 1726
 2 PLAC Westfield, Sussex, , England
@@ -2193,7 +2662,7 @@
 1 SEX F
 1 NAME Mary /Wenbon/
 1 FAMS @F92@
-0 @P138@ INDI 
+0 @P137@ INDI 
 1 BIRT 
 2 DATE 21 October 1721
 2 PLAC Westfield, Sussex, England
@@ -2203,7 +2672,7 @@
 1 SEX M
 1 NAME William /Barham/
 1 FAMS @F92@
-0 @P139@ INDI 
+0 @P138@ INDI 
 1 NAME John /Hemsley/
 1 SEX M
 1 UID 198A6667FCA41B40A49A4A71D1398D817C70
@@ -2216,7 +2685,7 @@
 2 DATE 5 OCT 1763
 1 FAMC @F33@
 1 FAMS @F31@
-0 @P140@ INDI 
+0 @P139@ INDI 
 1 NAME Mary /Radford/
 1 SEX F
 1 UID 84F112ED8C12644383CD6C7FD69691EADBD9
@@ -2228,7 +2697,7 @@
 2 DATE 21 NOV 1803
 2 PLAC Framfield, Sussex, England
 1 FAMS @F31@
-0 @P141@ INDI 
+0 @P140@ INDI 
 1 NAME William /Hemsley/
 1 SEX M
 1 UID 88BDB8FD4950AA4BAB5F195C9BB27E11E381
@@ -2241,7 +2710,7 @@
 1 BURI 
 2 DATE 3 NOV 1807
 1 FAMC @F30@
-0 @P142@ INDI 
+0 @P141@ INDI 
 1 NAME Mary /Hemsley/
 1 SEX F
 1 UID 47B0D3202EB7014BB8534C2C9B633E13ED69
@@ -2250,7 +2719,7 @@
 2 PLAC Buxted, Sussex, England
 1 DEAT Y
 1 FAMC @F30@
-0 @P143@ INDI 
+0 @P142@ INDI 
 1 NAME Samuel /Hemsley/
 1 SEX M
 1 UID A15F0E85D1DFA449A4E801C80B9FDEF805A3
@@ -2259,7 +2728,7 @@
 2 PLAC Buxted, Sussex, England
 1 DEAT Y
 1 FAMC @F30@
-0 @P144@ INDI 
+0 @P143@ INDI 
 1 NAME Elizabeth /Hemsley/
 1 SEX F
 1 UID 6B4FDE4ADDC98448989984541748F8C77B7C
@@ -2268,16 +2737,7 @@
 2 PLAC Buxted, Sussex, England
 1 DEAT Y
 1 FAMC @F30@
-0 @P145@ INDI 
-1 NAME Constance /Hemsley/
-1 SEX F
-1 UID 35D321303179D14B9523A02D7557C30C3FE0
-1 BIRT 
-2 DATE BEF 12 JUN 1791
-2 PLAC Framfield, Sussex, England
-1 DEAT Y
-1 FAMC @F30@
-0 @P146@ INDI 
+0 @P144@ INDI 
 1 NAME Fanny /Hemsley/
 1 SEX F
 1 UID 3CD040D4C1EACD419721B2DE3C6D4A112596
@@ -2286,7 +2746,23 @@
 2 PLAC Buxted, Sussex, England
 1 DEAT Y
 1 FAMC @F30@
-0 @P147@ INDI 
+0 @P145@ INDI 
+1 BAPM 
+2 DATE 12 Jun 1791
+2 PLAC Framfield, Sussex, England
+2 SOUR @S445310018@
+3 _APID 1,9841::103976449
+1 NAME Constance /Hemsley/
+2 SOUR @S445310018@
+3 _APID 1,9841::103976449
+1 SEX F
+1 UID 35D321303179D14B9523A02D7557C30C3FE0
+1 BIRT 
+2 DATE BEF 12 JUN 1791
+2 PLAC Framfield, Sussex, England
+1 DEAT Y
+1 FAMC @F30@
+0 @P146@ INDI 
 1 NAME Henry /Hemsley/
 1 SEX M
 1 UID AE3E9F1300EC0548A9E75A4791BC3972007D
@@ -2299,7 +2775,7 @@
 1 DEAT Y
 1 FAMC @F37@
 1 FAMS @F33@
-0 @P148@ INDI 
+0 @P147@ INDI 
 1 NAME Sarah /Waghorne/
 1 SEX F
 1 UID CBA59F0A0C243D4684D29421350F4EFC6517
@@ -2307,7 +2783,7 @@
 2 DATE BEF 1682
 1 DEAT Y
 1 FAMS @F33@
-0 @P149@ INDI 
+0 @P148@ INDI 
 1 NAME Ann /Hemsley/
 1 SEX F
 1 UID F4F8E61B1F5E57409CAB4F9F3D9FB8C69068
@@ -2316,7 +2792,7 @@
 2 PLAC Waldron, Sussex, England
 1 DEAT Y
 1 FAMC @F31@
-0 @P150@ INDI 
+0 @P149@ INDI 
 1 NAME Hannah /Hemsley/
 1 SEX F
 1 UID 71B077239C203B4692CC38EB9BA7BBB82EB7
@@ -2325,7 +2801,7 @@
 2 PLAC Mayfield, Sussex, England
 1 DEAT Y
 1 FAMC @F31@
-0 @P151@ INDI 
+0 @P150@ INDI 
 1 NAME Constance /Hemsley/
 1 SEX F
 1 UID E1957845B91A1A478A04CCD7B71D945C5C47
@@ -2334,7 +2810,7 @@
 2 PLAC Mayfield, Sussex, England
 1 DEAT Y
 1 FAMC @F31@
-0 @P152@ INDI 
+0 @P151@ INDI 
 1 NAME Frances /Hemsley/
 1 SEX F
 1 UID 46F0BD391E13A045BD30902EA0F908BC4A46
@@ -2343,7 +2819,7 @@
 2 PLAC Mayfield, Sussex, England
 1 DEAT Y
 1 FAMC @F31@
-0 @P153@ INDI 
+0 @P152@ INDI 
 1 NAME Elizabeth /Hemsley/
 1 SEX F
 1 UID C5F5C28FE5FB994C943AC3298E067A42DACA
@@ -2352,7 +2828,7 @@
 2 PLAC Mayfield, Sussex, England
 1 DEAT Y
 1 FAMC @F31@
-0 @P154@ INDI 
+0 @P153@ INDI 
 1 NAME Richard /Hemsley/
 1 SEX M
 1 UID F408B8BF1A78A2448CD75D618D49EFA57679
@@ -2361,7 +2837,7 @@
 2 PLAC Mayfield, Sussex, England
 1 DEAT Y
 1 FAMC @F31@
-0 @P155@ INDI 
+0 @P154@ INDI 
 1 NAME Samuel /Hemsley/
 1 SEX M
 1 UID 19B5F96A5877B943924608C4173446CCFDCB
@@ -2373,7 +2849,7 @@
 2 PLAC Framfield, Sussex, England
 1 FAMC @F31@
 1 FAMS @F35@
-0 @P156@ INDI 
+0 @P155@ INDI 
 1 SEX M
 1 NAME Henry /Woodsell/
 1 UID 6119474F28C6BD4B8E8013A30FB23D1EE64E
@@ -2381,7 +2857,7 @@
 2 DATE BEF 18 NOV 1752
 2 PLAC Burwash, Sussex, England
 1 FAMC @F32@
-0 @P157@ INDI 
+0 @P156@ INDI 
 1 NAME William /Woodsell/
 1 SEX M
 1 UID DDC22861B6735442ACD1DD59BFE440CF4C57
@@ -2390,7 +2866,7 @@
 2 PLAC Burwash, Sussex, England
 1 DEAT Y
 1 FAMC @F32@
-0 @P158@ INDI 
+0 @P157@ INDI 
 1 NAME George /Hemsley/
 1 SEX M
 1 UID 2F1452C9A1341C4BBD3724F213C65EB08B55
@@ -2401,7 +2877,7 @@
 2 DATE 1694
 2 PLAC Isfield, Sussex, England
 1 FAMS @F37@
-0 @P159@ INDI 
+0 @P158@ INDI 
 1 NAME Susannah /Boss/
 1 SEX F
 1 UID 844C1F6E03862349957A31A3AB98BD609572
@@ -2409,7 +2885,7 @@
 2 DATE BEF 1650
 1 DEAT Y
 1 FAMS @F37@
-0 @P160@ INDI 
+0 @P159@ INDI 
 1 NAME Sarah /Hemsley/
 1 SEX F
 1 UID 439F32E7B1DAD04BA4862397729C0FE98B97
@@ -2423,7 +2899,7 @@
 2 DATE 10 JUL 1699
 2 PLAC Framfield, Sussex, England
 1 FAMC @F33@
-0 @P161@ INDI 
+0 @P160@ INDI 
 1 NAME Mary /Hemsley/
 1 SEX F
 1 UID FBCD78503FEA6C478168D702FD772F3304EA
@@ -2432,7 +2908,7 @@
 2 PLAC Framfield, Sussex, England
 1 DEAT Y
 1 FAMC @F33@
-0 @P162@ INDI 
+0 @P161@ INDI 
 1 NAME Samuel /Hemsley/
 1 SEX M
 1 UID DC3AB1393751B64AA7511FD43CF04402E515
@@ -2442,7 +2918,7 @@
 1 DEAT Y
 1 FAMC @F33@
 1 FAMS @F36@
-0 @P163@ INDI 
+0 @P162@ INDI 
 1 NAME Elizabeth /Hemsley/
 1 SEX F
 1 UID ABB8B1A2DB56F043A8E6FA21CCB117D1285E
@@ -2452,7 +2928,7 @@
 1 DEAT 
 2 DATE BEF 26 DEC 1713
 1 FAMC @F33@
-0 @P164@ INDI 
+0 @P163@ INDI 
 1 NAME Elizabeth /Hemsley/
 1 SEX F
 1 UID BDFBECAFB62E214AA84684DA0D0940094D12
@@ -2466,7 +2942,7 @@
 2 DATE 26 DEC 1713
 2 PLAC Framfield, Sussex, England
 1 FAMC @F33@
-0 @P165@ INDI 
+0 @P164@ INDI 
 1 NAME David /Hemsley/
 1 SEX M
 1 UID 6C77B15F8D660646A6FD9E9EEEE85B0244F7
@@ -2475,7 +2951,7 @@
 2 PLAC Horsted, Sussex, England
 1 DEAT Y
 1 FAMC @F33@
-0 @P166@ INDI 
+0 @P165@ INDI 
 1 NAME Sarah /Hemsley/
 1 UID 6290657A16E3974C8C8D195FDA6C39C27F2F
 1 BIRT 
@@ -2483,7 +2959,7 @@
 2 PLAC Little Horsted, Sussex, England
 1 DEAT Y
 1 FAMC @F33@
-0 @P168@ INDI 
+0 @P167@ INDI 
 1 NAME Benjamin John /Stone/
 1 SEX M
 1 UID 85D126F99C603C4CB390FBC3E35161800FB6
@@ -2492,7 +2968,7 @@
 2 PLAC East Melbourne, VIC, Australia
 1 NATI Australian
 1 FAMC @F34@
-0 @P169@ INDI 
+0 @P168@ INDI 
 1 BIRT 
 2 DATE 1762
 2 PLAC Framfield, Sussex, England
@@ -2506,12 +2982,12 @@
 1 SEX F
 1 UID 032E6C05F1A2BA43BD7DA52FC3EBC47426D1
 1 FAMS @F35@
-0 @P170@ INDI 
+0 @P169@ INDI 
 1 NAME Elizabeth /Hutchinson/
 1 SEX F
 1 UID AA75123D292E86498C5D60326265BD079AA0
 1 FAMS @F36@
-0 @P171@ INDI 
+0 @P170@ INDI 
 1 NAME George /Hemsley/
 1 SEX M
 1 UID 0060E029EFFEB849AFB6BAEF098EA425C588
@@ -2523,7 +2999,7 @@
 2 DATE 9 NOV 1687
 2 PLAC Isfield, Sussex, England
 1 FAMC @F37@
-0 @P172@ INDI 
+0 @P171@ INDI 
 1 NAME Thomas /Hemsley/
 1 SEX M
 1 UID 1CEE79281040474A9ECEB6C6851405AEC0F4
@@ -2533,7 +3009,7 @@
 1 DEAT Y
 1 FAMC @F37@
 1 FAMS @F38@
-0 @P173@ INDI 
+0 @P172@ INDI 
 1 NAME John /Hemsley/
 1 SEX M
 1 UID 1D4091DB96448C4686940CC182FF8CD841BD
@@ -2545,7 +3021,7 @@
 2 PLAC Keymer, Sussex
 1 FAMC @F37@
 1 FAMS @F40@
-0 @P174@ INDI 
+0 @P173@ INDI 
 1 NAME William /Hemsley/
 1 SEX M
 1 UID A8C03DE525FF634C8F1704F3A4DC424D09D7
@@ -2556,7 +3032,7 @@
 2 DATE BEF 11 MAY 1681
 2 PLAC Isfield, Sussex, England
 1 FAMC @F37@
-0 @P175@ INDI 
+0 @P174@ INDI 
 1 NAME Joanne /Parker/
 1 SEX F
 1 UID 434C28035423C74ABEEE34995E49FC4DAB0B
@@ -2564,7 +3040,7 @@
 2 DATE BEF 16 NOV 1673
 1 DEAT Y
 1 FAMS @F38@
-0 @P176@ INDI 
+0 @P175@ INDI 
 1 BIRT 
 2 DATE 29 MAY 1903
 2 PLAC Handsworth, Staffordshire, England
@@ -2637,7 +3113,7 @@
 2 PLAC Patterson Lakes, VIC, Australia
 1 FAMC @F60@
 1 FAMS @F39@
-0 @P177@ INDI 
+0 @P176@ INDI 
 1 BIRT 
 2 DATE 22 MAY 1897
 2 PLAC West Derby, Lancashire
@@ -2695,7 +3171,7 @@
 1 UID 7A08E4B300D89B40960C1C6E3E7990D41366
 1 FAMC @F48@
 1 FAMS @F39@
-0 @P178@ INDI 
+0 @P177@ INDI 
 1 NAME Charles Edmund /Adams/
 2 SOUR @S445225117@
 3 _APID 1,1207::193547816
@@ -2710,7 +3186,7 @@
 2 SOUR @S445225117@
 3 _APID 1,1207::193547816
 1 FAMC @F39@
-0 @P179@ INDI 
+0 @P178@ INDI 
 1 RESI 
 2 DATE 1967
 2 PLAC 3 Bailey ct, Springvale, Victoria, Australia
@@ -2725,7 +3201,7 @@
 2 DATE 15 JUL 1932
 2 PLAC Melbourne, VIC, Australia
 1 FAMC @F39@
-0 @P180@ INDI 
+0 @P179@ INDI 
 1 BIRT 
 2 DATE Jan-Mar 1872
 2 PLAC Birmingham, Warwickshire, England
@@ -2836,7 +3312,7 @@
 1 DEAT Y
 1 FAMC @F91@
 1 FAMS @F60@
-0 @P181@ INDI 
+0 @P180@ INDI 
 1 NAME Sarah /Jenner/
 1 SEX F
 1 UID 82507679EBDD054893A3EF91233BF3CFAC14
@@ -2847,7 +3323,7 @@
 2 DATE BEF 14 APR 1737
 2 PLAC Keymer, Sussex, England
 1 FAMS @F40@
-0 @P182@ INDI 
+0 @P181@ INDI 
 1 NAME Michael /Rutledge/
 2 SOUR @S445246689@
 3 _APID 1,1780::3512289
@@ -2891,31 +3367,31 @@
 2 CONT
 2 CONT Married in 1897 Sydney NSW, Reyment, Lucy Margaret. appeared on the NSW Electoral Roll 1901 as residing at Church Street, Hay, Riverina NSW; Occupation: Domestic Duties.
 1 FAMS @F41@
-0 @P183@ INDI 
+0 @P182@ INDI 
 1 SEX F
 1 NAME Sheila /Rutledge/
 1 FAMC @F41@
-0 @P184@ INDI 
+0 @P183@ INDI 
 1 SEX F
 1 NAME Eileen /Rutledge/
 1 FAMC @F41@
-0 @P185@ INDI 
+0 @P184@ INDI 
 1 SEX F
 1 NAME Margaret /Rutledge/
 1 FAMC @F41@
-0 @P186@ INDI 
+0 @P185@ INDI 
 1 SEX M
 1 NAME Leo /Rutledge/
 1 FAMC @F41@
-0 @P187@ INDI 
+0 @P186@ INDI 
 1 NAME Muriel /Rutledge/
 1 SEX F
 1 FAMC @F41@
-0 @P188@ INDI 
+0 @P187@ INDI 
 1 NAME Ronald /Rutledge/
 1 SEX M
 1 FAMC @F41@
-0 @P189@ INDI 
+0 @P188@ INDI 
 1 NAME Lucy Margaret /Reyment/
 2 SOUR @S445246689@
 3 _APID 1,1780::3488444
@@ -2929,7 +3405,7 @@
 1 SEX F
 1 UID 6DB19057ADD2D142880EE09F6D3CE33C747F
 1 FAMS @F41@
-0 @P190@ INDI 
+0 @P189@ INDI 
 1 BIRT 
 2 DATE 22 May 1904
 2 PLAC Hay, Hay Shire, New South Wales, Australia
@@ -2976,11 +3452,11 @@
 3 _APID 1,60541::1667110
 1 SEX M
 1 FAMC @F41@
-0 @P191@ INDI 
+0 @P190@ INDI 
 1 SEX F
 1 UID 8D964346702FF6498DC91EEF4795293628ED
 1 FAMS @F47@
-0 @P192@ INDI 
+0 @P191@ INDI 
 1 NAME Walter /Davis/
 2 SOUR @S445247785@
 3 PAGE Surrey History Centre; Woking, Surrey, England
@@ -2990,13 +3466,13 @@
 1 SEX M
 1 UID 659D18B46DE04C46B39C4C17A9F9E14628CF
 1 FAMS @F47@
-0 @P193@ INDI 
+0 @P192@ INDI 
 1 NAME /Davis/
 1 SEX F
 1 UID 5550DF5E82CC4144B3FAADADEB0C335E4433
 1 FAMC @F47@
 1 FAMS @F46@
-0 @P194@ INDI 
+0 @P193@ INDI 
 1 NAME Hermanus /Mulder/
 1 SEX M
 1 UID A0FF9999230D3342988FA8141C0134D37D42
@@ -3006,7 +3482,7 @@
 1 FAMC @F44@
 1 FAMS @F42@
 1 FAMS @F43@
-0 @P195@ INDI 
+0 @P194@ INDI 
 1 NAME Bartholomeus /Mulder/
 1 SEX M
 1 UID 78D36303D927AC4F88B3811B9505E87E8329
@@ -3015,7 +3491,7 @@
 1 DEAT 
 2 DATE 7 JUN 1988
 1 FAMS @F44@
-0 @P196@ INDI 
+0 @P195@ INDI 
 1 NAME Johanna /Klazine/
 1 SEX F
 1 UID AB7AACAC504C15439DC1303D6ED13732E476
@@ -3026,19 +3502,19 @@
 2 DATE 28 SEP 2012
 2 PLAC Melbourne, VIC, Australia
 1 FAMS @F44@
-0 @P197@ INDI 
+0 @P196@ INDI 
 1 NAME Johanna Ella /Visser/
 1 SEX F
 1 UID CFA531C3973C0345B40A476AA85A5C6CBCD7
 1 FAMS @F42@
-0 @P198@ INDI 
+0 @P197@ INDI 
 1 SEX F
 1 NAME Sharon Leane /Mulder/
 1 UID 2773E1276EA28F45AEAE4886C8FFB3628CFC
 1 BIRT 
 2 DATE 12 SEP 1971
 1 FAMC @F42@
-0 @P199@ INDI 
+0 @P198@ INDI 
 1 RESI 
 2 PLAC St. John, Birkenhead, Cheshire, England
 2 SOUR @S445586369@
@@ -3124,12 +3600,12 @@
 1 UID F735421DFD4F26488C6C8041B2FF797CA4B1
 1 DEAT Y
 1 OBJE
-2 FILE http://trees.ancestry.com/rd?f=image&guid=6fc6712b-ddf8-489f-987b-1662c279dd92&tid=167956472&pid=199
+2 FILE http://trees.ancestry.com/rd?f=image&guid=6fc6712b-ddf8-489f-987b-1662c279dd92&tid=167956472&pid=198
 2 FORM jpg
 2 TITL Death - Edmund Burrows (1941D1-B-0155)
 1 FAMC @F90@
 1 FAMS @F48@
-0 @P200@ INDI 
+0 @P199@ INDI 
 1 BIRT 
 2 DATE abt 1871
 2 PLAC Liverpool, Lancashire, England
@@ -3168,7 +3644,7 @@
 1 UID 925B330DDC487E4991290578759077A16CFD
 1 FAMC @F49@
 1 FAMS @F48@
-0 @P201@ INDI 
+0 @P200@ INDI 
 1 NAME Sathayamma
 1 SEX F
 1 UID 14E8275A194857459D0B70B73B2E21F2C5B5
@@ -3176,27 +3652,27 @@
 2 PLAC Chilkoor, Andhra Pradesh, India
 1 FAMC @F95@
 1 FAMS @F64@
-0 @P202@ INDI 
+0 @P201@ INDI 
 1 NAME Pochima
 1 SEX F
 1 UID 0F58EA0688DB5841B2038560BF915BB74F73
 1 FAMS @F95@
-0 @P203@ INDI 
+0 @P202@ INDI 
 1 SEX F
 1 NAME Alice
 1 FAMS @F45@
-0 @P204@ INDI 
+0 @P203@ INDI 
 1 NAME Percy /Bates/
 1 SEX M
 1 UID 66E379140C18E546936E57A4F6054DAA1352
 1 FAMC @F46@
 1 FAMS @F45@
-0 @P205@ INDI 
+0 @P204@ INDI 
 1 NAME /Bates/
 1 SEX M
 1 UID B180C39B1E76904FBB3110915E33D9484169
 1 FAMS @F46@
-0 @P206@ INDI 
+0 @P205@ INDI 
 1 NAME Catherine /Burrows/
 2 SOUR @S445248254@
 3 PAGE Class: RG11; Piece: 3692; Folio: 52; Page: 10; GSU roll: 1341884
@@ -3230,7 +3706,7 @@
 3 _APID 1,7572::9178385
 1 SEX F
 1 FAMS @F90@
-0 @P207@ INDI 
+0 @P206@ INDI 
 1 NAME John /Burrows/
 2 SOUR @S445586204@
 3 PAGE Liverpool Record Office; Liverpool, England; Reference Number: 283 LEO/3/1
@@ -3279,7 +3755,7 @@
 3 _APID 1,7572::9178397
 1 SEX M
 1 FAMS @F90@
-0 @P208@ INDI 
+0 @P207@ INDI 
 1 BIRT 
 2 DATE abt 1907
 2 PLAC Bootle, Lancashire, England
@@ -3298,7 +3774,7 @@
 3 _APID 1,2352::22520478
 1 SEX F
 1 FAMC @F48@
-0 @P209@ INDI 
+0 @P208@ INDI 
 1 BIRT 
 2 DATE abt 1904
 2 PLAC Bootle, Lancashire, England
@@ -3317,7 +3793,7 @@
 3 _APID 1,2352::22520477
 1 SEX M
 1 FAMC @F48@
-0 @P210@ INDI 
+0 @P209@ INDI 
 1 BIRT 
 2 DATE abt 1902
 2 PLAC Bootle, Lancashire, England
@@ -3336,13 +3812,13 @@
 3 _APID 1,2352::22520476
 1 SEX M
 1 FAMC @F48@
-0 @P211@ INDI 
+0 @P210@ INDI 
 1 NAME Charles /Richardson/
 1 SEX M
 1 UID A8FF4B996D804343B1C802C6BBC6B432A6A7
 1 DEAT Y
 1 FAMS @F49@
-0 @P212@ INDI 
+0 @P211@ INDI 
 1 NAME Elizabeth /Irving/
 1 SEX F
 1 UID 262CD3E35C8A554DA9CCF4C41FA73C5D1CF8
@@ -3352,21 +3828,21 @@
 2 DATE 24 DEC 1924
 1 FAMC @F50@
 1 FAMS @F49@
-0 @P213@ INDI 
+0 @P212@ INDI 
 1 NAME John /Irving/
 1 SEX M
 1 UID D3999C1A5DDD0E4590C4FF26A850030A2D09
 1 DEAT 
 2 DATE 25 DEC 1871
 1 FAMS @F50@
-0 @P214@ INDI 
+0 @P213@ INDI 
 1 NAME Jean /McGuffoge/
 1 SEX F
 1 UID 220AD82FBF967E4D98FE3C2930DAE1366F1D
 1 DEAT 
 2 DATE 5 OCT 1863
 1 FAMS @F50@
-0 @P215@ INDI 
+0 @P214@ INDI 
 1 NAME James /Freeth/
 1 SEX M
 1 UID 55322AE48DEFDB47BBAC9E7032E594B508D0
@@ -3382,7 +3858,7 @@
 1 FAMC @F55@
 1 FAMS @F52@
 1 FAMS @F53@
-0 @P216@ INDI 
+0 @P215@ INDI 
 1 NAME Lydia /Such/
 1 SEX F
 1 UID A33E6E76281F7747ACE528A0CBF90961516B
@@ -3392,12 +3868,12 @@
 2 DATE MAR 1848
 2 PLAC Kings Norton
 1 FAMS @F52@
-0 @P217@ INDI 
+0 @P216@ INDI 
 1 NAME /Newbold/
 1 SEX M
 1 UID 190DC0F12EA4184D934685C4FC0D1B2C80D6
 1 FAMS @F54@
-0 @P218@ INDI 
+0 @P217@ INDI 
 1 NAME Hannah
 1 SEX F
 1 UID 6525ACB2EA55CA4FB13041F5A4D315CDB05E
@@ -3407,7 +3883,7 @@
 1 DEAT 
 2 DATE MAR 1867
 1 FAMS @F54@
-0 @P219@ INDI 
+0 @P218@ INDI 
 1 NAME Job /Freeth/
 1 SEX M
 1 UID 29EDF9812E19164E87FF80D18B5AF28E7765
@@ -3421,46 +3897,46 @@
 2 PLAC Harborne, Staffordshire, England
 1 FAMC @F56@
 1 FAMS @F55@
-0 @P220@ INDI 
+0 @P219@ INDI 
 1 NAME Nancy /Smallwood/
 1 SEX F
 1 UID CB7DE15037F795439F3C524D9E74BF743E8E
 1 FAMS @F55@
-0 @P221@ INDI 
+0 @P220@ INDI 
 1 NAME Mary /Tollis/
 1 SEX F
 1 UID 5FDDA26CFD88CD418EB5759407D12E588782
 1 FAMS @F53@
-0 @P222@ INDI 
+0 @P221@ INDI 
 1 NAME Joseph /Freeth/
 1 SEX M
 1 UID E57B08BE876F734E9871297F1D6B64EA649F
 1 FAMS @F56@
-0 @P223@ INDI 
+0 @P222@ INDI 
 1 NAME Frances /Henn/
 1 SEX F
 1 UID 0A97DE24AC6A3248862420F773D00897D62D
 1 FAMS @F56@
-0 @P224@ INDI 
+0 @P223@ INDI 
 1 NAME Chandrikalla
 1 SEX F
 1 UID 79BA629EE9B1C146980C47522B06BFE4E5D7
 1 FAMC @F95@
 1 FAMS @F63@
-0 @P225@ INDI 
+0 @P224@ INDI 
 1 NAME David /Stone/
 1 SEX M
 1 BIRT 
 2 DATE 30 JUL 1997
 1 FAMC @F63@
-0 @P226@ INDI 
+0 @P225@ INDI 
 1 NAME Walter /Davis/
 2 SOUR @S445247785@
 3 PAGE Surrey History Centre; Woking, Surrey, England
 3 _APID 1,4779::1358040949
 1 SEX M
 1 FAMS @F93@
-0 @P227@ INDI 
+0 @P226@ INDI 
 1 BAPM 
 2 DATE 15 Jul 1906
 2 PLAC Parkstone St Peter, Dorset, England
@@ -3495,7 +3971,7 @@
 1 DEAT 
 2 DATE 1965
 1 FAMC @F57@
-0 @P228@ INDI 
+0 @P227@ INDI 
 1 BIRT 
 2 DATE 1910
 2 PLAC Upper Parkstone, Dorset, England
@@ -3517,7 +3993,7 @@
 1 DEAT 
 2 DATE 1913
 1 FAMC @F57@
-0 @P229@ INDI 
+0 @P228@ INDI 
 1 NAME Walter Henry /Thorne/
 2 SOUR @S445248134@
 3 PAGE The National Archives of the UK (TNA); Kew, Surrey, England; Census Returns of England and Wales, 1891; Class: RG12; Piece: 901; Folio: 119; Page: 25; GSU roll: 6096011
@@ -3646,7 +4122,7 @@
 3 _APID 1,7814::11125303
 1 FAMC @F82@
 1 FAMS @F58@
-0 @P230@ INDI 
+0 @P229@ INDI 
 1 BIRT 
 2 DATE 1856
 2 PLAC Alfreton, Derbyshire, England
@@ -3727,7 +4203,7 @@
 1 DEAT Y
 1 FAMC @F59@
 1 FAMS @F58@
-0 @P231@ INDI 
+0 @P230@ INDI 
 1 BIRT 
 2 DATE 1886
 1 DEAT 
@@ -3737,12 +4213,12 @@
 1 UID DAF69BA760C0444C9733D45BF639C8F5A7F7
 1 NOTE Maybe died in Merriden, WA?
 1 FAMS @F66@
-0 @P232@ INDI 
+0 @P231@ INDI 
 1 NAME Emily
 1 SEX F
 1 UID 054348D089DF1640901DB81C7BE426FF23E4
 1 FAMS @F66@
-0 @P233@ INDI 
+0 @P232@ INDI 
 1 BAPM 
 2 DATE 27 Apr 1902
 2 PLAC Branksome St Aldhelm, Dorset, England
@@ -3810,7 +4286,7 @@
 3 _APID 1,6598::24935872
 1 SEX M
 1 FAMC @F58@
-0 @P234@ INDI 
+0 @P233@ INDI 
 1 NAME Ann Mary /Bown/
 2 SOUR @S445308664@
 3 PAGE Class: RG 9; Piece: 1330; Folio: 28; Page: 22; GSU roll: 542796
@@ -3858,7 +4334,7 @@
 3 _APID 1,8767::17589224
 1 SEX F
 1 FAMS @F82@
-0 @P235@ INDI 
+0 @P234@ INDI 
 1 BAPM 
 2 DATE 6 Jan 1822
 2 PLAC Sturminster Newton, Dorset, England
@@ -3941,7 +4417,7 @@
 1 OCCU Auctioneer
 1 FAMC @F87@
 1 FAMS @F82@
-0 @P236@ INDI 
+0 @P235@ INDI 
 1 BIRT 
 2 DATE 1828
 2 PLAC Poole, Dorset, England
@@ -4042,7 +4518,7 @@
 1 OCCU Excise Officer
 1 FAMC @F96@
 1 FAMS @F59@
-0 @P237@ INDI 
+0 @P236@ INDI 
 1 DEAT Y
 2 DATE 25 Jan 1917
 2 PLAC Poole, Dorset, England
@@ -4173,7 +4649,7 @@
 1 UID AC3549E18B774C4CA881E02323A4CFF05747
 1 FAMC @F62@
 1 FAMS @F59@
-0 @P238@ INDI 
+0 @P237@ INDI 
 1 NAME John /Talbot/
 2 SOUR @S445309028@
 3 PAGE Dorset History Centre; Dorchester, England; Reference: PE/LOF
@@ -4182,7 +4658,7 @@
 3 _APID 1,9849::947671
 1 SEX M
 1 FAMS @F96@
-0 @P239@ INDI 
+0 @P238@ INDI 
 1 BIRT 
 2 DATE 1860
 2 PLAC Marnhull, Dorset, England
@@ -4249,7 +4725,7 @@
 3 _APID 1,8767::17585427
 1 SEX F
 1 FAMC @F59@
-0 @P240@ INDI 
+0 @P239@ INDI 
 1 BIRT 
 2 DATE 1862
 2 PLAC Marnhull Dorset England
@@ -4277,7 +4753,7 @@
 3 PAGE London Metropolitan Archives; London, England; Reference Number: p85/mry2/028
 3 _APID 1,1623::2557009
 1 FAMC @F59@
-0 @P241@ INDI 
+0 @P240@ INDI 
 1 BIRT 
 2 DATE 1853
 2 PLAC Southwick, Staffordshire, England
@@ -4308,7 +4784,7 @@
 3 _APID 1,8767::17585425
 1 SEX F
 1 FAMC @F59@
-0 @P242@ INDI 
+0 @P241@ INDI 
 1 BIRT 
 2 DATE 12 May 1799
 2 PLAC Harn St Church, Dorset, England
@@ -4356,7 +4832,7 @@
 1 UID EAE031B90229674F8297EEACB618F898A644
 1 FAMC @F89@
 1 FAMS @F62@
-0 @P243@ INDI 
+0 @P242@ INDI 
 1 NAME James /Snook/
 2 SOUR @S445310018@
 3 _APID 1,9841::118282081
@@ -4430,7 +4906,7 @@
 3 PAGE Class: RG11; Piece: 2118; Folio: 8; Page: 7; GSU roll: 1341512
 3 _APID 1,7572::3777777
 1 FAMS @F62@
-0 @P244@ INDI 
+0 @P243@ INDI 
 1 NAME Mary /Adams/
 1 SEX F
 1 UID DE16261303B02A4395CF0A4359F5E362912F
@@ -4439,14 +4915,14 @@
 2 DATE 18 MAY 1916
 2 PLAC England
 1 FAMC @F60@
-0 @P245@ INDI 
+0 @P244@ INDI 
 1 NAME Stanley /Adams/
 1 SEX M
 1 UID 8439326668E97847BEAEAB6B94975E32A261
 1 BIRT 
 2 PLAC England
 1 FAMC @F60@
-0 @P246@ INDI 
+0 @P245@ INDI 
 1 BIRT 
 2 DATE APR 1920
 2 PLAC Tamworth, Staffordshire, England
@@ -4469,7 +4945,7 @@
 1 DEAT 
 2 DATE 23 MAR 2020
 1 FAMC @F60@
-0 @P247@ INDI 
+0 @P246@ INDI 
 1 NAME Emily
 2 SOUR @S445310018@
 3 _APID 1,9841::58732278
@@ -4504,7 +4980,7 @@
 3 _APID 1,7572::22473089
 1 SEX F
 1 FAMS @F91@
-0 @P248@ INDI 
+0 @P247@ INDI 
 1 NAME William Henry /Adams/
 1 BIRT 
 2 DATE abt 1841
@@ -4524,7 +5000,7 @@
 3 _APID 1,7572::22473103
 1 SEX M
 1 FAMS @F91@
-0 @P249@ INDI 
+0 @P248@ INDI 
 1 BAPM 
 2 DATE 23 Oct 1904
 2 PLAC Warwickshire, England
@@ -4553,7 +5029,7 @@
 1 SEX M
 1 UID AFC84D75EEB50C4DA9BCFBBB0B69FCE9A928
 1 FAMC @F60@
-0 @P250@ INDI 
+0 @P249@ INDI 
 1 BIRT 
 2 DATE 1899
 2 PLAC Birmingham, Warwickshire, England
@@ -4594,7 +5070,7 @@
 1 SEX F
 1 FAMC @F60@
 1 FAMS @F84@
-0 @P251@ INDI 
+0 @P250@ INDI 
 1 BIRT 
 2 DATE 1907
 2 PLAC Sutton Coldfield, Warwickshire, England
@@ -4614,11 +5090,11 @@
 1 SEX F
 1 UID 6EA78D03A2FDB0468004CCB3FD42E6E54721
 1 FAMC @F60@
-0 @P252@ INDI 
+0 @P251@ INDI 
 1 SEX M
 1 NAME /Green/
 1 FAMS @F84@
-0 @P253@ INDI 
+0 @P252@ INDI 
 1 NAME Leslie Bernard /Dean/
 2 SOUR @S445304483@
 3 _APID 1,1623::21844656
@@ -4639,7 +5115,7 @@
 2 SOUR @S445250099@
 3 _APID 1,61596::45590426
 1 FAMS @F81@
-0 @P254@ INDI 
+0 @P253@ INDI 
 1 SEX M
 2 SOUR @S445250099@
 3 _APID 1,61596::45590429
@@ -4656,7 +5132,7 @@
 2 SOUR @S445250099@
 3 _APID 1,61596::45590429
 1 FAMC @F81@
-0 @P257@ INDI 
+0 @P256@ INDI 
 1 NAME Jack S /Stone/
 1 SEX M
 1 UID 889E6F6CCE049449B82B6F58528D2AC427C3
@@ -4664,7 +5140,7 @@
 2 DATE 18 MAY 1874
 1 DEAT Y
 1 FAMC @F61@
-0 @P258@ INDI 
+0 @P257@ INDI 
 1 NAME Alice Maude /Stone/
 1 SEX F
 1 UID C93A63B59BA8454F855D6DC83BB25DD2253D
@@ -4672,7 +5148,7 @@
 2 DATE 1876
 1 DEAT Y
 1 FAMC @F61@
-0 @P259@ INDI 
+0 @P258@ INDI 
 1 NAME Ettie Mary /Stone/
 1 SEX F
 1 UID 4511F51D99518947AE1E718C043F66E97DD4
@@ -4680,12 +5156,12 @@
 2 DATE 2 SEP 1878
 1 DEAT Y
 1 FAMC @F61@
-0 @P260@ INDI 
+0 @P259@ INDI 
 1 NAME Wilfred Joseph /Stone/
 1 SEX M
 1 UID BD029F34FFD73740904A9DB27068F015E576
 1 FAMC @F61@
-0 @P261@ INDI 
+0 @P260@ INDI 
 1 NAME Evan Harold /Stone/
 1 SEX M
 1 UID 0DB38FF45FAF154AB8AF67A1286D98CB17E2
@@ -4693,20 +5169,20 @@
 2 DATE 9 MAY 1886
 1 DEAT Y
 1 FAMC @F61@
-0 @P262@ INDI 
+0 @P261@ INDI 
 1 NAME William Ernest /Stone/
 1 SEX M
 1 UID 97F344457AB59A48BD3432CECC46C001E8FA
 1 BIRT 
 2 DATE 30 JUL 1889
 1 FAMC @F61@
-0 @P263@ INDI 
+0 @P262@ INDI 
 1 NAME Martha /Wall/
 1 SEX F
 1 UID 636C54B8C3DD35429CC9C3E09922BB6DDD79
 1 DEAT Y
 1 FAMS @F94@
-0 @P264@ INDI 
+0 @P263@ INDI 
 1 BIRT 
 2 DATE abt 1836
 2 PLAC Poole, Dorset, England
@@ -4725,11 +5201,11 @@
 3 _APID 1,8860::5558245
 1 SEX M
 1 FAMC @F62@
-0 @P265@ INDI 
+0 @P264@ INDI 
 1 SEX F
 1 NAME Elizabeth
 1 FAMS @F89@
-0 @P266@ INDI 
+0 @P265@ INDI 
 1 BIRT 
 2 DATE Bef. 17 Jun 1764
 2 PLAC Wimborne, Dorset
@@ -4739,31 +5215,31 @@
 1 SEX M
 1 NAME Richard /Cane/
 1 FAMS @F89@
-0 @P267@ INDI 
+0 @P266@ INDI 
 1 SEX F
 1 NAME Minnie /Street/
 1 FAMC @F66@
-0 @P268@ INDI 
+0 @P267@ INDI 
 1 SEX F
 1 NAME Elizabeth /Street/
 1 NOTE Twin of Emily
 2 CONT Moved to Canada
 1 FAMC @F66@
 1 FAMS @F86@
-0 @P269@ INDI 
+0 @P268@ INDI 
 1 SEX M
 1 NAME George /Street/
 1 FAMC @F66@
-0 @P270@ INDI 
+0 @P269@ INDI 
 1 SEX F
 1 NAME Nellie /Street/
 1 FAMC @F66@
-0 @P271@ INDI 
+0 @P270@ INDI 
 1 SEX F
 1 NAME Gertrude /Street/
 1 FAMC @F66@
 1 FAMS @F85@
-0 @P272@ INDI 
+0 @P271@ INDI 
 1 RESI 
 2 DATE 1980
 2 PLAC Cargelligo, Riverina, New South Wales, Australia
@@ -4778,7 +5254,7 @@
 1 SEX M
 1 UID 1340188E09011540B22B45FEC35641DFB1BF
 1 FAMC @F67@
-0 @P273@ INDI 
+0 @P272@ INDI 
 1 RESI 
 2 DATE 1968
 2 PLAC Cargelligo, Riverina, New South Wales, Australia
@@ -4795,7 +5271,7 @@
 2 DATE 2 JUL 1937
 2 PLAC Gosford, NSW, Australia
 1 FAMC @F67@
-0 @P274@ INDI 
+0 @P273@ INDI 
 1 NAME Dawn Anne Vera /Rutledge/
 1 SEX F
 1 UID 520CEA1EA146914C8AF73DCA7697CC5FEA0F
@@ -4803,7 +5279,7 @@
 2 DATE 23 Feb 1950
 2 PLAC West Wyalong, NSW, Australia
 1 FAMC @F67@
-0 @P275@ INDI 
+0 @P274@ INDI 
 1 DEAT 
 2 DATE 1 Aug 2008
 1 BIRT 
@@ -4814,7 +5290,7 @@
 1 BURI 
 2 DATE 12 Aug 2008
 1 FAMC @F67@
-0 @P276@ INDI 
+0 @P275@ INDI 
 1 RESI 
 2 DATE 1958
 2 PLAC West Wyalong, Riverina, New South Wales, Australia
@@ -4859,7 +5335,7 @@
 3 _APID 1,1266::514146
 1 FAMC @F78@
 1 FAMS @F68@
-0 @P277@ INDI 
+0 @P276@ INDI 
 1 BIRT 
 2 DATE 28 JAN 1884
 2 PLAC Seppeltsfield
@@ -4883,7 +5359,7 @@
 2 DATE 29 APR 1956
 1 FAMC @F69@
 1 FAMS @F68@
-0 @P278@ INDI 
+0 @P277@ INDI 
 1 NAME Ada /Norman/
 1 SEX F
 1 UID 0C18284692C01A46A18FC28857742F25DDD8
@@ -4893,7 +5369,7 @@
 1 DEAT 
 2 DATE 23 APR 1971
 1 FAMC @F68@
-0 @P279@ INDI 
+0 @P278@ INDI 
 1 NAME Reuvin Frank /Norman/
 1 SEX M
 1 UID C710644D49DBFB4F9FEAC95CBC1312890EE1
@@ -4902,7 +5378,7 @@
 2 DATE 10 OCT 1918
 2 PLAC Temora, NSW, Australia
 1 FAMC @F68@
-0 @P280@ INDI 
+0 @P279@ INDI 
 1 NAME Walter William /Norman/
 1 SEX M
 1 UID 9DCB81801F7B8F4499CCB8130EA8FDA25BD1
@@ -4912,17 +5388,17 @@
 1 DEAT 
 2 DATE 1 AUG 1988
 1 FAMC @F68@
-0 @P281@ INDI 
+0 @P280@ INDI 
 1 NAME Elizabith Julihana /Ziebarth/
 2 SOUR @S445255328@
 3 _APID 1,1778::305884723
 1 FAMS @F78@
-0 @P282@ INDI 
+0 @P281@ INDI 
 1 NAME Elias Rovan /Normann/
 2 SOUR @S445255328@
 3 _APID 1,1778::155884723
 1 FAMS @F78@
-0 @P283@ INDI 
+0 @P282@ INDI 
 1 NAME Maria /Wenke/
 2 SOUR @S445255328@
 3 _APID 1,1778::305660322
@@ -4942,7 +5418,7 @@
 2 PLAC Ebenezer, SA, Australia
 1 FAMC @F73@
 1 FAMS @F69@
-0 @P284@ INDI 
+0 @P283@ INDI 
 1 NAME August Franz /Krause/
 2 SOUR @S445255328@
 3 _APID 1,1778::155660322
@@ -4958,17 +5434,17 @@
 2 PLAC Seppeltsfield, SA, Australia
 1 FAMC @F72@
 1 FAMS @F69@
-0 @P285@ INDI 
+0 @P284@ INDI 
 1 NAME Carl August Franz /Krause/
 1 SEX M
 1 UID 5D9B48A5E9A7E04CB29DDBDB15977D421154
 1 FAMS @F72@
-0 @P286@ INDI 
+0 @P285@ INDI 
 1 NAME Friedke /Friese/
 1 SEX F
 1 UID 90416033B305D247BB786EC123E3E19715FB
 1 FAMS @F72@
-0 @P287@ INDI 
+0 @P286@ INDI 
 1 NAME Johannes Franz /Krause/
 1 SEX M
 1 UID 736831377BC6804184DFC24BB93BA9F44667
@@ -4978,7 +5454,7 @@
 2 DATE 30 MAR 1882
 2 PLAC near Greenoch, Barossa, SA, Australia
 1 FAMC @F69@
-0 @P288@ INDI 
+0 @P287@ INDI 
 1 NAME Franz Hermann /Krause/
 1 SEX M
 1 UID ED19816BD7F16545A53762DD3066FBD6E696
@@ -4989,7 +5465,7 @@
 2 DATE 7 AUG 1887
 2 PLAC Seppeltsfield, SA, Australia
 1 FAMC @F69@
-0 @P289@ INDI 
+0 @P288@ INDI 
 1 NAME Franz August /Krause/
 1 SEX M
 1 UID EB0FE1E34C3EFC41A41250DB856AB6FD0841
@@ -5000,7 +5476,7 @@
 2 DATE 30 JUL 1949
 1 FAMC @F69@
 1 FAMS @F70@
-0 @P290@ INDI 
+0 @P289@ INDI 
 1 NAME Amanda Emilie /Krause/
 1 SEX F
 1 UID 05352D8D0C583341B7DB5A3EDA38E1E2CB64
@@ -5011,7 +5487,7 @@
 2 DATE 6 FEB 1964
 1 FAMC @F69@
 1 FAMS @F79@
-0 @P291@ INDI 
+0 @P290@ INDI 
 1 BIRT 
 2 DATE 2 JUL 1900
 2 PLAC Seppeltsfield, SA, Australia
@@ -5034,7 +5510,7 @@
 1 UID 83CFC93E7C18ED45A33033B2E8C12A14BE5B
 1 FAMC @F69@
 1 FAMS @F71@
-0 @P292@ INDI 
+0 @P291@ INDI 
 1 NAME Adam /Wenke/
 1 SEX M
 1 UID 27FD3451900C264986E85DD5E6ED23428C4F
@@ -5046,7 +5522,7 @@
 2 PLAC Bethel, District of Kapunda, SA, Australia
 1 FAMC @F75@
 1 FAMS @F73@
-0 @P293@ INDI 
+0 @P292@ INDI 
 1 NAME Anna /Lieschke/
 1 SEX F
 1 UID E0ACBEC87835E0458BF1C1DD82CD095CB257
@@ -5061,11 +5537,11 @@
 2 PLAC Hamburg, Germany
 1 FAMC @F76@
 1 FAMS @F73@
-0 @P294@ INDI 
+0 @P293@ INDI 
 1 SEX F
 1 NAME Eveline Elfrieda /Zimmermann/
 1 FAMS @F70@
-0 @P295@ INDI 
+0 @P294@ INDI 
 1 BIRT 
 2 DATE 15 DEC 1885
 1 DEAT 
@@ -5073,7 +5549,7 @@
 1 SEX M
 1 NAME Attwell /Fechner/
 1 FAMS @F79@
-0 @P296@ INDI 
+0 @P295@ INDI 
 1 DEAT 
 2 DATE 16 May 1992
 2 SOUR @S445277139@
@@ -5086,17 +5562,17 @@
 2 SOUR @S445277139@
 3 _APID 1,60528::3240396
 1 FAMS @F71@
-0 @P297@ INDI 
+0 @P296@ INDI 
 1 NAME Andreas /Wenk/
 1 SEX M
 1 UID 7AAFE3E4DAD7F6409A78E8374CF8C1EDFA52
 1 FAMS @F75@
-0 @P298@ INDI 
+0 @P297@ INDI 
 1 NAME Anna /Duerlich/
 1 SEX F
 1 UID AA47E8047B454446AB68D95FC59C921D82D0
 1 FAMS @F75@
-0 @P299@ INDI 
+0 @P298@ INDI 
 1 BIRT 
 2 DATE 10 JUN 1796
 2 PLAC Rachlau, Upper Lusatia, Germany
@@ -5128,10 +5604,10 @@
 1 SOUR @S445277511@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=167956472&pid=299
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=167956472&pid=298
 1 FAMC @F77@
 1 FAMS @F76@
-0 @P300@ INDI 
+0 @P299@ INDI 
 1 NAME Maria /Jannasch/
 1 SEX F
 1 UID 87847CFBD401C2468E970A551AAE2A794E6D
@@ -5139,7 +5615,7 @@
 2 DATE 5 Sep 1851
 2 PLAC Hamburg, Germany
 1 FAMS @F76@
-0 @P301@ INDI 
+0 @P300@ INDI 
 1 NAME Magdalene /Wenke/
 1 SEX F
 1 UID 357086E2D26BA84796FA2BF437B778E53350
@@ -5149,7 +5625,7 @@
 1 DEAT 
 2 DATE 20 JAN 1902
 1 FAMC @F75@
-0 @P302@ INDI 
+0 @P301@ INDI 
 1 NAME Michael /Wenke/
 1 SEX M
 1 UID 6EBB37BF635E7E4E9B2999A2AE5786396F9B
@@ -5158,7 +5634,7 @@
 2 PLAC Rachlau, Upper Lusatia, Germany
 1 DEAT Y
 1 FAMC @F75@
-0 @P303@ INDI 
+0 @P302@ INDI 
 1 BIRT 
 2 DATE 1834
 1 DEAT 
@@ -5166,7 +5642,7 @@
 1 SEX M
 1 NAME Jacob /Lieschke/
 1 FAMC @F76@
-0 @P304@ INDI 
+0 @P303@ INDI 
 1 BIRT 
 2 DATE 1831
 1 DEAT 
@@ -5178,7 +5654,7 @@
 2 PLAC Hamburg, Hamburg, Germany
 1 FAMC @F76@
 1 FAMS @F80@
-0 @P305@ INDI 
+0 @P304@ INDI 
 1 BIRT 
 2 PLAC Rachlau, Upper Lusatia, Germany
 1 NAME Agnese /Zwahr/
@@ -5187,9 +5663,9 @@
 1 SOUR @S445277511@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=167956472&pid=305
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=167956472&pid=304
 1 FAMS @F77@
-0 @P306@ INDI 
+0 @P305@ INDI 
 1 BIRT 
 2 DATE 11 APR 1771
 2 PLAC Rachlau, Upper Lusatia, Germany
@@ -5200,9 +5676,9 @@
 1 SOUR @S445277511@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=167956472&pid=306
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=167956472&pid=305
 1 FAMS @F77@
-0 @P307@ INDI 
+0 @P306@ INDI 
 1 BIRT 
 2 DATE 1800
 2 PLAC Rachlau, Bautzen, Sachsen, Germany (Rascha)
@@ -5213,13 +5689,13 @@
 1 SOUR @S445277511@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=167956472&pid=307
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=167956472&pid=306
 1 FAMC @F77@
-0 @P308@ INDI 
+0 @P307@ INDI 
 1 SEX F
 1 NAME Maria /Altus/
 1 FAMS @F80@
-0 @P309@ INDI 
+0 @P308@ INDI 
 1 BIRT 
 2 DATE abt 1802
 2 PLAC Sturminster, Dorset, England
@@ -5341,7 +5817,7 @@
 2 PLAC Dorchester, Dorset, England
 1 FAMC @F88@
 1 FAMS @F87@
-0 @P310@ INDI 
+0 @P309@ INDI 
 1 NAME Robert /Thorne/
 2 SOUR @S445309028@
 3 PAGE Dorset History Centre; Dorchester, England; Reference: PE/SN: RE 1/3-4, 2/1-5, 3/1-4
@@ -5393,7 +5869,7 @@
 3 _APID 1,9852::34188992
 1 SEX M
 1 FAMS @F87@
-0 @P311@ INDI 
+0 @P310@ INDI 
 1 BIRT 
 2 DATE 1863
 2 PLAC Sturminster, Dorset, England
@@ -5436,7 +5912,7 @@
 3 _APID 1,8767::17589229
 1 SEX F
 1 FAMC @F82@
-0 @P312@ INDI 
+0 @P311@ INDI 
 1 BIRT 
 2 DATE 1869
 2 PLAC Sturminster Dorset England
@@ -5455,7 +5931,7 @@
 3 _APID 1,7619::4350106
 1 SEX F
 1 FAMC @F82@
-0 @P313@ INDI 
+0 @P312@ INDI 
 1 BIRT 
 2 DATE 1862
 2 PLAC Sturminster Dorset England
@@ -5474,7 +5950,7 @@
 3 _APID 1,7619::4350104
 1 SEX M
 1 FAMC @F82@
-0 @P314@ INDI 
+0 @P313@ INDI 
 1 BIRT 
 2 DATE 1859
 2 PLAC Sturminster, Dorset, England
@@ -5505,7 +5981,7 @@
 3 _APID 1,8767::17589228
 1 SEX M
 1 FAMC @F82@
-0 @P315@ INDI 
+0 @P314@ INDI 
 1 BIRT 
 2 DATE 23 Mar 1857
 2 PLAC Sturminster Newton, Dorset, England
@@ -5564,7 +6040,7 @@
 1 SEX M
 1 FAMC @F82@
 1 FAMS @F83@
-0 @P316@ INDI 
+0 @P315@ INDI 
 1 BIRT 
 2 DATE 1853
 2 PLAC Sturminster, Dorset, England
@@ -5583,7 +6059,7 @@
 3 _APID 1,8767::17589225
 1 SEX F
 1 FAMC @F82@
-0 @P317@ INDI 
+0 @P316@ INDI 
 1 SEX F
 1 NAME Keturah /Adella/
 2 SOUR @S445309993@
@@ -5591,37 +6067,37 @@
 4 CONC . District Court for the District of Oregon, 1859-1941; 
 3 _APID 1,2530::900047745
 1 FAMS @F83@
-0 @P318@ INDI 
+0 @P317@ INDI 
 1 SEX M
 1 NAME /Gishuble/
 1 FAMS @F85@
-0 @P319@ INDI 
+0 @P318@ INDI 
 1 SEX M
 1 NAME Robert /Binnie/
 1 FAMC @F86@
-0 @P320@ INDI 
+0 @P319@ INDI 
 1 SEX M
 1 NAME /Binnie/
 1 FAMS @F86@
-0 @P321@ INDI 
+0 @P320@ INDI 
 1 NAME Mary /Francis/
 2 SOUR @S445316171@
 3 PAGE Dorset History Centre; Dorchester, England; Dorset Parish Registers; Reference: PE/SN: RE1/4
 3 _APID 1,2243::301384034
 1 SEX F
 1 FAMS @F88@
-0 @P322@ INDI 
+0 @P321@ INDI 
 1 NAME James /Francis/
 2 SOUR @S445316171@
 3 PAGE Dorset History Centre; Dorchester, England; Dorset Parish Registers; Reference: PE/SN: RE1/4
 3 _APID 1,2243::151384034
 1 SEX M
 1 FAMS @F88@
-0 @P323@ INDI 
+0 @P322@ INDI 
 1 SEX F
 1 NAME Martha /Francis/
 1 FAMC @F88@
-0 @P324@ INDI 
+0 @P323@ INDI 
 1 NAME Ann /Burrows/
 2 SOUR @S445248254@
 3 PAGE Class: RG11; Piece: 3692; Folio: 52; Page: 10; GSU roll: 1341884
@@ -5652,7 +6128,7 @@
 3 _APID 1,7572::9178413
 1 SEX F
 1 FAMC @F90@
-0 @P325@ INDI 
+0 @P324@ INDI 
 1 BIRT 
 2 DATE abt 1874
 2 PLAC Birkenhead, Cheshire, England
@@ -5671,7 +6147,7 @@
 3 _APID 1,7572::9178311
 1 SEX M
 1 FAMC @F90@
-0 @P326@ INDI 
+0 @P325@ INDI 
 1 NAME William /Burrows/
 2 SOUR @S445248254@
 3 PAGE Class: RG11; Piece: 3692; Folio: 52; Page: 10; GSU roll: 1341884
@@ -5689,7 +6165,7 @@
 3 _APID 1,7572::9178386
 1 SEX M
 1 FAMC @F90@
-0 @P327@ INDI 
+0 @P326@ INDI 
 1 NAME Mary /Burrows/
 2 SOUR @S445248254@
 3 PAGE Class: RG11; Piece: 3692; Folio: 52; Page: 10; GSU roll: 1341884
@@ -5708,7 +6184,7 @@
 3 _APID 1,7572::9178312
 1 SEX F
 1 FAMC @F90@
-0 @P328@ INDI 
+0 @P327@ INDI 
 1 BIRT 
 2 DATE abt 1878
 2 PLAC Seacombe, Cheshire, England
@@ -5727,7 +6203,7 @@
 3 _APID 1,7572::9178488
 1 SEX F
 1 FAMC @F90@
-0 @P329@ INDI 
+0 @P328@ INDI 
 1 NAME Sarah /Burrows/
 2 SOUR @S445248254@
 3 PAGE Class: RG11; Piece: 3692; Folio: 52; Page: 10; GSU roll: 1341884
@@ -5746,7 +6222,7 @@
 3 _APID 1,7572::9178430
 1 SEX F
 1 FAMC @F90@
-0 @P330@ INDI 
+0 @P329@ INDI 
 1 NAME Peter /Burrows/
 2 SOUR @S445248254@
 3 PAGE Class: RG11; Piece: 3692; Folio: 52; Page: 10; GSU roll: 1341884
@@ -5765,7 +6241,7 @@
 3 _APID 1,7572::9178429
 1 SEX M
 1 FAMC @F90@
-0 @P331@ INDI 
+0 @P330@ INDI 
 1 BAPM 
 2 DATE 10 Mar 1879
 2 PLAC Birmingham, Warwick, England
@@ -5791,7 +6267,7 @@
 3 _APID 1,7572::22473072
 1 SEX F
 1 FAMC @F91@
-0 @P332@ INDI 
+0 @P331@ INDI 
 1 BIRT 
 2 DATE abt 1869
 2 PLAC Birm, Warwickshire, England
@@ -5810,7 +6286,7 @@
 3 _APID 1,7572::22473222
 1 SEX F
 1 FAMC @F91@
-0 @P333@ INDI 
+0 @P332@ INDI 
 1 BIRT 
 2 DATE abt 1864
 2 PLAC Aldershott, Hampshire, England
@@ -5829,7 +6305,7 @@
 3 _APID 1,7572::22473160
 1 SEX M
 1 FAMC @F91@
-0 @P334@ INDI 
+0 @P333@ INDI 
 1 BIRT 
 2 DATE abt 1879
 2 PLAC Birm, Warwickshire, England
@@ -5848,7 +6324,7 @@
 3 _APID 1,7572::22473072
 1 SEX F
 1 FAMC @F91@
-0 @P335@ INDI 
+0 @P334@ INDI 
 1 BIRT 
 2 DATE abt 1869
 2 PLAC Birm, Warwickshire, England
@@ -5867,7 +6343,7 @@
 3 _APID 1,7572::22473222
 1 SEX F
 1 FAMC @F91@
-0 @P336@ INDI 
+0 @P335@ INDI 
 1 BIRT 
 2 DATE abt 1864
 2 PLAC Aldershott, Hampshire, England
@@ -5978,97 +6454,102 @@
 0 @F8@ FAM 
 1 HUSB @P26@
 1 WIFE @P27@
-1 CHIL @P49@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P48@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P47@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P46@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P21@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P44@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P45@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P42@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P43@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P52@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P51@
+1 CHIL @P41@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P50@
 2 _FREL Natural
 2 _MREL Natural
+1 CHIL @P49@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P45@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P21@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P47@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P48@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P40@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P46@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P51@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P44@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR 
+2 DATE 1871
+2 SOUR @S445225173@
+3 PAGE Class: RG14; Piece: 4871; Schedule Number: 23
+3 _APID 1,2352::51201952
 1 MARR 
 2 DATE 4 OCT 1867
 2 PLAC Uckfield, Sussex
 2 SOUR @S445247895@
 3 _APID 1,8913::13408170
 0 @F9@ FAM 
-1 HUSB @P49@
-1 WIFE @P53@
+1 HUSB @P41@
+1 WIFE @P52@
 1 MARR 
 2 DATE 27 DEC 1894
 2 PLAC Waldron, Sussex, England
 0 @F10@ FAM 
-1 HUSB @P48@
-1 WIFE @P54@
+1 HUSB @P50@
+1 WIFE @P53@
 1 MARR 
 2 DATE 9 APR 1893
 2 PLAC Waldron, Sussex, England
 0 @F11@ FAM 
-1 HUSB @P40@
-1 WIFE @P41@
+1 HUSB @P43@
+1 WIFE @P42@
 1 CHIL @P26@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P61@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P59@
 2 _FREL Natural
 2 _MREL Natural
+1 CHIL @P56@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P60@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P62@
+1 CHIL @P61@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 2 DATE 6 JUN 1837
 2 PLAC Framfield, Sussex, England
 0 @F12@ FAM 
-1 HUSB @P63@
-1 WIFE @P64@
+1 HUSB @P62@
+1 WIFE @P63@
 1 CHIL @P32@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P65@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P66@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P67@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 0 @F13@ FAM 
-1 HUSB @P68@
-1 WIFE @P71@
-1 CHIL @P79@
+1 HUSB @P67@
+1 WIFE @P70@
+1 CHIL @P78@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P71@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P72@
@@ -6089,17 +6570,14 @@
 1 CHIL @P77@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P78@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 0 @F14@ FAM 
 1 HUSB @P23@
-1 WIFE @P80@
-1 CHIL @P82@
+1 WIFE @P79@
+1 CHIL @P81@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P81@
+1 CHIL @P80@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6109,27 +6587,27 @@
 3 PAGE General Register Office; United Kingdom; Volume: 5a; Page: 760
 3 _APID 1,8753::55848779
 0 @F15@ FAM 
-1 HUSB @P65@
-1 WIFE @P59@
+1 HUSB @P64@
+1 WIFE @P56@
 1 MARR 
 2 DATE 7 MAY 1868
 2 PLAC Hadlow Down, Sussex, England
 0 @F16@ FAM 
-1 HUSB @P83@
-1 WIFE @P62@
+1 HUSB @P82@
+1 WIFE @P61@
 1 MARR 
 2 DATE 21 JUN 1880
 2 PLAC Buxted, Sussex, England
 0 @F17@ FAM 
-1 HUSB @P55@
-1 WIFE @P56@
+1 HUSB @P54@
+1 WIFE @P55@
+1 CHIL @P85@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P86@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P87@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P88@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P27@
@@ -6137,21 +6615,21 @@
 2 _MREL Natural
 1 MARR 
 0 @F18@ FAM 
-1 HUSB @P89@
-1 WIFE @P90@
-1 CHIL @P95@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P56@
-2 _FREL Natural
-2 _MREL Natural
+1 HUSB @P88@
+1 WIFE @P89@
 1 CHIL @P94@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P55@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P93@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P96@
+1 CHIL @P92@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P95@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6160,15 +6638,15 @@
 2 SOUR @S445248318@
 3 _APID 1,9852::27276720
 0 @F19@ FAM 
-1 HUSB @P99@
-1 WIFE @P86@
+1 HUSB @P98@
+1 WIFE @P85@
 1 MARR 
 2 DATE 20 NOV 1857
 2 PLAC Hadlow Down, Sussex, England
 0 @F20@ FAM 
-1 HUSB @P101@
-1 WIFE @P102@
-1 CHIL @P99@
+1 HUSB @P100@
+1 WIFE @P101@
+1 CHIL @P98@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6176,6 +6654,9 @@
 1 HUSB @P30@
 1 WIFE @P31@
 1 CHIL @P29@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P104@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P105@
@@ -6193,34 +6674,34 @@
 1 CHIL @P109@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P110@
-2 _FREL Natural
-2 _MREL Natural
 0 @F22@ FAM 
-1 HUSB @P100@
-1 WIFE @P87@
+1 HUSB @P99@
+1 WIFE @P86@
 1 MARR 
 2 DATE 20 NOV 1857
 2 PLAC Hadlow Down, Sussex, England
 0 @F23@ FAM 
-1 HUSB @P57@
-1 WIFE @P58@
+1 HUSB @P58@
+1 WIFE @P57@
+1 CHIL @P112@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P113@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P114@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P115@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P117@
-2 _FREL Natural
-2 _MREL Natural
 1 CHIL @P116@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P40@
+1 CHIL @P115@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P43@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P117@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P118@
@@ -6235,27 +6716,24 @@
 1 CHIL @P121@
 2 _FREL Natural
 2 _MREL Natural
+1 CHIL @P98@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P122@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P99@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P123@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 2 DATE 22 APR 1806
 2 PLAC Framfield, Sussex, England
 0 @F24@ FAM 
-1 HUSB @P124@
-1 WIFE @P116@
+1 HUSB @P123@
+1 WIFE @P115@
 1 MARR 
 2 DATE 1 FEB 1837
 2 PLAC Waldron, Sussex, England
 0 @F25@ FAM 
-1 HUSB @P81@
-1 WIFE @P126@
+1 HUSB @P80@
+1 WIFE @P125@
 1 MARR 
 2 DATE Jul-Sep 1968
 2 PLAC Cuckfield, Sussex, United Kingdom
@@ -6263,28 +6741,31 @@
 3 PAGE General Register Office; United Kingdom; Volume: 5h; Page: 396
 3 _APID 1,8753::31902268
 0 @F26@ FAM 
-1 HUSB @P125@
-1 WIFE @P117@
+1 HUSB @P124@
+1 WIFE @P116@
 1 MARR 
 0 @F27@ FAM 
-1 HUSB @P118@
-1 WIFE @P127@
+1 HUSB @P117@
+1 WIFE @P126@
 1 MARR 
 2 DATE 23 APR 1840
 2 PLAC Mayfield, Sussex, England
 0 @F28@ FAM 
-1 HUSB @P98@
-1 WIFE @P97@
+1 HUSB @P97@
+1 WIFE @P96@
+1 CHIL @P129@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P130@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P131@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P132@
+1 CHIL @P89@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P90@
+1 CHIL @P132@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P133@
@@ -6296,28 +6777,28 @@
 1 CHIL @P135@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P136@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 2 DATE 20 JUN 1779
 2 PLAC Burwash, Sussex, England
 2 SOUR @S445248318@
 3 _APID 1,9852::29995116
 0 @F29@ FAM 
-1 HUSB @P91@
-1 WIFE @P92@
-1 CHIL @P89@
+1 HUSB @P90@
+1 WIFE @P91@
+1 CHIL @P88@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F30@ FAM 
-1 HUSB @P111@
-1 WIFE @P112@
-1 CHIL @P141@
+1 HUSB @P110@
+1 WIFE @P111@
+1 CHIL @P140@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P57@
+1 CHIL @P58@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P141@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P142@
@@ -6326,21 +6807,23 @@
 1 CHIL @P143@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P144@
-2 _FREL Natural
-2 _MREL Natural
 1 CHIL @P145@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P146@
+1 CHIL @P144@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 2 DATE 1 APR 1775
 2 PLAC Framfield, Sussex, England
+2 SOUR @S445248318@
+3 _APID 1,9852::14481574
 0 @F31@ FAM 
-1 HUSB @P139@
-1 WIFE @P140@
+1 HUSB @P138@
+1 WIFE @P139@
+1 CHIL @P148@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P149@
 2 _FREL Natural
 2 _MREL Natural
@@ -6350,10 +6833,10 @@
 1 CHIL @P151@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P152@
+1 CHIL @P110@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P111@
+1 CHIL @P152@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P153@
@@ -6362,28 +6845,28 @@
 1 CHIL @P154@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P155@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 2 DATE 11 OCT 1743
 2 PLAC Burwash, Sussex, England
 0 @F32@ FAM 
-1 HUSB @P128@
-1 WIFE @P129@
+1 HUSB @P127@
+1 WIFE @P128@
+1 CHIL @P155@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P97@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P156@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P98@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P157@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F33@ FAM 
-1 HUSB @P147@
-1 WIFE @P148@
+1 HUSB @P146@
+1 WIFE @P147@
+1 CHIL @P159@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P160@
 2 _FREL Natural
 2 _MREL Natural
@@ -6393,19 +6876,16 @@
 1 CHIL @P162@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P163@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P139@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P165@
+1 CHIL @P138@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P164@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P166@
+1 CHIL @P163@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P165@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6414,37 +6894,40 @@
 0 @F34@ FAM 
 1 HUSB @P2@
 1 WIFE @P3@
-1 CHIL @P167@
+1 CHIL @P166@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P1@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P168@
+1 CHIL @P167@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 2 DATE 9 JAN 1993
 2 PLAC Dingley, VIC, Australia
 0 @F35@ FAM 
-1 HUSB @P155@
-1 WIFE @P169@
+1 HUSB @P154@
+1 WIFE @P168@
 1 MARR 
 2 DATE 20 JAN 1787
 2 PLAC Mayfield, Sussex, England
 0 @F36@ FAM 
-1 HUSB @P162@
-1 WIFE @P170@
+1 HUSB @P161@
+1 WIFE @P169@
 1 MARR 
 2 DATE 6 JUN 1732
 2 PLAC East Grinstead, Sussex, England
 0 @F37@ FAM 
-1 HUSB @P158@
-1 WIFE @P159@
-1 CHIL @P171@
+1 HUSB @P157@
+1 WIFE @P158@
+1 CHIL @P170@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P147@
+1 CHIL @P146@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P171@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P172@
@@ -6453,24 +6936,21 @@
 1 CHIL @P173@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P174@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 2 DATE 23 OCT 1665
 2 PLAC Isfield, Sussex, England
 0 @F38@ FAM 
-1 HUSB @P172@
-1 WIFE @P175@
+1 HUSB @P171@
+1 WIFE @P174@
 1 MARR 
 2 DATE 18 MAY 1693
 0 @F39@ FAM 
-1 HUSB @P176@
-1 WIFE @P177@
-1 CHIL @P178@
+1 HUSB @P175@
+1 WIFE @P176@
+1 CHIL @P177@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P179@
+1 CHIL @P178@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P7@
@@ -6479,15 +6959,18 @@
 1 MARR 
 2 DATE 30 DEC 1930
 0 @F40@ FAM 
-1 HUSB @P173@
-1 WIFE @P181@
+1 HUSB @P172@
+1 WIFE @P180@
 1 MARR 
 2 DATE 6 APR 1703
 2 PLAC Keymer, Sussex, England
 0 @F41@ FAM 
-1 HUSB @P182@
-1 WIFE @P189@
+1 HUSB @P181@
+1 WIFE @P188@
 1 CHIL @P5@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P182@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P183@
@@ -6505,10 +6988,7 @@
 1 CHIL @P187@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P188@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P190@
+1 CHIL @P189@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6517,63 +6997,63 @@
 2 SOUR @S445246689@
 3 _APID 1,1780::3512289
 0 @F42@ FAM 
-1 HUSB @P194@
-1 WIFE @P197@
-1 CHIL @P198@
+1 HUSB @P193@
+1 WIFE @P196@
+1 CHIL @P197@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 2 DATE 11 FEB 1961
 0 @F43@ FAM 
-1 HUSB @P194@
-1 WIFE @P82@
+1 HUSB @P193@
+1 WIFE @P81@
 1 MARR 
 2 DATE JUN 2000
 2 PLAC Mt Evelyn, VIC, Australia
 0 @F44@ FAM 
-1 HUSB @P195@
-1 WIFE @P196@
-1 CHIL @P194@
+1 HUSB @P194@
+1 WIFE @P195@
+1 CHIL @P193@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 2 DATE 11 JUN 1936
 0 @F45@ FAM 
-1 HUSB @P204@
-1 WIFE @P203@
-1 CHIL @P126@
+1 HUSB @P203@
+1 WIFE @P202@
+1 CHIL @P125@
 2 _FREL Natural
 2 _MREL Natural
 0 @F46@ FAM 
-1 HUSB @P205@
-1 WIFE @P193@
-1 CHIL @P204@
+1 HUSB @P204@
+1 WIFE @P192@
+1 CHIL @P203@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F47@ FAM 
-1 HUSB @P192@
-1 WIFE @P191@
+1 HUSB @P191@
+1 WIFE @P190@
 1 CHIL @P22@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P193@
+1 CHIL @P192@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F48@ FAM 
-1 HUSB @P199@
-1 WIFE @P200@
-1 CHIL @P177@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P210@
+1 HUSB @P198@
+1 WIFE @P199@
+1 CHIL @P176@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P209@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P208@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P207@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6584,75 +7064,75 @@
 3 _APID 1,2197::1625908
 1 MARR 
 0 @F49@ FAM 
-1 HUSB @P211@
-1 WIFE @P212@
-1 CHIL @P200@
+1 HUSB @P210@
+1 WIFE @P211@
+1 CHIL @P199@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F50@ FAM 
-1 HUSB @P213@
-1 WIFE @P214@
-1 CHIL @P212@
+1 HUSB @P212@
+1 WIFE @P213@
+1 CHIL @P211@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F51@ FAM 
-1 HUSB @P69@
-1 WIFE @P70@
-1 CHIL @P68@
+1 HUSB @P68@
+1 WIFE @P69@
+1 CHIL @P67@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 2 DATE 25 OCT 1836
 0 @F52@ FAM 
-1 HUSB @P215@
-1 WIFE @P216@
-1 CHIL @P69@
+1 HUSB @P214@
+1 WIFE @P215@
+1 CHIL @P68@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 2 DATE 30 SEP 1807
 2 PLAC St. Phillips, Birmingham
 0 @F53@ FAM 
-1 HUSB @P215@
-1 WIFE @P221@
+1 HUSB @P214@
+1 WIFE @P220@
 1 MARR 
 2 DATE 30 SEP 1799
 2 PLAC St. Martin's, Birmingham
 0 @F54@ FAM 
-1 HUSB @P217@
-1 WIFE @P218@
-1 CHIL @P70@
+1 HUSB @P216@
+1 WIFE @P217@
+1 CHIL @P69@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F55@ FAM 
-1 HUSB @P219@
-1 WIFE @P220@
-1 CHIL @P215@
+1 HUSB @P218@
+1 WIFE @P219@
+1 CHIL @P214@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 2 DATE 25 OCT 1759
 2 PLAC St. Martin's, Birmingham
 0 @F56@ FAM 
-1 HUSB @P222@
-1 WIFE @P223@
-1 CHIL @P219@
+1 HUSB @P221@
+1 WIFE @P222@
+1 CHIL @P218@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F57@ FAM 
-1 HUSB @P84@
-1 WIFE @P85@
+1 HUSB @P83@
+1 WIFE @P84@
+1 CHIL @P226@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P227@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P228@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P80@
+1 CHIL @P79@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6662,12 +7142,12 @@
 3 _APID 1,2352::44968995
 1 MARR 
 0 @F58@ FAM 
-1 HUSB @P229@
-1 WIFE @P230@
-1 CHIL @P84@
+1 HUSB @P228@
+1 WIFE @P229@
+1 CHIL @P83@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P233@
+1 CHIL @P232@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6680,18 +7160,18 @@
 3 _APID 1,8913::28757747
 1 MARR 
 0 @F59@ FAM 
-1 HUSB @P236@
-1 WIFE @P237@
-1 CHIL @P241@
+1 HUSB @P235@
+1 WIFE @P236@
+1 CHIL @P240@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P230@
+1 CHIL @P229@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P238@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P239@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P240@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6706,27 +7186,27 @@
 3 _APID 1,8913::28065044
 1 MARR 
 0 @F60@ FAM 
-1 HUSB @P180@
-1 WIFE @P79@
-1 CHIL @P176@
+1 HUSB @P179@
+1 WIFE @P78@
+1 CHIL @P175@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P243@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P244@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P245@
+1 CHIL @P249@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P248@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P250@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P249@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P251@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P246@
+1 CHIL @P245@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6737,15 +7217,18 @@
 3 _APID 1,4994::3928071
 1 MARR 
 0 @F61@ FAM 
-1 HUSB @P103@
-1 WIFE @P104@
+1 HUSB @P102@
+1 WIFE @P103@
+1 CHIL @P256@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P257@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P258@
+1 CHIL @P30@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P30@
+1 CHIL @P258@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P259@
@@ -6757,18 +7240,15 @@
 1 CHIL @P261@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P262@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 2 DATE 10 APR 1873
 0 @F62@ FAM 
-1 HUSB @P243@
-1 WIFE @P242@
-1 CHIL @P237@
+1 HUSB @P242@
+1 WIFE @P241@
+1 CHIL @P236@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P264@
+1 CHIL @P263@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6785,18 +7265,18 @@
 1 MARR 
 0 @F63@ FAM 
 1 HUSB @P38@
-1 WIFE @P224@
-1 CHIL @P225@
+1 WIFE @P223@
+1 CHIL @P224@
 2 _FREL Adopted
 2 _MREL Natural
 0 @F64@ FAM 
 1 HUSB @P38@
-1 WIFE @P201@
+1 WIFE @P200@
 1 MARR 
 2 DATE 1992
 0 @F65@ FAM 
 1 HUSB @P38@
-1 WIFE @P82@
+1 WIFE @P81@
 1 CHIL @P14@
 2 _FREL Natural
 2 _MREL Natural
@@ -6810,9 +7290,12 @@
 2 DATE 1988
 2 PLAC Melbourne, VIC, Australia
 0 @F66@ FAM 
-1 HUSB @P231@
-1 WIFE @P232@
-1 CHIL @P85@
+1 HUSB @P230@
+1 WIFE @P231@
+1 CHIL @P84@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P266@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P267@
@@ -6827,17 +7310,17 @@
 1 CHIL @P270@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P271@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 0 @F67@ FAM 
 1 HUSB @P5@
 1 WIFE @P6@
-1 CHIL @P272@
+1 CHIL @P271@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P4@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P272@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P273@
@@ -6846,18 +7329,18 @@
 1 CHIL @P274@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P275@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 2 DATE 12 NOV 1933
 2 PLAC Wyalong West, New South Wales
 2 SOUR @S445246689@
 3 _APID 1,1780::3864635
 0 @F68@ FAM 
-1 HUSB @P276@
-1 WIFE @P277@
+1 HUSB @P275@
+1 WIFE @P276@
 1 CHIL @P6@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P277@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P278@
@@ -6866,21 +7349,21 @@
 1 CHIL @P279@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P280@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 2 DATE AUG 1910
 2 PLAC Ev Luth Michaelis Church Gnadenfre, South Australia
 2 SOUR @S445246689@
 3 _APID 1,1780::5349407
 0 @F69@ FAM 
-1 HUSB @P284@
-1 WIFE @P283@
-1 CHIL @P287@
+1 HUSB @P283@
+1 WIFE @P282@
+1 CHIL @P286@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P277@
+1 CHIL @P276@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P287@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P288@
@@ -6892,28 +7375,25 @@
 1 CHIL @P290@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P291@
-2 _FREL Natural
-2 _MREL Natural
 1 MARR 
 2 DATE 12 FEB 1880
 0 @F70@ FAM 
-1 HUSB @P289@
-1 WIFE @P294@
+1 HUSB @P288@
+1 WIFE @P293@
 0 @F71@ FAM 
-1 HUSB @P291@
-1 WIFE @P296@
+1 HUSB @P290@
+1 WIFE @P295@
 0 @F72@ FAM 
-1 HUSB @P285@
-1 WIFE @P286@
-1 CHIL @P284@
+1 HUSB @P284@
+1 WIFE @P285@
+1 CHIL @P283@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F73@ FAM 
-1 HUSB @P292@
-1 WIFE @P293@
-1 CHIL @P283@
+1 HUSB @P291@
+1 WIFE @P292@
+1 CHIL @P282@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6932,59 +7412,59 @@
 2 DATE 22 APR 1961
 2 PLAC Bentleigh, VIC, Australia
 0 @F75@ FAM 
-1 HUSB @P297@
-1 WIFE @P298@
+1 HUSB @P296@
+1 WIFE @P297@
+1 CHIL @P300@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P301@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P302@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P292@
+1 CHIL @P291@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F76@ FAM 
-1 HUSB @P299@
-1 WIFE @P300@
-1 CHIL @P293@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P304@
+1 HUSB @P298@
+1 WIFE @P299@
+1 CHIL @P292@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P303@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
-0 @F77@ FAM 
-1 HUSB @P306@
-1 WIFE @P305@
-1 CHIL @P299@
+1 CHIL @P302@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P307@
+1 MARR 
+0 @F77@ FAM 
+1 HUSB @P305@
+1 WIFE @P304@
+1 CHIL @P298@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P306@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
 0 @F78@ FAM 
-1 HUSB @P282@
-1 WIFE @P281@
-1 CHIL @P276@
+1 HUSB @P281@
+1 WIFE @P280@
+1 CHIL @P275@
 2 _FREL Natural
 2 _MREL Natural
 0 @F79@ FAM 
-1 HUSB @P295@
-1 WIFE @P290@
+1 HUSB @P294@
+1 WIFE @P289@
 0 @F80@ FAM 
-1 HUSB @P304@
-1 WIFE @P308@
+1 HUSB @P303@
+1 WIFE @P307@
 1 MARR 
 2 DATE 15 SEP 1858
 0 @F81@ FAM 
-1 HUSB @P253@
-1 WIFE @P108@
-1 CHIL @P254@
+1 HUSB @P252@
+1 WIFE @P107@
+1 CHIL @P253@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -6998,12 +7478,9 @@
 2 SOUR @S445304483@
 3 _APID 1,1623::21844656
 0 @F82@ FAM 
-1 HUSB @P235@
-1 WIFE @P234@
-1 CHIL @P229@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P316@
+1 HUSB @P234@
+1 WIFE @P233@
+1 CHIL @P228@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P315@
@@ -7015,10 +7492,13 @@
 1 CHIL @P313@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P311@
+1 CHIL @P312@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P312@
+1 CHIL @P310@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P311@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -7030,24 +7510,24 @@
 2 SOUR @S445309006@
 3 _APID 1,9849::2538588
 0 @F83@ FAM 
-1 HUSB @P315@
-1 WIFE @P317@
+1 HUSB @P314@
+1 WIFE @P316@
 0 @F84@ FAM 
-1 HUSB @P252@
-1 WIFE @P250@
+1 HUSB @P251@
+1 WIFE @P249@
 0 @F85@ FAM 
-1 HUSB @P318@
-1 WIFE @P271@
+1 HUSB @P317@
+1 WIFE @P270@
 0 @F86@ FAM 
-1 HUSB @P320@
-1 WIFE @P268@
-1 CHIL @P319@
+1 HUSB @P319@
+1 WIFE @P267@
+1 CHIL @P318@
 2 _FREL Natural
 2 _MREL Natural
 0 @F87@ FAM 
-1 HUSB @P310@
-1 WIFE @P309@
-1 CHIL @P235@
+1 HUSB @P309@
+1 WIFE @P308@
+1 CHIL @P234@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -7062,36 +7542,33 @@
 3 PAGE Dorset History Centre; Dorchester, England; Reference: PE/SN: RE 1/3-4, 2/1-5, 3/1-4
 3 _APID 1,2241::4667630
 0 @F88@ FAM 
-1 HUSB @P322@
-1 WIFE @P321@
-1 CHIL @P309@
+1 HUSB @P321@
+1 WIFE @P320@
+1 CHIL @P308@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P323@
+1 CHIL @P322@
 2 _FREL Natural
 2 _MREL Natural
 0 @F89@ FAM 
-1 HUSB @P266@
-1 WIFE @P265@
-1 CHIL @P242@
+1 HUSB @P265@
+1 WIFE @P264@
+1 CHIL @P241@
 2 _FREL Natural
 2 _MREL Natural
 0 @F90@ FAM 
-1 HUSB @P207@
-1 WIFE @P206@
+1 HUSB @P206@
+1 WIFE @P205@
+1 CHIL @P323@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P198@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P324@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P199@
-2 _FREL Natural
-2 _MREL Natural
 1 CHIL @P325@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P326@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P330@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P329@
@@ -7103,22 +7580,16 @@
 1 CHIL @P327@
 2 _FREL Natural
 2 _MREL Natural
+1 CHIL @P326@
+2 _FREL Natural
+2 _MREL Natural
 0 @F91@ FAM 
-1 HUSB @P248@
-1 WIFE @P247@
-1 CHIL @P333@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P336@
-2 _FREL Natural
-2 _MREL Natural
+1 HUSB @P247@
+1 WIFE @P246@
 1 CHIL @P332@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P335@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P180@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P331@
@@ -7127,29 +7598,38 @@
 1 CHIL @P334@
 2 _FREL Natural
 2 _MREL Natural
+1 CHIL @P179@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P330@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P333@
+2 _FREL Natural
+2 _MREL Natural
 0 @F92@ FAM 
-1 HUSB @P138@
-1 WIFE @P137@
-1 CHIL @P97@
+1 HUSB @P137@
+1 WIFE @P136@
+1 CHIL @P96@
 2 _FREL Natural
 2 _MREL Natural
 0 @F93@ FAM 
-1 HUSB @P226@
+1 HUSB @P225@
 1 CHIL @P22@
 2 _FREL Natural
 0 @F94@ FAM 
-1 WIFE @P263@
-1 CHIL @P104@
+1 WIFE @P262@
+1 CHIL @P103@
 2 _MREL Natural
 0 @F95@ FAM 
-1 WIFE @P202@
-1 CHIL @P201@
+1 WIFE @P201@
+1 CHIL @P200@
 2 _MREL Natural
-1 CHIL @P224@
+1 CHIL @P223@
 2 _MREL Natural
 0 @F96@ FAM 
-1 HUSB @P238@
-1 CHIL @P236@
+1 HUSB @P237@
+1 CHIL @P235@
 2 _FREL Natural
 0 @R404112021@ REPO
 1 NAME Ancestry.com
@@ -7502,4 +7982,16 @@
 1 AUTH Ancestry.com
 1 PUBL Ancestry.com Operations, Inc.
 1 _APID 1,4994::0
+0 @S445835637@ SOUR
+1 REPO @R404112021@
+1 TITL England & Wales, Criminal Registers, 1791-1892
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+1 _APID 1,1590::0
+0 @S445835945@ SOUR
+1 REPO @R404112021@
+1 TITL UK, Poll Books and Electoral Registers, 1538-1893
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+1 _APID 1,2410::0
 0 TRLR
