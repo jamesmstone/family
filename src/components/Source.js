@@ -1,32 +1,46 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
 import { Button, Modal, Tooltip } from "antd";
+import { ImageMap } from "./ImageMap";
 
-function Source({ i, source: { thumbnail, image, page } }) {
+const modalWidth = "95vw";
+const antModalPadding = "300px";
+
+function Source({ i, source: { image, page } }) {
   function modal() {
     Modal.info({
+      maskClosable: true,
       title: page ?? "Source",
       closable: true,
-      content: image && <Img fixed={image.childImageSharp.fixed} />,
+      width: modalWidth,
+      content: image && (
+        <ImageMap
+          style={{ width: `calc(${modalWidth}-2*${antModalPadding})` }}
+          image={image.imageMap}
+        />
+      ),
     });
   }
   return (
     <Tooltip title={page ?? `source ${i}`}>
-      <Button style={{ padding: 0 }} type={"link"} onClick={modal}>
+      <Button
+        disabled={!image}
+        style={{ padding: 0 }}
+        type={"link"}
+        onClick={modal}
+      >
         <sup>[{i}]</sup>
       </Button>
     </Tooltip>
   );
 }
+
 export const query = graphql`
   fragment SourceInfo on Source {
     page
     image {
-      childImageSharp {
-        fixed(width: 300) {
-          ...GatsbyImageSharpFixed
-        }
+      imageMap: childImageSharp {
+        ...ImageMap
       }
     }
   }

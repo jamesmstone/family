@@ -77,8 +77,8 @@ function IndividualMapEventMarkers({
               icon={getIcon(i, colour)}
             >
               <Popup>
-                <Link to={`/individual/${id}`}>{fullName}</Link> -{" "}
-                {title} - {place}
+                <Link to={`/individual/${id}`}>{fullName}</Link> - {title} -{" "}
+                {place}
                 {date ? `- ${date}` : ""}{" "}
                 {source && <Sources sources={source} />}
               </Popup>

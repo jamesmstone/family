@@ -19,7 +19,6 @@ const FamilyMap = () => {
     }
   `);
 
-
   return (
     <Layout>
       <SEO title="Family Tree Map" />
