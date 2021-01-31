@@ -5,7 +5,7 @@ import { Typography } from "antd";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { FamilyTreeDiagram } from "../components/FamilyTreeDiagram";
-import primitives from "basicprimitives";
+import { PageFitMode } from "basicprimitives";
 
 const FamilyTree = () => {
   const {
@@ -27,7 +27,7 @@ const FamilyTree = () => {
       <FamilyTreeDiagram
         individuals={individuals}
         initScale={0.25}
-        pageFitMode={primitives.common.PageFitMode.SelectionOnly}
+        pageFitMode={PageFitMode.SelectionOnly}
       />
     </Layout>
   );

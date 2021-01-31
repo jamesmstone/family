@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import primitives from "basicprimitives";
+import { PageFitMode, OrientationType, Colors, Enabled } from "basicprimitives";
 import styles from "../pages/familyTree.module.css";
 import { graphql, Link } from "gatsby";
 import { Slider } from "antd";
@@ -39,14 +39,14 @@ export const query = graphql`
 
 export function FamilyTreeDiagram({
   showGroupTitle = true,
-  orientation = primitives.common.OrientationType.Top,
+  orientation = OrientationType.Top,
   individuals: is,
   itemSize = undefined,
   itemRenderer = ({ context: itemConfig }) => {
     const itemTitleColor =
       itemConfig.itemTitleColor != null
         ? itemConfig.itemTitleColor
-        : primitives.common.Colors.RoyalBlue;
+        : Colors.RoyalBlue;
     return (
       <div className={styles.TemplateA}>
         <div
@@ -67,7 +67,7 @@ export function FamilyTreeDiagram({
   initScale = 1,
   height = "50vh",
   width,
-  pageFitMode = primitives.common.PageFitMode.None,
+  pageFitMode = PageFitMode.None,
 }) {
   const individuals = is.map(i => {
     let ret = {
@@ -96,7 +96,7 @@ export function FamilyTreeDiagram({
     cursorItem: 2,
     linesWidth: 1,
     linesColor: "black",
-    hasSelectorCheckbox: primitives.common.Enabled.False,
+    hasSelectorCheckbox: Enabled.False,
     normalLevelShift: 20,
     dotLevelShift: 20,
     lineLevelShift: 20,
