@@ -36,7 +36,7 @@
     "simple-rate-limiter": "^0.2.3"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^2.7.1"
   },
   "keywords": [
     "gatsby",
