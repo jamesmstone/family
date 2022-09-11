@@ -7,13 +7,13 @@
   "dependencies": {
     "@ant-design/icons": "^4.0.4",
     "@antv/data-set": "^0.11.1",
-    "@loadable/component": "^5.12.0",
+    "@loadable/component": "^5.15.2",
     "antd": "^4.0.4",
     "basicprimitives": "latest",
     "basicprimitivesreact": "^5.8.2",
     "bizcharts": "^3.5.8",
     "color-hash": "^1.0.3",
-    "gatsby": "^2.20.8",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-antd": "^2.2.0",
     "gatsby-plugin-manifest": "^2.3.3",
@@ -22,11 +22,11 @@
     "gatsby-plugin-react-leaflet": "^2.0.12",
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-sharp": "^2.4.3",
+    "gatsby-transformer-sharp": "^2.12.1",
     "leaflet": "^1.6.0",
     "moment": "latest",
     "parse-gedcom": "^1.0.5",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
@@ -36,7 +36,7 @@
     "simple-rate-limiter": "^0.2.3"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^2.7.1"
   },
   "keywords": [
     "gatsby",
