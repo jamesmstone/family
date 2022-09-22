@@ -8,7 +8,9 @@ import { EventsTimeline } from "../components/EventsTimeline";
 import { Pedigree } from "../components/Pedigree";
 import { MapEvents } from "../components/MapEvents";
 
-export default ({ data }) => {
+export default Individual;
+
+function Individual({ data }) {
   const { individual, pedigree, map } = data;
   const { events } = individual;
   return (
@@ -44,7 +46,7 @@ export default ({ data }) => {
             {individual.familySpouse && (
               <Descriptions.Item label={"Partner Families"}>
                 <ul>
-                  {individual.familySpouse.map(family => {
+                  {individual.familySpouse.map((family) => {
                     const partner =
                       family.husband && family.husband.id === individual.id
                         ? family.wife
@@ -172,10 +174,10 @@ export default ({ data }) => {
       </Row>
     </Layout>
   );
-};
+}
 
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     pedigree: individual(id: { eq: $id }) {
       ...Pedigree
     }

@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { Input, List, Typography } from "antd";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import SearchEngineOptimisation from "../components/searchEngineOptimisation";
 import { IndividualListItem } from "../components/IndividualListItem";
 
 const IndexPage = () => {
@@ -35,7 +35,7 @@ const IndexPage = () => {
         );
   return (
     <Layout>
-      <SEO title="Home" />
+      <SearchEngineOptimisation title="Home" />
       <Typography.Title>All Individuals</Typography.Title>
       <List
         header={

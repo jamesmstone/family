@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { Typography } from "antd";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import SearchEngineOptimisation from "../components/searchEngineOptimisation";
 import { FamilyTreeDiagram } from "../components/FamilyTreeDiagram";
 import { PageFitMode } from "basicprimitives";
 
@@ -22,7 +22,7 @@ const FamilyTree = () => {
 
   return (
     <Layout>
-      <SEO title="Family Tree" />
+      <SearchEngineOptimisation title="Family Tree" />
       <Typography.Title>Family Tree</Typography.Title>
       <FamilyTreeDiagram
         individuals={individuals}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { PageFitMode, OrientationType, Colors, Enabled } from "basicprimitives";
-import styles from "../pages/familyTree.module.css";
+import * as styles from "../pages/familyTree.module.css";
 import { graphql, Link } from "gatsby";
 import { Slider } from "antd";
 import { FamDiagram } from "basicprimitivesreact";

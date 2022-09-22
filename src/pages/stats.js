@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { Descriptions, List, Typography } from "antd";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import SearchEngineOptimisation from "../components/searchEngineOptimisation";
 import { IndividualListItem } from "../components/IndividualListItem";
 
 const StatsPage = () => {
@@ -52,7 +52,7 @@ const StatsPage = () => {
 
   return (
     <Layout>
-      <SEO title="Stats" />
+      <SearchEngineOptimisation title="Stats" />
       <Typography.Title>Stats</Typography.Title>
       <Typography.Title level={2}>Top ten oldest ages:</Typography.Title>
       <List

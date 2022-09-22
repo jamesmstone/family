@@ -3,12 +3,12 @@ set -e # Exit with nonzero exit code if anything fails
 
 npm ()
 {
-    docker run -it --rm -e CI=true -v /etc/localtime:/etc/localtime:ro -v $(pwd):/app -w /app node:alpine npm "$@"
+    docker run -it --rm -e CI=true -u "$(id -u):$(id -g)" -v /etc/localtime:/etc/localtime:ro -v $(pwd):/app -w /app node:alpine npm "$@"
 }
 
 
-npm install;
-npm run clean;
+yarn install;
+yarn run clean;
 mkdir public
-npm run build;
+yarn run build;
 cp CNAME public/;
