@@ -1,40 +1,30 @@
 const { createContentDigest } = require(`gatsby-core-utils`);
 const Queue = require(`better-queue`);
 const ProgressBar = require(`progress`);
-const limit = require("simple-rate-limiter");
-const request = limit(require("request"))
-  .to(1)
-  .per(1100);
+const axios = require("axios");
+const rateLimit = require("axios-rate-limit");
+const http = rateLimit(axios.create(), {
+  maxRequests: 1,
+  perMilliseconds: 1010,
+});
 
 async function loadLocation(place) {
-  return new Promise((resolver, reject) => {
-    const url = `https://nominatim.openstreetmap.org/search/${encodeURIComponent(
-      place
-    )}?format=json`;
-    request(
-      {
-        url,
-        headers: {
-          "User-Agent": "family.jamesst.one  - A personal family tree",
-        },
-      },
-      function(err, res, body) {
-        if (err) {
-          console.error({ err, res, body, url });
-          reject(err);
-        }
-        const location = JSON.parse(body)[0];
-        if (location === undefined) {
-          resolver();
-          return;
-        }
-        resolver({
-          lat: location && location.hasOwnProperty("lat") ? location.lat : null,
-          lng: location && location.hasOwnProperty("lon") ? location.lon : null,
-        });
-      }
-    );
+  const url = `https://nominatim.openstreetmap.org/search/${encodeURIComponent(
+    place
+  )}?format=json`;
+
+  const res = await http(url, {
+    headers: {
+      "User-Agent": "family.jamesst.one  - A personal family tree",
+    },
   });
+  if (!res.status !== 200) return { lat: null, lng: null };
+  const location = res.data;
+
+  return {
+    lat: location && location.hasOwnProperty("lat") ? location.lat : null,
+    lng: location && location.hasOwnProperty("lon") ? location.lon : null,
+  };
 }
 
 function createProgress(message, reporter) {
@@ -63,7 +53,7 @@ function createProgress(message, reporter) {
   };
 }
 
-const cacheId = location => `create-remote-location-node-${location}`;
+const cacheId = (location) => `create-remote-location-node-${location}`;
 
 let bar;
 // Keep track of the total number of jobs we push in the queue
@@ -131,14 +121,14 @@ const processingCache = {};
  * @param {CreateRemoteFileNodePayload} task
  * @return {Promise<Object>}
  */
-const pushTask = task =>
+const pushTask = (task) =>
   new Promise((resolve, reject) => {
     queue
       .push(task)
-      .on(`finish`, task => {
+      .on(`finish`, (task) => {
         resolve(task);
       })
-      .on(`failed`, err => {
+      .on(`failed`, (err) => {
         reject(`failed to process ${task.location}\n${err}`);
       });
   });
@@ -223,7 +213,7 @@ module.exports = ({
     name,
   });
 
-  processingCache[location] = locationDownloadPromise.then(location => {
+  processingCache[location] = locationDownloadPromise.then((location) => {
     bar.tick();
     return location;
   });
