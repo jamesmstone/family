@@ -18,8 +18,8 @@ async function loadLocation(place) {
       "User-Agent": "family.jamesst.one  - A personal family tree",
     },
   });
-  if (!res.status !== 200) return { lat: null, lng: null };
-  const location = res.data;
+  if (res.status !== 200) return { lat: null, lng: null };
+  const [location] = res.data;
 
   return {
     lat: location && location.hasOwnProperty("lat") ? location.lat : null,
