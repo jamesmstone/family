@@ -1,13 +1,13 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { FamilyTreeDiagram } from "./FamilyTreeDiagram";
-import primitives from "basicprimitives";
+import { Colors, OrientationType, Size } from "basicprimitives";
 
 const itemRenderer = ({ context: itemConfig }) => {
   const itemTitleColor =
     itemConfig.itemTitleColor != null
       ? itemConfig.itemTitleColor
-      : primitives.common.Colors.RoyalBlue;
+      : Colors.RoyalBlue;
   return (
     <div style={{ background: itemTitleColor }}>
       <Link to={`/individual/${itemConfig.id}`}>
@@ -34,14 +34,14 @@ export function Pedigree({
     ...grandParents,
     ...grandChildren,
     ...children,
-  ].filter(i => !!i);
+  ].filter((i) => !!i);
 
   return (
     <FamilyTreeDiagram
-      orientation={primitives.common.OrientationType.Right}
+      orientation={OrientationType.Right}
       individuals={individuals}
       itemRenderer={itemRenderer}
-      itemSize={new primitives.common.Size(200, 15)}
+      itemSize={new Size(200, 15)}
       width={"100%"}
       height={330}
       showScale={false}
