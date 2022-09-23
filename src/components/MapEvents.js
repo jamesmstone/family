@@ -7,7 +7,7 @@ import { Sources } from "./Source";
 import ColorHash from "color-hash";
 const colorHash = new ColorHash();
 
-const getIcon = i =>
+const getIcon = (i) =>
   new L.divIcon({
     html: `${i}`,
   });
@@ -19,7 +19,7 @@ export function MapEvents({ individuals }) {
         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {individuals.map(individual => (
+      {individuals.map((individual) => (
         <IndividualMapEventMarkers
           key={individual.id}
           individual={individual}
