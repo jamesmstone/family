@@ -26,9 +26,13 @@ export function IndividualListItem({
               status={alive ? "success" : undefined}
               title={"and counting..."}
             >
-              <Highlight matchClass={style.match} search={search}>
-                {fullName}
-              </Highlight>
+              {search ? (
+                <Highlight matchClass={style.match} search={search}>
+                  {fullName}
+                </Highlight>
+              ) : (
+                <>fullName </>
+              )}
             </Badge>
           </Link>
         }
