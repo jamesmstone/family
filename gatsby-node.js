@@ -2,6 +2,7 @@ const createLocation = require("./location");
 const moment = require("moment");
 const parsegedcom = require(`parse-gedcom`);
 const path = require(`path`);
+const fs = require(`fs`);
 
 async function onCreateNode({
   node,
@@ -567,4 +568,40 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
+};
+
+const publicPath = `./public`;
+exports.onPostBuild = async ({ graphql, reporter }, pluginOptions) => {
+  const result = await graphql(`
+    query {
+      allIndividual {
+        nodes {
+          id
+          birth {
+            born
+            date(formatString: "DD MMMM YYYY")
+            place {
+              place
+            }
+            source {
+              ...SourceInfo
+            }
+          }
+          death {
+            died
+            date(formatString: "DD MMMM YYYY")
+            place {
+              place
+            }
+            source {
+              ...SourceInfo
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const outputPath = path.join(publicPath, "individualsAPI.json");
+  await fs.writeFile(outputPath, result);
 };
