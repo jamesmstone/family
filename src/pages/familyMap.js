@@ -13,7 +13,7 @@ const FamilyMap = () => {
     {
       allIndividual(sort: { fields: birth___date, order: ASC }) {
         nodes {
-          ...MapIdividual
+          ...MapIndividual
         }
       }
     }

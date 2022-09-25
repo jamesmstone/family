@@ -182,7 +182,7 @@ export const query = graphql`
       ...Pedigree
     }
     map: individual(id: { eq: $id }) {
-      ...MapIdividual
+      ...MapIndividual
     }
     individual(id: { eq: $id }) {
       ...EventsTimeline

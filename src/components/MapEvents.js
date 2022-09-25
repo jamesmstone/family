@@ -94,7 +94,7 @@ function IndividualMapEventMarkers({
   );
 }
 export const query = graphql`
-  fragment MapIdividual on Individual {
+  fragment MapIndividual on Individual {
     id
     name {
       fullName
