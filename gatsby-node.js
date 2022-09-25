@@ -571,7 +571,7 @@ exports.createPages = async ({ graphql, actions }) => {
 };
 
 const publicPath = `./public`;
-exports.onPostBuild = async ({ graphql, reporter }, pluginOptions) => {
+exports.onPostBuild = async ({ graphql }) => {
   const result = await graphql(`
     query {
       allIndividual {
@@ -583,18 +583,12 @@ exports.onPostBuild = async ({ graphql, reporter }, pluginOptions) => {
             place {
               place
             }
-            source {
-              ...SourceInfo
-            }
           }
           death {
             died
             date(formatString: "DD MMMM YYYY")
             place {
               place
-            }
-            source {
-              ...SourceInfo
             }
           }
         }
@@ -603,5 +597,5 @@ exports.onPostBuild = async ({ graphql, reporter }, pluginOptions) => {
   `);
 
   const outputPath = path.join(publicPath, "individualsAPI.json");
-  await fs.writeFile(outputPath, result);
+  fs.writeFileSync(outputPath, JSON.stringify(result));
 };
