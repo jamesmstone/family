@@ -44,7 +44,7 @@
     "family"
   ],
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md,css}\"",
     "start": "npm run develop",
