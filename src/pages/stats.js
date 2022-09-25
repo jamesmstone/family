@@ -58,7 +58,7 @@ const StatsPage = () => {
       <List
         itemLayout="horizontal"
         dataSource={oldestPeople}
-        renderItem={individual => (
+        renderItem={(individual) => (
           <IndividualListItem individual={individual} />
         )}
       />

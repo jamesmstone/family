@@ -69,15 +69,15 @@ export function FamilyTreeDiagram({
   width,
   pageFitMode = PageFitMode.None,
 }) {
-  const individuals = is.map(i => {
+  const individuals = is.map((i) => {
     let ret = {
       id: i.id,
       itemTitleColor: i.sex === "M" ? "#4169E1" : "#e1160d",
       title: i.name.fullName,
       label: i.name.fullName,
       description: i.age ? `Age: ${i.age}` : "",
-      spouses: i.spouses.map(s => s.id),
-      parents: i.parents.map(s => s.id),
+      spouses: i.spouses.map((s) => s.id),
+      parents: i.parents.map((s) => s.id),
       image: null,
       templateName: "templateA",
     };
@@ -127,7 +127,7 @@ export function FamilyTreeDiagram({
             max={1}
             value={scale}
             tooltipVisible
-            tipFormatter={value => `${Math.round(value * 100)}%`}
+            tipFormatter={(value) => `${Math.round(value * 100)}%`}
             onChange={setScale}
           />
         </>

@@ -30,7 +30,7 @@ const IndexPage = () => {
   const individuals =
     search === undefined
       ? is
-      : is.filter(i =>
+      : is.filter((i) =>
           i.name.fullName.toLowerCase().includes(search.toLowerCase())
         );
   return (
@@ -50,7 +50,7 @@ const IndexPage = () => {
         }
         itemLayout="horizontal"
         dataSource={individuals}
-        renderItem={individual => (
+        renderItem={(individual) => (
           <IndividualListItem individual={individual} search={search} />
         )}
       />

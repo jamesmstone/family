@@ -33,7 +33,7 @@ export default function Tree({ data, direction = "TB" }) {
       <Coord transpose />
       <Tooltip />
       <View
-        data={dv.getAllLinks().map(link => ({
+        data={dv.getAllLinks().map((link) => ({
           x: [link.source.x, link.target.x],
           y: [link.source.y, link.target.y],
           source: link.source.id,
@@ -50,7 +50,7 @@ export default function Tree({ data, direction = "TB" }) {
         />
       </View>
       <View
-        data={dv.getAllNodes().map(node => ({
+        data={dv.getAllNodes().map((node) => ({
           hasChildren: !!(node.children && node.children.length),
           name: node.data.name,
           value: node.value,
