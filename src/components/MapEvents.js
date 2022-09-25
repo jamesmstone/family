@@ -40,23 +40,27 @@ function IndividualMapEventMarkers({
     if (!p) return false;
     const { location } = p;
     if (!location) return false;
+    if (!location.lat) return false;
+    if (!location.lng) return false;
     return true;
   });
+  if (placeEvents.length === 0) {
+    return null;
+  }
   const colour = colorHash.hex(id);
   return (
     <>
-      {placeEvents && (
-        <Polyline
-          color={colour}
-          positions={placeEvents.map(
-            ({
-              place: {
-                location: { lat, lng },
-              },
-            }) => [lat, lng]
-          )}
-        />
-      )}
+      <Polyline
+        color={colour}
+        positions={placeEvents.map(
+          ({
+            place: {
+              location: { lat, lng },
+            },
+          }) => [lat, lng]
+        )}
+      />
+
       {placeEvents.map(
         (
           {
@@ -72,7 +76,7 @@ function IndividualMapEventMarkers({
         ) => {
           return (
             <Marker
-              key={`${title}${date}`}
+              key={`${title}${date}-${lat}-${lng}`}
               position={[lat, lng]}
               icon={getIcon(i, colour)}
             >
