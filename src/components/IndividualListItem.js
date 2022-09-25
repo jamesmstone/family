@@ -31,7 +31,7 @@ export function IndividualListItem({
                   {fullName}
                 </Highlight>
               ) : (
-                <>fullName </>
+                <>fullName</>
               )}
             </Badge>
           </Link>
