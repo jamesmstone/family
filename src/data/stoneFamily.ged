@@ -238,7 +238,6 @@
 1 BIRT 
 2 DATE 20 MAY 2011
 2 PLAC Werribee, Victoria
-1 DEAT Y
 1 FAMC @F2@
 0 @P18@ INDI 
 1 NAME Zeppelin /BJ Meadows/
@@ -2972,7 +2971,7 @@
 1 BIRT 
 2 DATE 1762
 2 PLAC Framfield, Sussex, England
-1 DEAT 
+1 DEAT Y
 2 DATE MAR 1851
 2 PLAC Framfield, Sussex, England
 1 BURI 
@@ -5214,7 +5213,7 @@
 2 PLAC Wimborne, Dorset
 1 DEAT 
 2 DATE 23 Feb 1848
-2 PLAC Hurn, Christchurch- age 83
+2 PLAC Hurn, Christchurch
 1 SEX M
 1 NAME Richard /Cane/
 1 FAMS @F89@

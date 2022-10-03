@@ -9,37 +9,40 @@ import {
   GlobalOutlined,
 } from "@ant-design/icons";
 
+const items = [
+  {
+    key: "People",
+    label: <Link to={"/"}>People</Link>,
+    icon: <TeamOutlined />,
+  },
+  {
+    key: "Stats",
+    label: <Link to={"/stats"}>Stats</Link>,
+    icon: <LineChartOutlined />,
+  },
+  {
+    key: "Family Tree",
+    label: <Link to={"/familyTree"}>Family Tree</Link>,
+    icon: <PartitionOutlined rotate={270} />,
+  },
+  {
+    key: "Family Map",
+    label: <Link to={"/familyMap"}>Family Map</Link>,
+    icon: <GlobalOutlined />,
+  },
+];
+
 const Header = ({ siteTitle }) => (
   <Layout.Header>
     <Link style={{ float: "left", color: "#fff" }} to="/">
       {siteTitle}
     </Link>
-    <Menu style={{ lineHeight: "64px" }} theme={"dark"} mode="horizontal">
-      <Menu.Item key="/">
-        <Link to={"/"}>
-          <TeamOutlined />
-          People
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="/stats">
-        <Link to={"/stats"}>
-          <LineChartOutlined />
-          Stats
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="/familyTree">
-        <Link to={"/familyTree"}>
-          <PartitionOutlined rotate={270} />
-          Family Tree
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="/familyMap">
-        <Link to={"/familyMap"}>
-          <GlobalOutlined />
-          Family Map
-        </Link>
-      </Menu.Item>
-    </Menu>
+    <Menu
+      style={{ lineHeight: "64px" }}
+      theme={"dark"}
+      mode="horizontal"
+      items={items}
+    />
   </Layout.Header>
 );
 

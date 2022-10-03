@@ -3,17 +3,19 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import { Descriptions } from "antd";
 import { FamilyTreeDiagram } from "../components/FamilyTreeDiagram";
-import SEO from "../components/seo";
+import SearchEngineOptimisation from "../components/searchEngineOptimisation";
 
-export default ({ data }) => {
+export default Family;
+
+function Family({ data }) {
   const {
     family: { husband, wife, children },
   } = data;
 
-  const individuals = [husband, wife, ...children].filter(i => i !== null);
+  const individuals = [husband, wife, ...children].filter((i) => i !== null);
   return (
     <Layout>
-      <SEO title="Family Tree" />
+      <SearchEngineOptimisation title="Family Tree" />
       <Descriptions bordered>
         {husband && (
           <Descriptions.Item label={"Male"}>
@@ -30,7 +32,7 @@ export default ({ data }) => {
         {children && (
           <Descriptions.Item label={"Children"}>
             <ul>
-              {children.map(child => (
+              {children.map((child) => (
                 <li key={child.id}>
                   <Link to={`/individual/${child.id}`}>
                     {child.name.fullName}
@@ -50,9 +52,10 @@ export default ({ data }) => {
       />
     </Layout>
   );
-};
+}
+
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     family(id: { eq: $id }) {
       husband {
         id

@@ -7,7 +7,7 @@ import { Sources } from "./Source";
 import ColorHash from "color-hash";
 const colorHash = new ColorHash();
 
-const getIcon = i =>
+const getIcon = (i) =>
   new L.divIcon({
     html: `${i}`,
   });
@@ -19,7 +19,7 @@ export function MapEvents({ individuals }) {
         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {individuals.map(individual => (
+      {individuals.map((individual) => (
         <IndividualMapEventMarkers
           key={individual.id}
           individual={individual}
@@ -40,23 +40,27 @@ function IndividualMapEventMarkers({
     if (!p) return false;
     const { location } = p;
     if (!location) return false;
+    if (!location.lat) return false;
+    if (!location.lng) return false;
     return true;
   });
+  if (placeEvents.length === 0) {
+    return null;
+  }
   const colour = colorHash.hex(id);
   return (
     <>
-      {placeEvents && (
-        <Polyline
-          color={colour}
-          positions={placeEvents.map(
-            ({
-              place: {
-                location: { lat, lng },
-              },
-            }) => [lat, lng]
-          )}
-        />
-      )}
+      <Polyline
+        color={colour}
+        positions={placeEvents.map(
+          ({
+            place: {
+              location: { lat, lng },
+            },
+          }) => [lat, lng]
+        )}
+      />
+
       {placeEvents.map(
         (
           {
@@ -72,7 +76,7 @@ function IndividualMapEventMarkers({
         ) => {
           return (
             <Marker
-              key={`${title}${date}`}
+              key={`${title}${date}-${lat}-${lng}`}
               position={[lat, lng]}
               icon={getIcon(i, colour)}
             >
@@ -90,7 +94,7 @@ function IndividualMapEventMarkers({
   );
 }
 export const query = graphql`
-  fragment MapIdividual on Individual {
+  fragment MapIndividual on Individual {
     id
     name {
       fullName

@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { Input, List, Typography } from "antd";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import SearchEngineOptimisation from "../components/searchEngineOptimisation";
 import { IndividualListItem } from "../components/IndividualListItem";
 
 const IndexPage = () => {
@@ -30,12 +30,12 @@ const IndexPage = () => {
   const individuals =
     search === undefined
       ? is
-      : is.filter(i =>
+      : is.filter((i) =>
           i.name.fullName.toLowerCase().includes(search.toLowerCase())
         );
   return (
     <Layout>
-      <SEO title="Home" />
+      <SearchEngineOptimisation title="Home" />
       <Typography.Title>All Individuals</Typography.Title>
       <List
         header={
@@ -50,7 +50,7 @@ const IndexPage = () => {
         }
         itemLayout="horizontal"
         dataSource={individuals}
-        renderItem={individual => (
+        renderItem={(individual) => (
           <IndividualListItem individual={individual} search={search} />
         )}
       />

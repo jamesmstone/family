@@ -2,6 +2,7 @@ const createLocation = require("./location");
 const moment = require("moment");
 const parsegedcom = require(`parse-gedcom`);
 const path = require(`path`);
+const fs = require(`fs`);
 
 async function onCreateNode({
   node,
@@ -18,7 +19,7 @@ async function onCreateNode({
       pointer ? pointer : `${parent.id} [${i}] >>> gedcom`
     );
 
-    const findTags = (tag, t = tree) => t.filter(node => node.tag === tag);
+    const findTags = (tag, t = tree) => t.filter((node) => node.tag === tag);
     const findTag = (tag, t = tree) => {
       const [firstTag] = findTags(tag, t);
       return firstTag;
@@ -95,7 +96,7 @@ async function onCreateNode({
           death = {
             died,
             place: place ? { place } : null,
-            date: date ? moment(date).format() : null,
+            date: date ? moment(date, "D MMM YYYY").format() : null,
             source: deathSource,
           };
         }
@@ -108,7 +109,7 @@ async function onCreateNode({
           birth = {
             born: true,
             place: place ? { place } : null,
-            date: date ? moment(date).toISOString() : null,
+            date: date ? moment(date, "D MMM YYYY").toISOString() : null,
             source: birthSource,
           };
         }
@@ -120,7 +121,7 @@ async function onCreateNode({
 
           baptism = {
             place: place ? { place } : null,
-            date: date ? moment(date).toISOString() : null,
+            date: date ? moment(date, "D MMM YYYY").toISOString() : null,
             source: baptismSource,
           };
         }
@@ -131,7 +132,7 @@ async function onCreateNode({
             let source = findSource(residenceTree);
             return {
               place: place ? { place } : null,
-              date: date ? moment(date).toISOString() : null,
+              date: date ? moment(date, "D MMM YYYY").toISOString() : null,
               source: source,
             };
           });
@@ -231,7 +232,7 @@ exports.createResolvers = ({
               ids: familySpouse,
               type: "Family",
             });
-          const getIndividual = id => {
+          const getIndividual = (id) => {
             if (id === null) return null;
             return context.nodeModel.getNodeById({ id, type: "Individual" });
           };
@@ -273,7 +274,7 @@ exports.createResolvers = ({
 
             case "children":
               return getFamSs().flatMap(({ children }) =>
-                children.map(c => getIndividual(c))
+                children.map((c) => getIndividual(c))
               );
             case "spouse":
               return getFamSs()
@@ -281,7 +282,7 @@ exports.createResolvers = ({
                   getIndividual(husband),
                   getIndividual(wife),
                 ]) // this includes the current individual
-                .filter(s => {
+                .filter((s) => {
                   if (s === null) return false;
                   return s.id !== id;
                 }); // so here we exclude them
@@ -336,7 +337,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
               }
             : null;
           const residence = source.residence
-            ? source.residence.map(r => ({
+            ? source.residence.map((r) => ({
                 title: "Residence",
                 place: r.place,
                 date: r.date,
@@ -364,7 +365,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
             let y = b ? b : 0;
             return x - y;
           });
-          return [birth, baptism, ...sortedEvents, death].filter(e => e);
+          return [birth, baptism, ...sortedEvents, death].filter((e) => e);
         },
       };
     },
@@ -382,9 +383,13 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           }
 
           if (dDate === undefined) {
-            return moment().diff(moment(bDate), "years");
+            const years = moment().diff(moment(bDate), "years");
+            if (isNaN(years)) return null;
+            return years;
           }
-          return moment(dDate).diff(bDate, "years");
+          const years = moment(dDate).diff(bDate, "years");
+          if (isNaN(years)) return null;
+          return years;
         },
       };
     },
@@ -482,6 +487,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       }`,
     schema.buildObjectType({
       name: "Source",
+      interfaces: ["Node"],
       extensions: {
         // While in SDL you have two different directives, @infer and @dontInfer to
         // control inference behavior, Gatsby Type Builders take a single `infer`
@@ -497,9 +503,18 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         image: {
           type: "File",
           resolve: (source, args, context, info) =>
-            context.nodeModel
-              .getAllNodes({ type: "File" })
-              .find(file => file.relativePath === source.image),
+            context.nodeModel.getAllNodes({ type: "File" }).find((file) => {
+              if (
+                file.relativePath === undefined ||
+                file.relativePath === null
+              ) {
+                throw Error("missing file path: " + file.toString());
+              }
+              if (source.image === undefined || source.image === null) {
+                throw Error("missing source image: " + source.toString());
+              }
+              return file.relativePath === source.image;
+            }),
         },
       },
     }),
@@ -531,7 +546,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `);
-  result.data.allIndividual.nodes.forEach(node => {
+  result.data.allIndividual.nodes.forEach((node) => {
     createPage({
       path: `individual/${node.id}`,
       component: path.resolve(`./src/templates/individual.js`),
@@ -542,7 +557,7 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-  result.data.allFamily.nodes.forEach(node => {
+  result.data.allFamily.nodes.forEach((node) => {
     createPage({
       path: `family/${node.id}`,
       component: path.resolve(`./src/templates/family.js`),
@@ -553,4 +568,34 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
+};
+
+const publicPath = `./public`;
+exports.onPostBuild = async ({ graphql }) => {
+  const result = await graphql(`
+    query {
+      allIndividual {
+        nodes {
+          id
+          birth {
+            born
+            date(formatString: "DD MMMM YYYY")
+            place {
+              place
+            }
+          }
+          death {
+            died
+            date(formatString: "DD MMMM YYYY")
+            place {
+              place
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const outputPath = path.join(publicPath, "individualsAPI.json");
+  fs.writeFileSync(outputPath, JSON.stringify(result));
 };
