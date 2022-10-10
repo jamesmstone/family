@@ -34,7 +34,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-highlighter": "^0.4.3",
-    "react-leaflet": "^4.0.2"
+    "react-leaflet": "^4.1.0"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
