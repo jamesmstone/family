@@ -577,6 +577,9 @@ exports.onPostBuild = async ({ graphql }) => {
       allIndividual {
         nodes {
           id
+          name {
+            fullName
+          }
           birth {
             born
             date(formatString: "DD MMMM YYYY")
