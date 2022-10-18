@@ -4,6 +4,8 @@ const parsegedcom = require(`parse-gedcom`);
 const path = require(`path`);
 const fs = require(`fs`);
 
+const dateFormats = ["D MMM YYYY", "MMM YYYY", "YYYY"];
+
 async function onCreateNode({
   node,
   actions,
@@ -96,7 +98,7 @@ async function onCreateNode({
           death = {
             died,
             place: place ? { place } : null,
-            date: date ? moment(date, "D MMM YYYY").format() : null,
+            date: date ? moment(date, dateFormats).toISOString() : null,
             source: deathSource,
           };
         }
@@ -109,7 +111,7 @@ async function onCreateNode({
           birth = {
             born: true,
             place: place ? { place } : null,
-            date: date ? moment(date, "D MMM YYYY").toISOString() : null,
+            date: date ? moment(date, dateFormats).toISOString() : null,
             source: birthSource,
           };
         }
@@ -121,7 +123,7 @@ async function onCreateNode({
 
           baptism = {
             place: place ? { place } : null,
-            date: date ? moment(date, "D MMM YYYY").toISOString() : null,
+            date: date ? moment(date, dateFormats).toISOString() : null,
             source: baptismSource,
           };
         }
@@ -132,7 +134,7 @@ async function onCreateNode({
             let source = findSource(residenceTree);
             return {
               place: place ? { place } : null,
-              date: date ? moment(date, "D MMM YYYY").toISOString() : null,
+              date: date ? moment(date, dateFormats).toISOString() : null,
               source: source,
             };
           });
