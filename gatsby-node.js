@@ -5,6 +5,7 @@ const path = require(`path`);
 const fs = require(`fs`);
 
 const dateFormats = ["D MMM YYYY", "MMM YYYY", "YYYY"];
+const MAX_AGE = 105;
 
 async function onCreateNode({
   node,
@@ -107,13 +108,24 @@ async function onCreateNode({
           let place = findTagData("PLAC", birthTree);
           let date = findTagData("DATE", birthTree);
           let birthSource = findSource(birthTree);
-
+          let birthDate = date ? moment(date, dateFormats).toISOString() : null;
           birth = {
             born: true,
             place: place ? { place } : null,
-            date: date ? moment(date, dateFormats).toISOString() : null,
+            date: birthDate,
             source: birthSource,
           };
+          if (death === undefined && birthDate !== null) {
+            const yearsSinceBirth = moment().diff(birthDate, "years", true);
+            if (yearsSinceBirth > MAX_AGE) {
+              death = {
+                died: true, //assumed dead
+                place: null,
+                date: null,
+                source: null,
+              };
+            }
+          }
         }
         if (hasTag("BAPM")) {
           let [{ tree: baptismTree }] = findTags("BAPM");
@@ -387,6 +399,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
           if (dDate === undefined) {
             const years = moment().diff(moment(bDate), "years");
             if (isNaN(years)) return null;
+            if (years > MAX_AGE) return null;
             return years;
           }
           const years = moment(dDate).diff(bDate, "years");
