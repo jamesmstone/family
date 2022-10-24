@@ -3328,10 +3328,10 @@ better-queue-memory@^1.0.1:
   resolved "https://registry.yarnpkg.com/better-queue-memory/-/better-queue-memory-1.0.4.tgz#f390d6b30bb3b36aaf2ce52b37a483e8a7a81a22"
   integrity sha512-SWg5wFIShYffEmJpI6LgbL8/3Dqhku7xI1oEiy6FroP9DbcZlG0ZDjxvPdP9t7hTGW40IpIcC6zVoGT1oxjOuA==
 
-better-queue@^3.8.11:
-  version "3.8.11"
-  resolved "https://registry.yarnpkg.com/better-queue/-/better-queue-3.8.11.tgz#8b63203793b30590891f40ee7bca9eeedb3c3106"
-  integrity sha512-lfq4EvZfM/zYXa7x6bTsVkdZjz/srU6dJ/EsaydzVWVoFlKfhXLA5MJhqVLX3Mv7CPgubXyQktplV0amrF6kJw==
+better-queue@^3.8.12:
+  version "3.8.12"
+  resolved "https://registry.yarnpkg.com/better-queue/-/better-queue-3.8.12.tgz#15c18923d0f9778be94f19c3ef2bd85c632d0db3"
+  integrity sha512-D9KZ+Us+2AyaCz693/9AyjTg0s8hEmkiM/MB3i09cs4MdK1KgTSGJluXRYmOulR69oLZVo2XDFtqsExDt8oiLA==
   dependencies:
     better-queue-memory "^1.0.1"
     node-eta "^0.9.0"
