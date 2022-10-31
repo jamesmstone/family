@@ -1105,7 +1105,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.18.6"
 
-"@babel/plugin-transform-runtime@^7.12.10":
+"@babel/plugin-transform-runtime@^7.12.10", "@babel/plugin-transform-runtime@^7.15.0":
   version "7.19.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.19.1.tgz#a3df2d7312eea624c7889a2dcd37fd1dfd25b2c6"
   integrity sha512-2nJjTUFIzBMP/f/miLxEK9vxwW/KUXsdvN4sR//TmuDhe6yU2h57WmIOE12Gng3MDP/xpjUV/ToZRdcf8Yj4fA==
@@ -1115,18 +1115,6 @@
     babel-plugin-polyfill-corejs2 "^0.3.3"
     babel-plugin-polyfill-corejs3 "^0.6.0"
     babel-plugin-polyfill-regenerator "^0.4.1"
-    semver "^6.3.0"
-
-"@babel/plugin-transform-runtime@^7.15.0":
-  version "7.18.10"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.18.10.tgz#37d14d1fa810a368fd635d4d1476c0154144a96f"
-  integrity sha512-q5mMeYAdfEbpBAgzl7tBre/la3LeCxmDO1+wMXRdPWbcoMjR3GiXlCLk7JBZVVye0bqTGNMbt0yYVXX1B1jEWQ==
-  dependencies:
-    "@babel/helper-module-imports" "^7.18.6"
-    "@babel/helper-plugin-utils" "^7.18.9"
-    babel-plugin-polyfill-corejs2 "^0.3.2"
-    babel-plugin-polyfill-corejs3 "^0.5.3"
-    babel-plugin-polyfill-regenerator "^0.4.0"
     semver "^6.3.0"
 
 "@babel/plugin-transform-shorthand-properties@^7.0.0", "@babel/plugin-transform-shorthand-properties@^7.18.6":
@@ -3347,10 +3335,10 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-bizcharts@^4.1.20:
-  version "4.1.20"
-  resolved "https://registry.yarnpkg.com/bizcharts/-/bizcharts-4.1.20.tgz#e7962439ec56d3c453691ab496c75af97b4bac65"
-  integrity sha512-J9Y6cCJ+qj5Smv9vfaPTdwS88ESRmZ/gRX5wltN+gSoph38Cz42CIBFLrHCU8k9cVht+HERtG/EQBKYr98uAPA==
+bizcharts@^4.1.21:
+  version "4.1.21"
+  resolved "https://registry.yarnpkg.com/bizcharts/-/bizcharts-4.1.21.tgz#a5afa638100a38452ce31ea8284867152b702d05"
+  integrity sha512-qQjvI8cH7Td+ZVNCF60egsEihpT40Y313GtLHSMODamsnbD9wrAk+EMEdkOGp9qcasocJKRH5rzNYLD7BJi1wA==
   dependencies:
     "@antv/component" "*"
     "@antv/g2" "4.1.32"
@@ -3360,10 +3348,9 @@ bizcharts@^4.1.20:
     "@babel/plugin-transform-runtime" "^7.12.10"
     "@juggle/resize-observer" "^3.3.1"
     babel-plugin-transform-replace-object-assign "^2.0.0"
-    d3-color "^1.4.1"
+    d3-color "^3.1.0"
     react-error-boundary "3.0.2"
     react-reconciler "^0.25.1"
-    simple-statistics "^7.1.0"
     warning "^4.0.3"
 
 bl@^4.0.0, bl@^4.0.3:
@@ -4316,10 +4303,15 @@ d3-collection@1:
   resolved "https://registry.yarnpkg.com/d3-collection/-/d3-collection-1.0.7.tgz#349bd2aa9977db071091c13144d5e4f16b5b310e"
   integrity sha512-ii0/r5f4sjKNTfh84Di+DpztYwqKhEyUlKoPrzUFfeSkWxjW49xU2QzO9qrPrNkpdI0XJkfzvmTu8V2Zylln6A==
 
-d3-color@1, d3-color@^1.4.1:
+d3-color@1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-1.4.1.tgz#c52002bf8846ada4424d55d97982fef26eb3bc8a"
   integrity sha512-p2sTHSLCJI2QKunbGb7ocOh7DgTAn8IrLx21QRc/BSnodXM4sv6aLQlnfpvehFMLZEfBc6g9pH9SWQccFYfJ9Q==
+
+d3-color@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-3.1.0.tgz#395b2833dfac71507f12ac2f7af23bf819de24e2"
+  integrity sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==
 
 d3-composite-projections@^1.2.0:
   version "1.4.0"
@@ -5780,7 +5772,7 @@ gatsby-cli@^4.24.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^3.23.0, gatsby-core-utils@^3.24.0:
+gatsby-core-utils@^3.24.0:
   version "3.24.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.24.0.tgz#0e757bac28ad953a929046138403b3663b733cf7"
   integrity sha512-P4tbcYOJ1DSYKRP4gIAR9Xta/d/AzjmsK2C6PzX7sNcGnviDKtAIoeV9sE0kNXOqBfUCez25zmAi2cq8NlaxKw==
@@ -9999,11 +9991,6 @@ simple-statistics@^6.1.0:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/simple-statistics/-/simple-statistics-6.1.1.tgz#e3a0799ffc49914d6f421c5a4ac585f6a13e2bad"
   integrity sha512-zGwn0DDRa9Zel4H4n2pjTFIyGoAGpnpjrGIctreCxj5XWrcx9v7Xy7270FkC967WMmcvuc8ZU7m0ZG+hGN7gAA==
-
-simple-statistics@^7.1.0:
-  version "7.7.6"
-  resolved "https://registry.yarnpkg.com/simple-statistics/-/simple-statistics-7.7.6.tgz#31a21b2172d6c35cdb203dd7034232f5bc3cbd66"
-  integrity sha512-r1wIPpBsJ9/H2GdXiYfc06o7Rw4xvhtxwO/dMVSbcjmS3ayc43II1quxG7YD1wql2tr6a2Cm8aWKMnFkuNrj6A==
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
