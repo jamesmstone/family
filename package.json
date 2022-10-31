@@ -25,7 +25,7 @@
     "gatsby-plugin-react-leaflet": "^3.0.3",
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-source-filesystem": "^4.24.0",
-    "gatsby-transformer-sharp": "^4.23.1",
+    "gatsby-transformer-sharp": "^4.24.0",
     "leaflet": "^1.9.2",
     "moment": "latest",
     "parse-gedcom": "^1.0.5",
