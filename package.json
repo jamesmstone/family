@@ -16,7 +16,7 @@
     "better-queue": "^3.8.12",
     "bizcharts": "^4.1.20",
     "color-hash": "^2.0.1",
-    "gatsby": "^4.24.4",
+    "gatsby": "^4.24.5",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-antd": "^2.2.0",
     "gatsby-plugin-manifest": "^4.24.0",
