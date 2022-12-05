@@ -14,7 +14,7 @@
     "basicprimitives": "latest",
     "basicprimitivesreact": "^6.5.1",
     "better-queue": "^3.8.12",
-    "bizcharts": "^4.1.21",
+    "bizcharts": "^4.1.22",
     "color-hash": "^2.0.2",
     "gatsby": "^4.24.8",
     "gatsby-image": "^3.11.0",
