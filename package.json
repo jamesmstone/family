@@ -20,7 +20,7 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-antd": "^2.2.0",
     "gatsby-plugin-manifest": "^4.24.0",
-    "gatsby-plugin-offline": "^5.24.0",
+    "gatsby-plugin-offline": "^5.25.0",
     "gatsby-plugin-react-helmet": "^5.24.0",
     "gatsby-plugin-react-leaflet": "^3.0.3",
     "gatsby-plugin-sharp": "^4.24.0",
