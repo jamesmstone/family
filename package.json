@@ -24,7 +24,7 @@
     "gatsby-plugin-react-helmet": "^5.25.0",
     "gatsby-plugin-react-leaflet": "^3.0.3",
     "gatsby-plugin-sharp": "^4.25.0",
-    "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-source-filesystem": "^4.25.0",
     "gatsby-transformer-sharp": "^4.25.0",
     "leaflet": "^1.9.3",
     "moment": "latest",
